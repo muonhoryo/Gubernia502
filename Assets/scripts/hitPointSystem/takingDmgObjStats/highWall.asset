@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b151b8bcef89e8b47b6053268d23be72, type: 3}
+  m_Name: highWall
+  m_EditorClassIdentifier: 
+  isAlife: 0
+  maxShieldDuability: 0
+  maxHitPoint: 2000
+  normalRezist: 0
+  exploziveRezist: 0
+  onHitEffect:
+  - {fileID: 199916659644365023, guid: 09e0ab10738e7f24f8181403d8eea9aa, type: 3}
+  - {fileID: 2997183749822324980, guid: 8514e9140ebe4ef4ba2ba1907efe7d97, type: 3}
+  onDeathEffect: {fileID: 4857577194261453029, guid: cd4dfc4777a37e24c92297d3887aa307, type: 3}

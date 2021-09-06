@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 637b18eed614d084a89c9af3863a0b8f, type: 3}
+  m_Name: aprsWeapon
+  m_EditorClassIdentifier: 
+  parentObj: 0
+  damage: 80
+  fireCoolDown: 10
+  soundVolume: 0.1
+  magSize: 1
+  dispersion: 1
+  isDistant: 1
+  isAuto: 0
+  animWeaponModifier: 6
+  ammoTypeCount: 1
+  rotationOnSelected: {x: 0.01683959, y: -0.016948896, z: 0.6983747, w: -0.7153335}
+  positionOnSelected: {x: -0.024, y: -0.149, z: -0.134}
+  secondEquipedPos: {fileID: 0}
+  magImpulseTraectory: {x: 0, y: 0, z: 0}
+  altBulletStartZOffset: 0
+  magazinePrefab: {fileID: 9198947772459809476, guid: 347416b6c7c53e8428cbe697e2a102f7, type: 3}
+  onDestroyEffect: {fileID: 0}
+  equippedWeaponPrefab: {fileID: 2158968218594103681, guid: 8c260c1ec22a14b4a8cc739ff36f7e9f, type: 3}

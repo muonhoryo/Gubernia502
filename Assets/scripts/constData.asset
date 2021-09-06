@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3965151dfdcf527439edce7cfae0d6b7, type: 3}
+  m_Name: constData
+  m_EditorClassIdentifier: 
+  batrakEnemyFractions: 00000000
+  soundDegressSpeed: 0.5
+  alifeObjColliderRadius: 0.25
+  rifleBulletSpeed: 25
+  subSonicBulletSpeed: 15
+  subSonicDmgPenalty: 10
+  shotgunFragmentCount: 8
+  rocketExplosionRadius: 1
+  rocketSpeed: 15
+  simpleBulletSpeed: 20
+  beyondExplRezist: 90
+  ctrlRocketRotationSpeed: 3
+  invasiveOnHitDmgPenalty: 8
+  invasiveOnHitDispersion: 45
+  bulletMaxMoveDistant: 100
+  subSonicSoundLevel: 5
+  hideGuiDelayTime: 7
+  soundIndicMax: 15
+  soundIndicMin: 1.5
+  mainCameraMoveSpeed: 3
+  mainCameraHeight: 20
+  redactorCameraMoveSpeedMod: 0.0002
+  mainCameraMaxMoveRadius: 0.8
+  ermakMeleeBodyRotSpeed: 1
+  ermakMoveSoundVolume: 3
+  ermakMinSoundVolume: 0.5
+  ermakHandsSoundVolume: 1.5
+  ermakSecondFieldOfViewRange: 1
+  fieldOfViewRayCastHeight: 1.79
+  fieldOfViewEdgeDstThreshold: 5
+  fieldOfViewEdgeResolveIterations: 8
+  FieldOfviewMeshResolution: 0.41
+  ermakFieldOfViewAngle: 80
+  ermakFieldOfViewRange: 3
+  ermakPickUpItemAnimDelay: 1
+  ermakPickUpItemAnimSpeed: 2
+  ermakBodyRotationSpeed: 6
+  ermakHandsDmg: 20
+  ermakHeadRotationSpeed: 8
+  ermakMoveSpeed: 2.5
+  batrakSimpleAttackDmg: 30
+  moveMinHitDistance: 0.07
+  moveMinRayHitDistance: 0.07
+  batrakTimeToDeath: 3
+  batrakPathFindingIteractionsCount: 30
+  batrakPassiveMoveSpeed: 0.007
+  batrakActiveMoveSpeed: 0.073
+  batrakSlowedMoveRotationAngle: 60
+  batrakActiveRotationSpeed: 8
+  batrakPassiveRotationSpeed: 2
+  batrakMaxSimpleCombatDistance: 1.2
+  batrakPatrulIdleStateTime: 3
+  batrakOnAttackMoveDoneDistance: 0.6
+  batrakCheckSoundDelay: 0.25
+  saveLoader: {fileID: 8781439751362166634, guid: a23f10da67370794fa445105d348d6ea, type: 3}
+  drawingSphere: {fileID: 7813979459902944508, guid: 8f9fa112053f211499ff9cb8ba99b824, type: 3}
+  gamingItems:
+  - {fileID: 5755648606454621344, guid: 52703cf3b26d41942912441cb0c2904b, type: 3}
+  - {fileID: 1433149419510593845, guid: b994540cd20da964599b4c86359a34de, type: 3}
+  - {fileID: 6038551026396255413, guid: 3d642384d7aeb4a4ea9cd4b4124d596e, type: 3}
+  - {fileID: 7517368564721896930, guid: 43f5703f26fe9394583dc6baecf799cd, type: 3}
+  - {fileID: 7191574630267611152, guid: e8d933840748094488550aec3dc5f36c, type: 3}
+  - {fileID: 6953927371483423535, guid: 5a02def4fa7cc184a91616e01eee2f97, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 6510456851864710246, guid: a7519fa676e8f4f46ab1549470f33f09, type: 3}
+  - {fileID: 2168535808162764305, guid: 5b4aaebcfe64b074491b97c96be97ec2, type: 3}
+  - {fileID: 3346764821982734103, guid: 39f354ba525fa844ca4f7489043dbb40, type: 3}
+  - {fileID: 3243004965648312504, guid: 57fd40e05fea7ed4d8519b56f4085cbf, type: 3}
+  - {fileID: 0}
+  - {fileID: 4047942863659440098, guid: edab832c62e591e43997eafe00ac1a75, type: 3}
+  bullets:
+  - {fileID: 7478131271117987020, guid: 887f6b6d09f862b49b201d8003a83ea9, type: 3}
+  - {fileID: 801391891807970923, guid: 62fec35284ea71d41ac6715eac4f1239, type: 3}
+  - {fileID: 8854534565832260175, guid: 0f695b96a4c2a214b9fc236c00de1bd5, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  animatedAmmoInMag:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 7001676778326450358, guid: 0b8c3ba3c7da13641b02cbf2e3d19106, type: 3}
+  - {fileID: 9002495469015286922, guid: ccaf763671b772947b948573f3620230, type: 3}
+  explosions:
+  - {fileID: 0}
+  effects:
+  - {fileID: 6991460432871123143, guid: 3e0d54fca2e890544bababe394a3c0ca, type: 3}
+  levelObj:
+  - {fileID: 8412362155223866901, guid: 53933ae40aab91a468ac9380bcc00922, type: 3}
+  - {fileID: 4813505813823991276, guid: 0dcccda60d637d94e99f7ad65e7e1650, type: 3}
+  enemies:
+  - {fileID: 8061719243370886405, guid: 09722e1dcf5ab3647aeedc2ca858b97c, type: 3}
+  temporalPathPoint: {fileID: 9221587118021845269, guid: b7624672c1641c045b1219a254178705, type: 3}
+  pathPoint: {fileID: 3814236710997955502, guid: bbe78bbc167a9ce43a5bf50b2b00e993, type: 3}
+  ammoInfo:
+  - {fileID: 11400000, guid: f82d0d45d6a3e324ea02dd9fb993aa5b, type: 2}
+  - {fileID: 11400000, guid: fd658de2ff3ecf248907eb270359f9fc, type: 2}
+  - {fileID: 11400000, guid: 75e83ed71aeef7340ac65420f45931f2, type: 2}
+  - {fileID: 11400000, guid: 6eff0f449cf0ef9429cca7e62b30b0bd, type: 2}
+  - {fileID: 11400000, guid: 9cd3c0edb6eebdd48ac401f261fe8969, type: 2}
+  - {fileID: 11400000, guid: aa2a548c77371244e90ec9bc5a13cdf3, type: 2}

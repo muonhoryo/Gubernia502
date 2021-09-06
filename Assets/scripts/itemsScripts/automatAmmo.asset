@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2bc20dfc622e194885bc904daeea0da, type: 3}
+  m_Name: automatAmmo
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: 7ae5c10749d753f48b1efa31b250363d, type: 3}
+  id: 3
+  prefab: {fileID: 6038551026396255413, guid: 3d642384d7aeb4a4ea9cd4b4124d596e, type: 3}
+  stack: 100

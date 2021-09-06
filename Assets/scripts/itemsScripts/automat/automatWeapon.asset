@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 637b18eed614d084a89c9af3863a0b8f, type: 3}
+  m_Name: automatWeapon
+  m_EditorClassIdentifier: 
+  parentObj: 0
+  damage: 15
+  fireCoolDown: 6
+  soundVolume: 14
+  magSize: 30
+  dispersion: 15
+  isDistant: 1
+  isAuto: 1
+  animWeaponModifier: 3
+  ammotTypes: 03000000
+  rotationOnSelected: {x: 0.0039936374, y: 0.004040548, z: -0.70687944, w: 0.70731115}
+  positionOnSelected: {x: -0.015, y: 0.207, z: -0.015}
+  secondEquipedPos: {fileID: 0}
+  magImpulseTraectory: {x: 0.2, y: -0.2, z: 0}
+  altBulletStartZOffset: 0.85025
+  magazinePrefab: {fileID: 567488116122443920, guid: 5344d352f2783b14586769b501342cb2, type: 3}
+  onDestroyEffect: {fileID: 6035453093251722715, guid: cdc1641638c41ea49a2d46f6b81268bf, type: 3}
+  equippedWeaponPrefab: {fileID: 5371664518472220450, guid: 5e92415505d6b05429cc6e56e589e6b4, type: 3}

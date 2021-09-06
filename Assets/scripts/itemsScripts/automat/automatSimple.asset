@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2bc20dfc622e194885bc904daeea0da, type: 3}
+  m_Name: automatSimple
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: 74149b4760c19eb45883e5fe58d23ce5, type: 3}
+  id: 16
+  prefab: {fileID: 2168535808162764305, guid: 5b4aaebcfe64b074491b97c96be97ec2, type: 3}
+  stack: 1

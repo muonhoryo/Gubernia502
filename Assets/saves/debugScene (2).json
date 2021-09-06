@@ -1,0 +1,92 @@
+{
+  "levelName": "debugScene",
+  "walls": [
+    {
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "HPpoint": 1000,
+      "phase": 1
+    },
+    {
+      "position": {
+        "x": 1,
+        "y": 0,
+        "z": 1
+      },
+      "HPpoint": 1000,
+      "phase": 1
+    }
+  ],
+  "mainHero": {
+    "position": {
+      "x": 2,
+      "y": 0,
+      "z": 0
+    },
+    "yRotation": 0,
+    "shieldDuration": 100,
+    "HPpoint": 1
+  },
+  "enemies": [
+    {
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "behavior": "desactiveIdle",
+      "yRotation": 0,
+      "shieldDuration": 100,
+      "patrulPoints": [
+        {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      ],
+      "HPpoint": 1
+    }
+  ],
+  "weapons": [
+    {
+      "id": 16,
+      "eulerRotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "position": {
+        "x": 2,
+        "y": 1,
+        "z": 2
+      },
+      "damageBuff": 0,
+      "speedBuff": 0,
+      "magSizeBuff": 0,
+      "accuracyBuff": 0,
+      "durabilityBuff": 0,
+      "ammoInMag": 30,
+      "ammoId": 3,
+      "durability": 100
+    }
+  ],
+  "items": [
+    {
+      "position": {
+        "x": 1,
+        "y": 1,
+        "z": 2
+      },
+      "eulerRotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "id": 3,
+      "count": 100
+    }
+  ]
+}

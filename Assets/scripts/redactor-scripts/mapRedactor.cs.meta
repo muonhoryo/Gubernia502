@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 6dd5a4984f71db14f978caf6cb213bdc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - patrulPointSphere: {fileID: 3287750010002491031, guid: 7fc54a51d1fe12b48abc2db7317f92f2, type: 3}
+  - addingEnemyBehavior: {instanceID: 0}
+  - enemyBehaviorButton: {instanceID: 0}
+  - changeAddingObjButton: {instanceID: 0}
+  - mapRedactorPanel: {instanceID: 0}
+  - redactorModePanel: {instanceID: 0}
+  - redactorModeText: {instanceID: 0}
+  - addingObjPanel: {instanceID: 0}
+  - addingObjText: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

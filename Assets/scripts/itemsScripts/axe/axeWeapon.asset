@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 637b18eed614d084a89c9af3863a0b8f, type: 3}
+  m_Name: axeWeapon
+  m_EditorClassIdentifier: 
+  parentObj: 1
+  damage: 70
+  fireCoolDown: 0
+  soundVolume: 1.7
+  magSize: 0
+  dispersion: 0
+  isDistant: 0
+  isAuto: 0
+  animWeaponModifier: 1
+  ammotTypes: 
+  rotationOnSelected: {x: -0.002195673, y: -0.010991477, z: 0.70064497, w: 0.71342206}
+  positionOnSelected: {x: 0.062, y: 0.074, z: -0.291}
+  secondEquipedPos: {fileID: 11400000, guid: d303e394838cf5e44b54402049360345, type: 2}
+  magImpulseTraectory: {x: 0, y: 0, z: 0}
+  altBulletStartZOffset: 0
+  magazinePrefab: {fileID: 0}
+  onDestroyEffect: {fileID: 171086421647862306, guid: ec8255ae02676294d977fd1a16d365f2, type: 3}
+  equippedWeaponPrefab: {fileID: 5571572251383759239, guid: 407f257ca40825e4fb6c5b5e520a750f, type: 3}

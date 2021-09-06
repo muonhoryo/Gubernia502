@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 637b18eed614d084a89c9af3863a0b8f, type: 3}
+  m_Name: pistolWeapon
+  m_EditorClassIdentifier: 
+  parentObj: 0
+  damage: 25
+  fireCoolDown: 8
+  soundVolume: 12
+  magSize: 8
+  dispersion: 10
+  isDistant: 1
+  isAuto: 0
+  animWeaponModifier: 2
+  ammotTypes: 0100000002000000
+  rotationOnSelected: {x: 0.022912564, y: 0.030888377, z: -0.72123367, w: 0.69162345}
+  positionOnSelected: {x: -0.001, y: 0.11, z: -0.028}
+  secondEquipedPos: {fileID: 0}
+  magImpulseTraectory: {x: 0, y: -0.1, z: 0}
+  altBulletStartZOffset: 0.67575
+  magazinePrefab: {fileID: 371207862307227064, guid: f34c2a5f70dc45342a1ad7033567436b, type: 3}
+  onDestroyEffect: {fileID: 1849389266133726460, guid: e20a906f5d6a719478ec19221315c19f, type: 3}
+  equippedWeaponPrefab: {fileID: 3370392198498475989, guid: 33c8df67d0b6bce4b902db0feb2ccb3b, type: 3}
