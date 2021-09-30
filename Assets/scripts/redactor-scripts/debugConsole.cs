@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class debugConsole : MonoBehaviour
+public class debugConsole : MonoBehaviour//singltone
 {
+    static debugConsole singltone=null;
     public GameObject debugConsolePanel;
     public Text debugConsoleText;
     public mapRedactor redactor;
@@ -101,6 +102,18 @@ public class debugConsole : MonoBehaviour
             {
                 debugConsoleText.text += Input.inputString;
             }
+        }
+    }
+    private void Awake()
+    {
+        if (singltone == null)
+        {
+            singltone = this;
+            Gubernia502.debugConsole = this;
+        }
+        else
+        {
+            Destroy(this);
         }
     }
 }

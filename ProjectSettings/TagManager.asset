@@ -22,11 +22,11 @@ TagManager:
   - notAlife
   - Items
   - FieldOfView
-  - flter
+  - halfVisibleFilter
   - mainHero
   - patrulPoints
-  - 
-  - 
+  - absolutVision
+  - noneVisibleFilter
   - 
   - 
   - 

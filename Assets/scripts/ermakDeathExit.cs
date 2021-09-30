@@ -11,5 +11,6 @@ public class ermakDeathExit : breakItemExit
             Gubernia502.mainCamera.changeToStayOnTarget(ermakLockControl.transform.position);
         }
         Destroy(ermakLockControl.gameObject);
+        saveSystem.loadMainMenu();
     }
 }

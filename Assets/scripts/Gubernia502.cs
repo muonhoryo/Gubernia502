@@ -4,6 +4,163 @@ using UnityEngine;
 using System.Threading;
 public static class Gubernia502
 {
+    public abstract class bulletStats
+    {
+        public float dispersionAngle;
+        public abstract int prefabNum { get; }
+        public abstract float flyAngle { get; set; }
+        protected float FlyAngle;
+        public abstract int hitDmg { get; set; }
+        protected int HitDmg;
+        public abstract float flySpeed { get; }
+        public abstract Vector3 moveTraectory { get; }
+        public abstract Vector3 bulletStart { get; set; }
+        protected Vector3 BulletStart;
+        public abstract GameObject owner { get; set; }
+        protected GameObject Owner;
+    }
+    private class simpleBullet : bulletStats
+    {
+        public simpleBullet(float flyAngle, int hitDmg, Vector3 bulletStart, GameObject owner, float dispersionAngle)
+        {
+            this.dispersionAngle = dispersionAngle;
+            this.flyAngle = flyAngle;
+            this.hitDmg = hitDmg;
+            this.bulletStart = bulletStart;
+            this.owner = owner;
+        }
+        public override int prefabNum => 0;
+        public override float flyAngle { get => FlyAngle; set => FlyAngle = value + Random.Range(-dispersionAngle / 2, dispersionAngle / 2); }
+        public override int hitDmg { get => HitDmg; set => HitDmg = value; }
+        public override float flySpeed => constData.simpleBulletSpeed;
+        public override Vector3 moveTraectory
+        {
+            get => new Vector3(Mathf.Sin(flyAngle * Mathf.PI / 180),
+                               0f,
+                               Mathf.Cos(flyAngle * Mathf.PI / 180));
+        }
+        public override Vector3 bulletStart { get => BulletStart; set => BulletStart = value; }
+        public override GameObject owner { get => Owner; set => Owner = value; }
+    }
+    private class cumulativeRocketShoot : simpleBullet
+    {
+        public cumulativeRocketShoot(float flyAngle, int hitDmg, Vector3 bulletStart, GameObject owner) :
+            base(flyAngle, hitDmg, bulletStart, owner, 0f)
+        {
+        }
+        public override float flyAngle { get => base.flyAngle; set => FlyAngle = value; }
+        public override int prefabNum => 3;
+        public override float flySpeed => constData.rocketSpeed;
+        public readonly static float explosionRadius = constData.rocketExplosionRadius;
+    }
+    private class ctrlCumulativeRocketShoot : cumulativeRocketShoot
+    {
+        public ctrlCumulativeRocketShoot(float flyAngle, int hitDmg, Vector3 bulletStart, GameObject owner) :
+                    base(flyAngle, hitDmg, bulletStart, owner)
+        {
+        }
+        public override int prefabNum => 4;
+    }
+    private class shotgunShoot : simpleBullet
+    {
+        public shotgunShoot(float flyAngle, int hitDmg, Vector3 bulletStart, GameObject owner, float dispersionAngle)
+            : base(flyAngle, hitDmg, bulletStart, owner, dispersionAngle)
+        {
+        }
+        public readonly static int shootCount = constData.shotgunFragmentCount;
+    }
+    private class subSonicBullet : simpleBullet
+    {
+        public subSonicBullet(float flyAngle, int hitDmg, Vector3 bulletStart, GameObject owner, float dispersionAngle)
+            : base(flyAngle, hitDmg, bulletStart, owner, dispersionAngle)
+        {
+        }
+        public override int hitDmg
+        {
+            get => base.hitDmg;
+            set
+            {
+                HitDmg = value - constData.subSonicDmgPenalty;
+                if (HitDmg < 0)
+                {
+                    HitDmg = 0;
+                }
+            }
+        }
+        public override float flySpeed => constData.subSonicBulletSpeed;
+    }
+    private class rifleBullet : simpleBullet
+    {
+        public rifleBullet(float flyAngle, int hitDmg, Vector3 bulletStart, GameObject owner, float dispersionAngle)
+            : base(flyAngle, hitDmg, bulletStart, owner, dispersionAngle)
+        {
+        }
+        public override int prefabNum => 1;
+        public override float flySpeed => constData.rifleBulletSpeed;
+    }
+    private class invasiveBullet : rifleBullet
+    {
+        public invasiveBullet(float flyAngle, int hitDmg, Vector3 bulletStart, GameObject owner, float dispersionAngle)
+            : base(flyAngle, hitDmg, bulletStart, owner, dispersionAngle)
+        {
+        }
+        public override int prefabNum => 2;
+    }
+    private static void rocket(cumulativeRocketShoot rocketStats)
+    {
+        GameObject rocket = bullet(rocketStats);
+        rocket.GetComponent<cumulativeRocket>().explosionRadius = cumulativeRocketShoot.explosionRadius;
+        rocket.GetComponent<cumulativeRocket>().bulletOwner = rocketStats.owner;
+    }
+    private static void controlRocket(ctrlCumulativeRocketShoot rocketStats)
+    {
+        GameObject rocket = bullet(rocketStats);
+        mainCamera.changeToTargetTracking(rocket);
+        rocket.GetComponent<controledCumulariveRocket>().explosionRadius = cumulativeRocketShoot.explosionRadius;
+        rocket.GetComponent<controledCumulariveRocket>().bulletOwner = rocketStats.owner;
+    }
+    private static GameObject bullet<T>(T bulletStats)where T:simpleBullet
+    {
+        GameObject bullet = Object.Instantiate(constData.bullets[bulletStats.prefabNum], bulletStats.bulletStart,
+                                      Quaternion.Euler(0f, bulletStats.flyAngle, 0f));
+        bullet.GetComponent<bullet>().hitDmg = bulletStats.hitDmg;
+        bullet.GetComponent<bullet>().speed = bulletStats.flySpeed;
+        bullet.GetComponent<bullet>().moveTraectory = bulletStats.moveTraectory;
+        bullet.GetComponent<bullet>().bulletOwner = bulletStats.owner;
+        return bullet;
+    }
+    public static void spawnBullet(int type, int dmg, Vector3 bulletStart, float dispersionCenter, float dispersionAngle, GameObject owner)
+    {
+        switch (type)
+        {
+            case 2:
+                bullet(new subSonicBullet(dispersionCenter, dmg, bulletStart, owner, dispersionAngle));
+                break;
+            case 4:
+                for (int i = 0; i < shotgunShoot.shootCount - 1; i++)
+                {
+                    bullet(new shotgunShoot(dispersionCenter, dmg, bulletStart, owner, dispersionAngle));
+                }
+                break;
+            case 5:
+                bullet(new rifleBullet(dispersionCenter, dmg, bulletStart, owner, dispersionAngle));
+                break;
+            case 6:
+                bullet(new invasiveBullet(dispersionCenter, dmg, bulletStart, owner, dispersionAngle));
+                break;
+            case 8:
+                rocket(new cumulativeRocketShoot(dispersionCenter, dmg, bulletStart, owner));
+                break;
+            default:
+                bullet(new simpleBullet(dispersionCenter, dmg, bulletStart, owner, dispersionAngle));
+                break;
+        }
+    }
+    public static void spawnControlRocket(int type, int dmg, Vector3 bulletStart, float dispersionCenter,
+                                                float dispersionAngle, GameObject owner)
+    {
+        controlRocket(new ctrlCumulativeRocketShoot(dispersionCenter, dmg, bulletStart, owner));
+    }
     public static readonly Color activeColor = new Color(0, 0, 1);
     public static readonly Color noneActiveColor = new Color(0.2196078f, 0.2196078f, 0.2196078f);
     private static bool GameIsActive = true;
@@ -28,16 +185,34 @@ public static class Gubernia502
                     enemies[i].disableBatrak();
                 }
             }
+            if (playerController != null)
+            {
+                playerController.enabled = value;
+            }
             GameIsActive = value;
         }
     }
+    public delegate float getFloatFun();
     public delegate void simpleFun();
     public static Gubernia502ConstData constData;
+    private static List<GameObject> drawingSpheres = new List<GameObject> { };
     public static List<temporalPathPoint> pathFindingMap = new List<temporalPathPoint> { };
     public static List<wallHitPointSystem> walls = new List<wallHitPointSystem> { };
     public static List<batrakBehavior> enemies = new List<batrakBehavior> { };
     public static List<collectibleWeaponsItem> weapons = new List<collectibleWeaponsItem> { };
     public static List<collectibleSimpleItem> items = new List<collectibleSimpleItem> { };
+    public static string saveFileName;
+    public static multiThreadManager threadManager;
+    public static debugConsole debugConsole;
+    public static MainCamera mainCamera;
+    public static ermakPlayerController playerController;
+    public static mainMenu mainMenu;
+    public enum fraction
+    {
+        serednyak = 0,
+        batrak = 1,
+        other=2
+    }
     public class oneSidePathWay
     {
         public oneSidePathWay(temporalPathPoint startPoint, temporalPathPoint endPoint, twoSidePathWay pathWay)
@@ -72,107 +247,6 @@ public static class Gubernia502
             secondWay.startPoint.ways.Remove(secondWay);
         }
     }
-    public enum fraction
-    {
-        serednyak = 0,
-        batrak = 1
-    }
-    public abstract class bulletStats
-    {
-        public float dispersionAngle;
-        public abstract int prefabNum { get; }
-        public abstract float flyAngle { get; set; }
-        protected float FlyAngle;
-        public abstract int hitDmg { get; set; }
-        protected int HitDmg;
-        public abstract float flySpeed { get; }
-        public abstract Vector3 moveTraectory { get; }
-        public abstract Vector3 bulletStart { get; set; }
-        protected Vector3 BulletStart;
-        public abstract GameObject owner { get; set; }
-        protected GameObject Owner;
-    }
-    private class simpleBullet : bulletStats
-    {
-        public simpleBullet(float flyAngle, int hitDmg, Vector3 bulletStart, GameObject owner, float dispersionAngle)
-        {
-            this.dispersionAngle = dispersionAngle;
-            this.flyAngle = flyAngle;
-            this.hitDmg = hitDmg;
-            this.bulletStart = bulletStart;
-            this.owner = owner;
-        }
-        public override int prefabNum => 0;
-        public override float flyAngle { get => FlyAngle; set => FlyAngle = value + Random.Range(-dispersionAngle / 2, dispersionAngle / 2); }
-        public override int hitDmg { get => HitDmg; set => HitDmg = value; }
-        public override float flySpeed => constData.simpleBulletSpeed;
-        public override Vector3 moveTraectory { get => new Vector3(Mathf.Sin(flyAngle * Mathf.PI / 180),
-                                                                   0f,
-                                                                   Mathf.Cos(flyAngle * Mathf.PI / 180)); }
-        public override Vector3 bulletStart { get => BulletStart; set => BulletStart = value; }
-        public override GameObject owner { get => Owner; set => Owner = value; }
-    }
-    private class cumulativeRocketShoot : simpleBullet
-    {
-        public cumulativeRocketShoot(float flyAngle, int hitDmg, Vector3 bulletStart, GameObject owner) :
-            base(flyAngle, hitDmg, bulletStart, owner, 0f)
-        {
-        }
-        public override float flyAngle { get => base.flyAngle; set => FlyAngle = value; }
-        public override int prefabNum => 3;
-        public override float flySpeed => constData.rocketSpeed;
-        public readonly static float explosionRadius = constData.rocketExplosionRadius;
-    }
-    private class ctrlCumulativeRocketShoot:cumulativeRocketShoot
-    {
-        public ctrlCumulativeRocketShoot(float flyAngle, int hitDmg, Vector3 bulletStart, GameObject owner) :
-                    base(flyAngle, hitDmg, bulletStart, owner)
-        {
-        }
-        public override int prefabNum => 4;
-    }
-    private class shotgunShoot : simpleBullet
-    {
-        public shotgunShoot(float flyAngle, int hitDmg, Vector3 bulletStart, GameObject owner,float dispersionAngle)
-            : base(flyAngle, hitDmg, bulletStart, owner, dispersionAngle)
-        {
-        }
-        public readonly static int shootCount = constData.shotgunFragmentCount;
-    }
-    private class subSonicBullet : simpleBullet
-    {
-        public subSonicBullet(float flyAngle, int hitDmg, Vector3 bulletStart, GameObject owner,float dispersionAngle)
-            : base(flyAngle, hitDmg, bulletStart, owner, dispersionAngle)
-        { 
-        }
-        public override int hitDmg { get => base.hitDmg;
-            set 
-            { 
-                HitDmg = value - constData.subSonicDmgPenalty;
-                if (HitDmg < 0)
-                {
-                    HitDmg = 0;
-                }
-            } }
-        public override float flySpeed => constData.subSonicBulletSpeed;
-    }
-    private class rifleBullet : simpleBullet
-    {
-        public rifleBullet(float flyAngle, int hitDmg, Vector3 bulletStart, GameObject owner,float dispersionAngle)
-            : base(flyAngle, hitDmg, bulletStart, owner, dispersionAngle)
-        {
-        }
-        public override int prefabNum =>1;
-        public override float flySpeed => constData.rifleBulletSpeed;
-    }
-    private class invasiveBullet : rifleBullet
-    {
-        public invasiveBullet(float flyAngle, int hitDmg, Vector3 bulletStart, GameObject owner,float dispersionAngle)
-            : base(flyAngle, hitDmg, bulletStart, owner, dispersionAngle)
-        {
-        }
-        public override int prefabNum =>2;
-    }
     public class pathFindThreadState
     {
         public pathFindThreadState(Vector3 start,Vector3 end)
@@ -187,10 +261,11 @@ public static class Gubernia502
         public temporalPathPoint temporalEnd;
         public Vector3 start { get; private set; }
         public Vector3 end { get; private set; }
-        public AutoResetEvent waitHandler;
+        public AutoResetEvent waitHandler { get; private set; }
         public Thread currentThread;
         public List<Vector3> finalPath;
         public bool pathFindDone = false;
+        public int threadIndex = -1;
         public void threadDextraPathFind()
         {
             dextraPathFindThread(this);
@@ -372,26 +447,6 @@ public static class Gubernia502
             return false;
         }
     }//multithread
-    public static multiThreadManager threadManager;
-    public static debugConsole debugConsole;
-    public static MainCamera mainCamera;
-    public static ermakPlayerController playerController;
-    public static void drawSphereLine(float radius,Vector3 start,Vector3 end)
-    {
-        if (constData.drawingSphere != null)
-        {
-            float distance = Vector3.Distance(start, end);
-            Vector3 direction = (end - start).normalized;
-            Vector3 currentCastPos = start;
-            float stepsCount = (int)(distance / 0.05f) + 1;
-            for (int i = 0; i < stepsCount; i++)
-            {
-                GameObject sphere = Object.Instantiate(constData.drawingSphere, currentCastPos, Quaternion.Euler(Vector3.zero));
-                sphere.transform.localScale = Vector3.one * radius;
-                currentCastPos += direction * 0.05f;
-            }
-        }
-    }
     public static void recalculatePathMap()
     {
         for(int i = 0; i < pathFindingMap.Count; i++)
@@ -549,12 +604,6 @@ public static class Gubernia502
         wasChanged = false;
         return (oldPath);
     }*/
-    public static List<Vector3> pathUpdate(List<Vector3> oldPathFind, Vector3 endPoint, int index)
-    {
-        oldPathFind.RemoveRange(index, oldPathFind.Count - index);
-        oldPathFind.Add(endPoint);
-        return oldPathFind;
-    }
     /*private static List< Vector3> pathFinding(GameObject owner,ref temporalPathPoint endPoint, int pathSortIteractions,float highPriorityDirection=0)
     {
         temporalPathPoint startPoint= Object.Instantiate(temporalPathPoint, owner.transform.position , Quaternion.Euler(Vector3.zero)).GetComponent<temporalPathPoint>();
@@ -717,60 +766,26 @@ public static class Gubernia502
             sideRotation = -1;
         }
     }
-    private static void rocket(cumulativeRocketShoot rocketStats)
+    public static void drawSphereLine(float radius, Vector3 start, Vector3 end)
     {
-        GameObject rocket = bullet(rocketStats);
-        rocket.GetComponent<cumulativeRocket>().explosionRadius = cumulativeRocketShoot.explosionRadius;
-        rocket.GetComponent<cumulativeRocket>().bulletOwner = rocketStats.owner;
-    }
-    private static void controlRocket(ctrlCumulativeRocketShoot rocketStats)
-    {
-        GameObject rocket = bullet(rocketStats);
-        mainCamera.changeToTargetTracking(rocket);
-        rocket.GetComponent<controledCumulariveRocket>().explosionRadius = cumulativeRocketShoot.explosionRadius;
-        rocket.GetComponent<controledCumulariveRocket>().bulletOwner = rocketStats.owner;
-    }
-    private static GameObject bullet(simpleBullet bulletStats)
-    {
-        GameObject bullet = Object.Instantiate(constData.bullets[bulletStats.prefabNum], bulletStats.bulletStart,
-                                      Quaternion.Euler(0f, bulletStats.flyAngle, 0f));
-        bullet.GetComponent<bullet>().hitDmg = bulletStats.hitDmg;
-        bullet.GetComponent<bullet>().speed = bulletStats.flySpeed;
-        bullet.GetComponent<bullet>().moveTraectory = bulletStats.moveTraectory;
-        bullet.GetComponent<bullet>().bulletOwner = bulletStats.owner;
-        return bullet;
-    }
-    public static void spawnBullet(int type, int dmg,Vector3 bulletStart,float dispersionCenter,float dispersionAngle,GameObject owner)
-    {
-        switch (type)
+        for (int i = 0; i < drawingSpheres.Count; i++)
         {
-            case 2:
-                bullet(new subSonicBullet(dispersionCenter, dmg, bulletStart, owner, dispersionAngle));
-                break;
-            case 4:
-                for(int i = 0; i < shotgunShoot.shootCount-1; i++)
-                {
-                    bullet(new shotgunShoot(dispersionCenter, dmg, bulletStart, owner, dispersionAngle));
-                }
-                break;
-            case 5:
-                bullet(new rifleBullet(dispersionCenter, dmg, bulletStart, owner, dispersionAngle));
-                break;
-            case 6:
-                bullet(new invasiveBullet(dispersionCenter, dmg, bulletStart, owner, dispersionAngle));
-                break;
-            case 8:
-                rocket(new cumulativeRocketShoot(dispersionCenter, dmg, bulletStart, owner));
-                break;
-            default:
-                bullet(new simpleBullet(dispersionCenter, dmg, bulletStart, owner, dispersionAngle));
-                break;
+            Object.Destroy(drawingSpheres[i]);
         }
-    }
-    public static void spawnControlRocket(int type,int dmg,Vector3 bulletStart,float dispersionCenter,
-                                                float dispersionAngle,GameObject owner)
-    {
-        controlRocket(new ctrlCumulativeRocketShoot(dispersionCenter, dmg, bulletStart, owner));
+        if (constData.drawingSphere != null)
+        {
+            float distance = Vector3.Distance(start, end);
+            Vector3 direction = (end - start).normalized;
+            Vector3 currentCastPos = start;
+            float stepsCount = (int)(distance / 0.05f) + 1;
+            for (int i = 0; i < stepsCount; i++)
+            {
+                GameObject sphere = Object.Instantiate(constData.drawingSphere, currentCastPos, Quaternion.Euler(Vector3.zero));
+                sphere.transform.localScale = Vector3.one * radius;
+                currentCastPos += direction * 0.05f;
+                drawingSpheres.Add(sphere);
+            }
+        }
     }
     /// <summary>
     /// Преобразование угла из float в Vector3
@@ -829,6 +844,17 @@ public static class Gubernia502
     {
         return offSet.z * Mathf.Cos(rotationAngle * Mathf.PI / 180) +
                offSet.x * -Mathf.Sin(rotationAngle * Mathf.PI / 180);
+    }
+    public static int roundToUp(float a)
+    {
+        if (a % 1 != 0)
+        {
+            return ((int)a) + 1;
+        }
+        else
+        {
+            return (int)a;
+        }
     }
 }
 

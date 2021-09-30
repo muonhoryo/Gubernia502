@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class creative : MonoBehaviour
+public class creative : MonoBehaviour//singltone
 {
+    static creative singltone = null;
     public Object creatingObject;
     public Transform redactorObject;
     public Transform redactor;
-    //public Transform offset;
     public createSide side;
     public enum createSide
     {
@@ -32,5 +32,15 @@ public class creative : MonoBehaviour
         }
         Instantiate(creatingObject, redactorObject.position,Quaternion.identity);
     }
-    
+    private void Awake()
+    {
+        if (singltone != null)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            singltone = this;
+        }
+    }
 }

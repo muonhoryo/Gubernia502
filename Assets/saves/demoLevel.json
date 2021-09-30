@@ -1,0 +1,14700 @@
+{
+	"levelName": "demoLevel",
+	"walls": [
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": 3
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": 3
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": 3
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": 3
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": 2
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": 1
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": 0
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -1
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -2
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -3
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -3
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -3
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -3
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -3
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -3
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -2
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -1
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": 0
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": 3
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": 1
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": 3
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": 2
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": 3
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -4
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -5
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -6
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -7
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -4
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -5
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -6
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -7
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -8
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -8
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -11
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -11
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -11
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -8
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -8
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -8
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -8
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -8
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -8
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -12
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -13
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -11
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -11
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -14
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -11
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -6,
+				"y": 0,
+				"z": -11
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -11
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -12
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -13
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -14
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -14
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -15
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -15
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -15
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -16
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -17
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -18
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -18
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -18
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -18
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -14
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -15
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -16
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -17
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -18
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -6,
+				"y": 0,
+				"z": -18
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -18
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -14
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -14
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -15
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -15
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -11
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -11
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -11
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -12
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -13
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -14
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -15
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -16
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -17
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -18
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -18
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -18
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -18
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -18
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -18
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -19
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -18
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -18
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -19
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -20
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -23
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -24
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -25
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -25
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -8
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -6,
+				"y": 0,
+				"z": -8
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -8
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -8
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -8
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -8
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -9
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -10
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -11
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -12
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -13
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -14
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -15
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -12,
+				"y": 0,
+				"z": -15
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -12,
+				"y": 0,
+				"z": -16
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -12,
+				"y": 0,
+				"z": -17
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -12,
+				"y": 0,
+				"z": -18
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -12,
+				"y": 0,
+				"z": -19
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -12,
+				"y": 0,
+				"z": -20
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -12,
+				"y": 0,
+				"z": -21
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -12,
+				"y": 0,
+				"z": -22
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -12,
+				"y": 0,
+				"z": -23
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -12,
+				"y": 0,
+				"z": -24
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -12,
+				"y": 0,
+				"z": -25
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -25
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -15
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -6,
+				"y": 0,
+				"z": -21
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -21
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -22
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -6,
+				"y": 0,
+				"z": -22
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -25
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -25
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -6,
+				"y": 0,
+				"z": -25
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -25
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -25
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -20
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -21
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -22
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -23
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -25
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -24
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -26
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -27
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -26
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -19
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -20
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -21
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -22
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -24
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -25
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -26
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -23
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -19
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -20
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -21
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -23
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -22
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -24
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -26
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -25
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -18
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -18
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -19
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -20
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -25
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -25
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -25
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -25
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -25
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -25
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -24
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -23
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -21
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -21
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -22
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -22
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -8
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -8
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -8
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -8
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -8
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -8
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -9
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -10
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -11
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -12
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -13
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -14
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -15
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -15
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -15
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -16
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -17
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -18
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -19
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -20
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -21
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -22
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -23
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -24
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -25
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -25
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -25
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -26
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -27
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -27
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -27
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -27
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -28
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -29
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -30
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -31
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -32
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -33
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -33
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -33
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -28
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -30
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -29
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -31
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -28
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -29
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -30
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -31
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -28
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -29
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -30
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -31
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -28
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -29
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -30
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -31
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -33
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -33
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -33
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -33
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -33
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -33
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -32
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -34
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -34
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -35
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -35
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -36
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -37
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -36
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -37
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -38
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -38
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -38
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -38
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -38
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -38
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -39
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -40
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -41
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -42
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -39
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -40
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -41
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -42
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -43
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -43
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -44
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -44
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -44
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -44
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -44
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -44
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": 3
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": 4
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": 4
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": 4
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": 4
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": 4
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": 4
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": 4
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": 4
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": 4
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": 3
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": 2
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": 1
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": 0
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -2
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -3
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -1
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -4
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -4
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -4
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -4
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": 2
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": 0
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -1
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": 1
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -4
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -3
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -2
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -4
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -4
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -5
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -7
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -6
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -5
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -6
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -7
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -7
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -7
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -7
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -6,
+				"y": 0,
+				"z": -7
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -7
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -7
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -7
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -7
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -7
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -12,
+				"y": 0,
+				"z": -8
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -12,
+				"y": 0,
+				"z": -9
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -8
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -9
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -10
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -11
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -12
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -14
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -12,
+				"y": 0,
+				"z": -14
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -13
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -13,
+				"y": 0,
+				"z": -15
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -13,
+				"y": 0,
+				"z": -14
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -13,
+				"y": 0,
+				"z": -16
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -13,
+				"y": 0,
+				"z": -17
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -13,
+				"y": 0,
+				"z": -18
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -13,
+				"y": 0,
+				"z": -19
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -13,
+				"y": 0,
+				"z": -20
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -13,
+				"y": 0,
+				"z": -21
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -13,
+				"y": 0,
+				"z": -22
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -13,
+				"y": 0,
+				"z": -23
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -13,
+				"y": 0,
+				"z": -25
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -13,
+				"y": 0,
+				"z": -26
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -13,
+				"y": 0,
+				"z": -24
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -12,
+				"y": 0,
+				"z": -26
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -26
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -26
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -26
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -26
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -26
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -6,
+				"y": 0,
+				"z": -26
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -26
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -27
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -28
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -29
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -30
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -31
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -32
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -33
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -34
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -34
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -34
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -34
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -35
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -36
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -37
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -37
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -37
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -38
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -39
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -40
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -41
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -43
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -44
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -42
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -45
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -45
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -45
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -45
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -45
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -45
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -45
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -45
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -44
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -43
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -42
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -40
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -39
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -41
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -38
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -37
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -37
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -37
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -35
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -34
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -36
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -34
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -34
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -34
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -32
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -31
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -29
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -30
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -26
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -27
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -28
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -26
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -26
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -26
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -26
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -26
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -26
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -26
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -26
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -25
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -24
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -22
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -23
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -21
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -20
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -18
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -19
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -17
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -16
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -15
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -14
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -14
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -14
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -13
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -12
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -11
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -10
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -9
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -8
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -7
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -7
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -7
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -7
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -7
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -7
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -7
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -7
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -7
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -6
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -5
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -46
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -47
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -46
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -47
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -48
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -48
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -48
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -48
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -48
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -48
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -49
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -50
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -51
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -52
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -52
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -52
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -48
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -48
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -49
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -51
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -52
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -52
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -52
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -52
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -52
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -52
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -48
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -48
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -48
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -48
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -48
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -49
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -50
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -52
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -51
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -53
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -54
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -54
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -54
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -54
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -54
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -54
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -54
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -55
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -56
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -57
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -57
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -55
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -56
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -57
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -58
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -59
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -57
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -60
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -60
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -60
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -58
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -60
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -59
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -60
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -60
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -60
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -60
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -52
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -48
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -53
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -54
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -56
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -57
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -57
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -57
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -57
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -48
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -6,
+				"y": 0,
+				"z": -48
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -58
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -58
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -58
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -59
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -60
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -6,
+				"y": 0,
+				"z": -52
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -52
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -51
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -48
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -49
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -48
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -48
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -48
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -49
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -50
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -51
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -52
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -53
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -53
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -54
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -55
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -55
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -54
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -55
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -56
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -57
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -58
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -58
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -58
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -58
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -59
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -60
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -61
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -62
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -63
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -63
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -63
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -61
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -62
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -63
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -63
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -63
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -63
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -63
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -63
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -64
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -65
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -65
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -6,
+				"y": 0,
+				"z": -65
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -65
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -65
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -62
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -64
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -65
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -63
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -66
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -66
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -61
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -62
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -64
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -63
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -65
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -66
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -66
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -66
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -66
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -66
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -66
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -66
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -66
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -66
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -66
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -66
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -66
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -67
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -68
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -69
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -70
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -71
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -72
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -72
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -6,
+				"y": 0,
+				"z": -72
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -72
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -66
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -67
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -68
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -70
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -71
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -69
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -72
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -72
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -72
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -72
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -72
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -72
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -72
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -72
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -73
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -72
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -72
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -73
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -72
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -67
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -68
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -69
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -70
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -71
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -72
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -72
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -72
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -72
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -72
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -46
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -47
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -47
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -47
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -47
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -46
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -47
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -47
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -47
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -74
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -75
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -76
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -74
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -75
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -76
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -77
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -77
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -77
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -78
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -79
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -80
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -81
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -82
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -83
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -83
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -83
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -77
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -77
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -77
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -78
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -79
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -80
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -81
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -82
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -83
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -83
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -83
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -84
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -84
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -84
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -84
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -83
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -84
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -84
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -82
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -81
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -80
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -79
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -78
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -77
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -76
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -76
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -76
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -73
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -74
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -75
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -73
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -73
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -73
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -73
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -6,
+				"y": 0,
+				"z": -73
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -73
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -73
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -73
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -73
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -73
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -73
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -72
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -71
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -70
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -69
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -68
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -67
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -66
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -65
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -63
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -62
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -64
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -61
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -60
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -59
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -57
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -58
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -56
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -54
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -53
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -55
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -52
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -51
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -50
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -49
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -48
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -11,
+				"y": 0,
+				"z": -47
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -47
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -47
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -47
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -47
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -6,
+				"y": 0,
+				"z": -47
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -47
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -47
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -47
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -47
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -47
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -47
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -48
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -47
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -50
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -49
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -51
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -52
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -53
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -55
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -56
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -54
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -58
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -57
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -59
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -60
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -62
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -61
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -63
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -64
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -66
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -67
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -65
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -68
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -69
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -70
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -71
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -72
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -73
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -73
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -73
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -73
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -73
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -73
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -73
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -73
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -74
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -75
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -76
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -76
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -76
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -77
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -78
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -80
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -81
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -79
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -83
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -82
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -84
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -84
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -85
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -86
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -87
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -85
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -86
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -87
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -88
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -88
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -88
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -88
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -88
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -88
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -88
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -88
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -88
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -88
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -6,
+				"y": 0,
+				"z": -88
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -88
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -88
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -88
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -88
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -88
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -88
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -88
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -88
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -88
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -89
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -90
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -91
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -92
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -93
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -94
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -95
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -96
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -97
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -98
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -99
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -100
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -101
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -102
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -103
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -104
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -105
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -106
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -107
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -108
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -109
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -109
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -109
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -109
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -109
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -109
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -109
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -109
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -109
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -109
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -109
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -109
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -109
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -109
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -109
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -89
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -90
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -91
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -92
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -93
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -94
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -95
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -96
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -97
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -98
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -99
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -100
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -101
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -103
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -102
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -104
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -106
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -105
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -107
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -109
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -108
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -109
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -109
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -109
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -6,
+				"y": 0,
+				"z": -109
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -110
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -111
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -112
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -113
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -110
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -111
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -112
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -113
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -114
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -114
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -114
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -114
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -114
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -114
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -115
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -116
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -117
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -118
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -119
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -120
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -120
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -120
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -120
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -120
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -120
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -119
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -115
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -117
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -118
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -116
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -89
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -91
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -94
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -95
+			},
+			"HPpoint": 500,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -95
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -95
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -95
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -95
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -95
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -95
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -96
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -98
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -100
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -101
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -102
+			},
+			"HPpoint": 500,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -102
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -102
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -102
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -102
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -108
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -106
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -103
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -105
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -108
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -103
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -102
+			},
+			"HPpoint": 500,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -102
+			},
+			"HPpoint": 500,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -102
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -102
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -102
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -102
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -101
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -100
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -99
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -97
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -96
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -95
+			},
+			"HPpoint": 500,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -95
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -95
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -95
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -95
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -94
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -92
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -89
+			},
+			"HPpoint": 50,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -87
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -87
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -87
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -87
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -87
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -87
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -87
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -87
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -87
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -6,
+				"y": 0,
+				"z": -87
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -85
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -86
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -88
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -89
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -90
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -91
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -92
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -93
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -94
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -95
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -96
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -97
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -98
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -99
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -100
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -101
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -103
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -102
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -104
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -105
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -108
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -106
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -107
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -109
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -9,
+				"y": 0,
+				"z": -110
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -8,
+				"y": 0,
+				"z": -110
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -7,
+				"y": 0,
+				"z": -110
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -6,
+				"y": 0,
+				"z": -110
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -110
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -110
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -110
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -110
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -110
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -110
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -111
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -112
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -113
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -113
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -113
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -114
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -115
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -116
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -117
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -118
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -119
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -120
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -2,
+				"y": 0,
+				"z": -121
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -1,
+				"y": 0,
+				"z": -121
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -121
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -121
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -121
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -121
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -121
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -121
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -120
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -119
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -118
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -117
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -116
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -115
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -114
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -113
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -113
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -113
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -111
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -110
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -112
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -110
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -110
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -110
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -110
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -110
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -110
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -110
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -110
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -110
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -109
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -108
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -107
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -106
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -105
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -104
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -103
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -102
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -101
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -100
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -99
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -97
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -96
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -98
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -95
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -93
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -94
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -92
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -91
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -90
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -89
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -88
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -87
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -87
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -87
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -87
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -87
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -87
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -87
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -87
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -87
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -87
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -86
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -85
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -122
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -123
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -124
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -125
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -126
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -126
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -126
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -126
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -122
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -123
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -124
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -126
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -125
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -127
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -128
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -128
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -128
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -128
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -127
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -128
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -129
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -129
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -130
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -130
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -130
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -129
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -127
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -126
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -128
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -130
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -131
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -132
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -132
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -132
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -133
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -134
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -135
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -136
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -133
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -133
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -135
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -138
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -138
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -138
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -132
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -133
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -134
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -131
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -136
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -137
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -135
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -136
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -137
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -138
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -139
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -139
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -140
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -141
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -142
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -141
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -133
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -134
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -135
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -136
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -137
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -138
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -140
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -141
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -141
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -139
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -142
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -143
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -144
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -145
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -146
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -147
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -148
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -144
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -145
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -145
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -145
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -147
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -148
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -149
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -150
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -139
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -140
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -142
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -142
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -140
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -139
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -141
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -141
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -150
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -150
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -150
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -143
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -144
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -145
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -147
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -148
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -146
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -149
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -146
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -147
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -148
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -149
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -150
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -151
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -152
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -153
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -153
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -152
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -152
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -152
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -152
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -152
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -152
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -150
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -150
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -149
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -148
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -148
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -149
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -152
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -152
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -152
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -152
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -151
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -150
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -149
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -148
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -147
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -146
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -146
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -145
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -144
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -146
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -146
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -144
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -143
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -142
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -142
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -141
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -142
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -141
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -140
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -140
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -145
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -144
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -143
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -142
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -141
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -140
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -140
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -140
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -139
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -138
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -138
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -139
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -138
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -139
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -138
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -137
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -136
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -134
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -134
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -133
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -132
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -136
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -135
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -134
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -137
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -136
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -135
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -133
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -134
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -132
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -132
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -132
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -130
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -129
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -128
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -131
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -130
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -128
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -129
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -126
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -126
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -126
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -126
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -131
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -131
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -130
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -129
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -128
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -128
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -129
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -130
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -126
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -126
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 15,
+				"y": 0,
+				"z": -126
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 15,
+				"y": 0,
+				"z": -128
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 16,
+				"y": 0,
+				"z": -128
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 16,
+				"y": 0,
+				"z": -129
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 15,
+				"y": 0,
+				"z": -129
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 16,
+				"y": 0,
+				"z": -130
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 15,
+				"y": 0,
+				"z": -130
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 16,
+				"y": 0,
+				"z": -126
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 17,
+				"y": 0,
+				"z": -126
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 18,
+				"y": 0,
+				"z": -126
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 18,
+				"y": 0,
+				"z": -127
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 18,
+				"y": 0,
+				"z": -128
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 18,
+				"y": 0,
+				"z": -129
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 18,
+				"y": 0,
+				"z": -130
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 19,
+				"y": 0,
+				"z": -130
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -130
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 16,
+				"y": 0,
+				"z": -132
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 18,
+				"y": 0,
+				"z": -133
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 16,
+				"y": 0,
+				"z": -134
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -131
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -132
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -133
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 15,
+				"y": 0,
+				"z": -146
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 16,
+				"y": 0,
+				"z": -146
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 18,
+				"y": 0,
+				"z": -146
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 19,
+				"y": 0,
+				"z": -146
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 18,
+				"y": 0,
+				"z": -145
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -146
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -145
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -144
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -143
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -142
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -141
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -140
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -134
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -135
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -136
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -137
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -139
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -138
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 18,
+				"y": 0,
+				"z": -135
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 16,
+				"y": 0,
+				"z": -136
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 18,
+				"y": 0,
+				"z": -137
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 16,
+				"y": 0,
+				"z": -138
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 18,
+				"y": 0,
+				"z": -139
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 16,
+				"y": 0,
+				"z": -140
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 18,
+				"y": 0,
+				"z": -141
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 16,
+				"y": 0,
+				"z": -142
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 18,
+				"y": 0,
+				"z": -143
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 16,
+				"y": 0,
+				"z": -144
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 16,
+				"y": 0,
+				"z": -147
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 16,
+				"y": 0,
+				"z": -148
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 16,
+				"y": 0,
+				"z": -149
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 16,
+				"y": 0,
+				"z": -150
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 18,
+				"y": 0,
+				"z": -147
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 18,
+				"y": 0,
+				"z": -148
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 18,
+				"y": 0,
+				"z": -149
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 18,
+				"y": 0,
+				"z": -150
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 16,
+				"y": 0,
+				"z": -151
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 15,
+				"y": 0,
+				"z": -151
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -151
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -152
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -153
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 18,
+				"y": 0,
+				"z": -151
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 19,
+				"y": 0,
+				"z": -151
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -151
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -152
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -153
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -154
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -154
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -155
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -156
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 15,
+				"y": 0,
+				"z": -156
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 17,
+				"y": 0,
+				"z": -156
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 19,
+				"y": 0,
+				"z": -156
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -156
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -155
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 16,
+				"y": 0,
+				"z": -156
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 18,
+				"y": 0,
+				"z": -156
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -122
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -123
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -124
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -125
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -126
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -127
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -128
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": -129
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -129
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -129
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -129
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -131
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -130
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -132
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -132
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -133
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -134
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -135
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -136
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -137
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -138
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -139
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -140
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -141
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -142
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -142
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -142
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -143
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -144
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 2,
+				"y": 0,
+				"z": -144
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -144
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -145
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -146
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -147
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -149
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -150
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -148
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -151
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -152
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -153
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -153
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -153
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -153
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -153
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -153
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -153
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -153
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -153
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -153
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -153
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 15,
+				"y": 0,
+				"z": -147
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -147
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -147
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -149
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -150
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -152
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -148
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 15,
+				"y": 0,
+				"z": -148
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 15,
+				"y": 0,
+				"z": -149
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -148
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 15,
+				"y": 0,
+				"z": -150
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -149
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -150
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -151
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -154
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -155
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -156
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -157
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 15,
+				"y": 0,
+				"z": -157
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -157
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 16,
+				"y": 0,
+				"z": -157
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 18,
+				"y": 0,
+				"z": -157
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 19,
+				"y": 0,
+				"z": -157
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 17,
+				"y": 0,
+				"z": -157
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -157
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -157
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -156
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -155
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -154
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -153
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -152
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -150
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -151
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -150
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 19,
+				"y": 0,
+				"z": -150
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 19,
+				"y": 0,
+				"z": -147
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 19,
+				"y": 0,
+				"z": -148
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 19,
+				"y": 0,
+				"z": -149
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -147
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -147
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -146
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -145
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -144
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -143
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -142
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -141
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -140
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -139
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -138
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -137
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -136
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -135
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -134
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -132
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -133
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -131
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -130
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 21,
+				"y": 0,
+				"z": -129
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 20,
+				"y": 0,
+				"z": -129
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 19,
+				"y": 0,
+				"z": -129
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 19,
+				"y": 0,
+				"z": -128
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 19,
+				"y": 0,
+				"z": -127
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 19,
+				"y": 0,
+				"z": -126
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 19,
+				"y": 0,
+				"z": -125
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 18,
+				"y": 0,
+				"z": -125
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 17,
+				"y": 0,
+				"z": -125
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 16,
+				"y": 0,
+				"z": -125
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 15,
+				"y": 0,
+				"z": -125
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 14,
+				"y": 0,
+				"z": -125
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 13,
+				"y": 0,
+				"z": -125
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 12,
+				"y": 0,
+				"z": -125
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 11,
+				"y": 0,
+				"z": -125
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": 0,
+				"z": -125
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -125
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -125
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -125
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -126
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -127
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -128
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -129
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -125
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -125
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -125
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -124
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -122
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 0,
+				"z": -123
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -92
+			},
+			"HPpoint": 10000,
+			"phase": 2
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -93
+			},
+			"HPpoint": 10000,
+			"phase": 2
+		},
+		{
+			"position": {
+				"x": -3,
+				"y": 0,
+				"z": -95
+			},
+			"HPpoint": 10000,
+			"phase": 2
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -97
+			},
+			"HPpoint": 10000,
+			"phase": 2
+		},
+		{
+			"position": {
+				"x": -10,
+				"y": 0,
+				"z": -98
+			},
+			"HPpoint": 10000,
+			"phase": 1
+		},
+		{
+			"position": {
+				"x": -6,
+				"y": 0,
+				"z": -102
+			},
+			"HPpoint": 10000,
+			"phase": 2
+		},
+		{
+			"position": {
+				"x": -5,
+				"y": 0,
+				"z": -102
+			},
+			"HPpoint": 10000,
+			"phase": 2
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 0,
+				"z": -102
+			},
+			"HPpoint": 10000,
+			"phase": 2
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -104
+			},
+			"HPpoint": 10000,
+			"phase": 2
+		},
+		{
+			"position": {
+				"x": 1,
+				"y": 0,
+				"z": -105
+			},
+			"HPpoint": 10000,
+			"phase": 2
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -106
+			},
+			"HPpoint": 10000,
+			"phase": 2
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -107
+			},
+			"HPpoint": 10000,
+			"phase": 2
+		},
+		{
+			"position": {
+				"x": 8,
+				"y": 0,
+				"z": -102
+			},
+			"HPpoint": 10000,
+			"phase": 2
+		},
+		{
+			"position": {
+				"x": 9,
+				"y": 0,
+				"z": -102
+			},
+			"HPpoint": 10000,
+			"phase": 2
+		},
+		{
+			"position": {
+				"x": 5,
+				"y": 0,
+				"z": -95
+			},
+			"HPpoint": 10000,
+			"phase": 2
+		},
+		{
+			"position": {
+				"x": 6,
+				"y": 0,
+				"z": -95
+			},
+			"HPpoint": 10000,
+			"phase": 2
+		},
+		{
+			"position": {
+				"x": 7,
+				"y": 0,
+				"z": -95
+			},
+			"HPpoint": 10000,
+			"phase": 2
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -90
+			},
+			"HPpoint": 10000,
+			"phase": 2
+		},
+		{
+			"position": {
+				"x": 3,
+				"y": 0,
+				"z": -91
+			},
+			"HPpoint": 10000,
+			"phase": 2
+		}
+	],
+	"mainHero": {
+		"position": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"yRotation": 135,
+		"shieldDuration": 100,
+		"HPpoint": 1
+	},
+	"enemies": [
+		{
+			"position": {
+				"x": -3.437373,
+				"y": 0,
+				"z": -16.46007
+			},
+			"behavior": "passivePatrul",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+				{
+					"x": -1.55344,
+					"y": 0,
+					"z": -16.4987
+				},
+				{
+					"x": -1.453295,
+					"y": 0,
+					"z": -12.53984
+				},
+				{
+					"x": -5.609899,
+					"y": 0,
+					"z": -12.51734
+				},
+				{
+					"x": -5.583076,
+					"y": 0,
+					"z": -16.59419
+				}
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": -5.566997,
+				"y": 0,
+				"z": -23.48403
+			},
+			"behavior": "passivePatrul",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+				{
+					"x": -3.424445,
+					"y": 0,
+					"z": -23.40361
+				},
+				{
+					"x": -3.451282,
+					"y": 0,
+					"z": -19.51455
+				},
+				{
+					"x": -7.715853,
+					"y": 0,
+					"z": -19.4341
+				},
+				{
+					"x": -7.581756,
+					"y": 0,
+					"z": -23.51084
+				}
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 3.475701,
+				"y": 0,
+				"z": -16.43463
+			},
+			"behavior": "passivePatrul",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+				{
+					"x": 5.616046,
+					"y": 0,
+					"z": -16.52538
+				},
+				{
+					"x": 5.639654,
+					"y": 0,
+					"z": -12.57126
+				},
+				{
+					"x": 1.50918,
+					"y": 0,
+					"z": -12.49081
+				},
+				{
+					"x": 1.486283,
+					"y": 0,
+					"z": -16.20933
+				}
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 5.605302,
+				"y": 0,
+				"z": -23.50442
+			},
+			"behavior": "passivePatrul",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+				{
+					"x": 7.590087,
+					"y": 0,
+					"z": -23.31662
+				},
+				{
+					"x": 7.536442,
+					"y": 0,
+					"z": -19.37389
+				},
+				{
+					"x": 3.29868,
+					"y": 0,
+					"z": -19.50801
+				},
+				{
+					"x": 3.29868,
+					"y": 0,
+					"z": -23.55809
+				}
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 6.605927,
+				"y": 0,
+				"z": -58.49657
+			},
+			"behavior": "passivePatrul",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+				{
+					"x": 8.88783,
+					"y": 0,
+					"z": -55.19131
+				},
+				{
+					"x": 4.301394,
+					"y": 0,
+					"z": -55.13752
+				},
+				{
+					"x": 4.435519,
+					"y": 0,
+					"z": -58.839
+				},
+				{
+					"x": 8.646444,
+					"y": 0,
+					"z": -58.78521
+				}
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 6.049473,
+				"y": 0,
+				"z": -70.56817
+			},
+			"behavior": "passivePatrul",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+				{
+					"x": 8.758773,
+					"y": 0,
+					"z": -70.70356
+				},
+				{
+					"x": 8.812414,
+					"y": 0,
+					"z": -67.37768
+				},
+				{
+					"x": -2.190732,
+					"y": 0,
+					"z": -67.27477
+				},
+				{
+					"x": -2.405303,
+					"y": 0,
+					"z": -70.76154
+				}
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": -0.1584042,
+				"y": 0,
+				"z": -67.15585
+			},
+			"behavior": "passivePatrul",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+				{
+					"x": -2.575539,
+					"y": 0,
+					"z": -67.24805
+				},
+				{
+					"x": -2.230072,
+					"y": 0,
+					"z": -70.5706
+				},
+				{
+					"x": 8.366828,
+					"y": 0,
+					"z": -70.76923
+				},
+				{
+					"x": 8.554583,
+					"y": 0,
+					"z": -67.28242
+				}
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": -5.510474,
+				"y": 0,
+				"z": -67.87086
+			},
+			"behavior": "passivePatrul",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+				{
+					"x": -5.215446,
+					"y": 0,
+					"z": -66.20803
+				},
+				{
+					"x": -8.4608,
+					"y": 0,
+					"z": -66.28838
+				},
+				{
+					"x": -8.326703,
+					"y": 0,
+					"z": -70.79438
+				},
+				{
+					"x": -5.376378,
+					"y": 0,
+					"z": -70.79438
+				}
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": -8.641785,
+				"y": 0,
+				"z": -49.68019
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": -2.526525,
+				"y": 0,
+				"z": -50.05578
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": -5.557719,
+				"y": 0,
+				"z": -53.85632
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": -7.959771,
+				"y": 0,
+				"z": -62.64071
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": -1.946838,
+				"y": 0,
+				"z": -64.3661
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 7.869753,
+				"y": 0,
+				"z": -61.81795
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 0.9670432,
+				"y": 0,
+				"z": -58.96076
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 1.619324,
+				"y": 0,
+				"z": -54.93893
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 8.12005,
+				"y": 0,
+				"z": -50.65619
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 7.888366,
+				"y": 0,
+				"z": -104.8545
+			},
+			"behavior": "passivePatrul",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+				{
+					"x": 7.928739,
+					"y": 0,
+					"z": -106.1679
+				},
+				{
+					"x": 7.551479,
+					"y": 0,
+					"z": -98.93895
+				},
+				{
+					"x": 7.188501,
+					"y": 0,
+					"z": -91.30048
+				},
+				{
+					"x": -3.447041,
+					"y": 0,
+					"z": -91.3735
+				},
+				{
+					"x": -3.587198,
+					"y": 0,
+					"z": -99.03432
+				},
+				{
+					"x": -3.571827,
+					"y": 0,
+					"z": -105.5477
+				}
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 9.051338,
+				"y": 0,
+				"z": -98.81714
+			},
+			"behavior": "passivePatrul",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+				{
+					"x": 7.171694,
+					"y": 0,
+					"z": -98.61082
+				},
+				{
+					"x": -3.093357,
+					"y": 0,
+					"z": -98.08046
+				},
+				{
+					"x": -3.170248,
+					"y": 0,
+					"z": -92.33019
+				},
+				{
+					"x": 6.646387,
+					"y": 0,
+					"z": -91.60602
+				}
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": -4.495927,
+				"y": 0,
+				"z": -97.45781
+			},
+			"behavior": "passivePatrul",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+				{
+					"x": -3.6205,
+					"y": 0,
+					"z": -98.45035
+				},
+				{
+					"x": 7.136283,
+					"y": 0,
+					"z": -98.45688
+				},
+				{
+					"x": 6.628438,
+					"y": 0,
+					"z": -105.5965
+				},
+				{
+					"x": -2.902389,
+					"y": 0,
+					"z": -105.6542
+				}
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 8.546029,
+				"y": 0,
+				"z": -90.19333
+			},
+			"behavior": "passivePatrul",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+				{
+					"x": 7.342618,
+					"y": 0,
+					"z": -91.23966
+				},
+				{
+					"x": 7.163464,
+					"y": 0,
+					"z": -98.65543
+				},
+				{
+					"x": 6.713923,
+					"y": 0,
+					"z": -105.3383
+				},
+				{
+					"x": -2.822295,
+					"y": 0,
+					"z": -105.5265
+				},
+				{
+					"x": -2.971064,
+					"y": 0,
+					"z": -98.65703
+				},
+				{
+					"x": -3.155564,
+					"y": 0,
+					"z": -91.67138
+				}
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": -2.293373,
+				"y": 0,
+				"z": -90.77346
+			},
+			"behavior": "passivePatrul",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+				{
+					"x": -3.163456,
+					"y": 0,
+					"z": -91.43096
+				},
+				{
+					"x": -2.555494,
+					"y": 0,
+					"z": -98.56833
+				},
+				{
+					"x": -3.002524,
+					"y": 0,
+					"z": -104.7798
+				},
+				{
+					"x": 8.668325,
+					"y": 0,
+					"z": -105.9551
+				},
+				{
+					"x": 7.817187,
+					"y": 0,
+					"z": -99.15228
+				},
+				{
+					"x": 7.260009,
+					"y": 0,
+					"z": -91.67195
+				}
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": -3.325815,
+				"y": 0,
+				"z": -105.9976
+			},
+			"behavior": "passivePatrul",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+				{
+					"x": -3.670549,
+					"y": 0,
+					"z": -105.7205
+				},
+				{
+					"x": -3.068299,
+					"y": 0,
+					"z": -99.36246
+				},
+				{
+					"x": -3.311504,
+					"y": 0,
+					"z": -91.35172
+				},
+				{
+					"x": 8.194115,
+					"y": 0,
+					"z": -91.54852
+				},
+				{
+					"x": 7.345478,
+					"y": 0,
+					"z": -98.08131
+				},
+				{
+					"x": 7.137695,
+					"y": 0,
+					"z": -106.1774
+				}
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 10.02936,
+				"y": 0,
+				"z": -92.02566
+			},
+			"behavior": "passivePatrul",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+				{
+					"x": 10.51215,
+					"y": 0,
+					"z": -93.79583
+				},
+				{
+					"x": 10.48532,
+					"y": 0,
+					"z": -89.39716
+				},
+				{
+					"x": 4.906475,
+					"y": 0,
+					"z": -89.45071
+				},
+				{
+					"x": 4.584622,
+					"y": 0,
+					"z": -93.8494
+				}
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 9.207905,
+				"y": 0,
+				"z": -100.2331
+			},
+			"behavior": "passivePatrul",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+				{
+					"x": 10.78285,
+					"y": 0,
+					"z": -100.666
+				},
+				{
+					"x": 10.5683,
+					"y": 0,
+					"z": -96.58911
+				},
+				{
+					"x": 4.836015,
+					"y": 0,
+					"z": -96.69274
+				},
+				{
+					"x": 4.862837,
+					"y": 0,
+					"z": -100.099
+				}
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 9.125284,
+				"y": 0,
+				"z": -107.6713
+			},
+			"behavior": "passivePatrul",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+				{
+					"x": 10.65411,
+					"y": 0,
+					"z": -107.242
+				},
+				{
+					"x": 10.51998,
+					"y": 0,
+					"z": -103.1115
+				},
+				{
+					"x": 4.833878,
+					"y": 0,
+					"z": -103.2457
+				},
+				{
+					"x": 4.887522,
+					"y": 0,
+					"z": -107.7249
+				}
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": -1.308517,
+				"y": 0,
+				"z": -92.9369
+			},
+			"behavior": "passivePatrul",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+				{
+					"x": -0.3161354,
+					"y": 0,
+					"z": -93.52695
+				},
+				{
+					"x": -0.6916184,
+					"y": 0,
+					"z": -88.99413
+				},
+				{
+					"x": -6.109549,
+					"y": 0,
+					"z": -89.31595
+				},
+				{
+					"x": -6.753255,
+					"y": 0,
+					"z": -93.36582
+				}
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": -0.7477975,
+				"y": 0,
+				"z": -99.83783
+			},
+			"behavior": "passivePatrul",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+				{
+					"x": -0.3454776,
+					"y": 0,
+					"z": -100.7497
+				},
+				{
+					"x": -0.2918329,
+					"y": 0,
+					"z": -96.61928
+				},
+				{
+					"x": -5.977972,
+					"y": 0,
+					"z": -96.91454
+				},
+				{
+					"x": -6.487581,
+					"y": 0,
+					"z": -100.8033
+				}
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": -0.9248035,
+				"y": 0,
+				"z": -106.4918
+			},
+			"behavior": "passivePatrul",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+				{
+					"x": -0.2592926,
+					"y": 0,
+					"z": -107.4557
+				},
+				{
+					"x": -0.2861145,
+					"y": 0,
+					"z": -103.2447
+				},
+				{
+					"x": -5.539882,
+					"y": 0,
+					"z": -103.3994
+				},
+				{
+					"x": -6.156777,
+					"y": 0,
+					"z": -107.8251
+				}
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 5.018071,
+				"y": 0,
+				"z": -131.3555
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 4.921893,
+				"y": 0,
+				"z": -134.016
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 5.11392,
+				"y": 0,
+				"z": -137.0674
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 4.899358,
+				"y": 0,
+				"z": -139.9642
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 5.073885,
+				"y": 0,
+				"z": -143.0745
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 4.850734,
+				"y": 0,
+				"z": -146.1106
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 5.061024,
+				"y": 0,
+				"z": -148.8589
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 15.15184,
+				"y": 0,
+				"z": -133.1069
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 18.97267,
+				"y": 0,
+				"z": -136.0555
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 15.16406,
+				"y": 0,
+				"z": -139.1134
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 18.97013,
+				"y": 0,
+				"z": -142.3234
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 15.11649,
+				"y": 0,
+				"z": -144.8732
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 9.087813,
+				"y": 0,
+				"z": -143.1943
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 12.94581,
+				"y": 0,
+				"z": -141.0594
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 9.190817,
+				"y": 0,
+				"z": -146.9601
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 12.94581,
+				"y": 0,
+				"z": -144.9216
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 9.187224,
+				"y": 0,
+				"z": -138.9303
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 9.00768,
+				"y": 0,
+				"z": -135.1826
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 12.97725,
+				"y": 0,
+				"z": -136.9527
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 12.95041,
+				"y": 0,
+				"z": -133.1712
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 9.125032,
+				"y": 0,
+				"z": -131.0454
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		},
+		{
+			"position": {
+				"x": 9.210805,
+				"y": 0,
+				"z": -127.0039
+			},
+			"behavior": "stayOnPoint",
+			"yRotation": 0,
+			"shieldDuration": 100,
+			"patrulPoints": [
+			],
+			"HPpoint": 1
+		}
+	],
+	"weapons": [
+		{
+			"id": 20,
+			"eulerRotation": {
+				"x": 0.0004717633,
+				"y": 7.902066,
+				"z": 348.6264
+			},
+			"position": {
+				"x": 1.558175,
+				"y": 0.0350043,
+				"z": -1.577016
+			},
+			"damageBuff": 0,
+			"speedBuff": 0,
+			"magSizeBuff": 0,
+			"accuracyBuff": 0,
+			"durabilityBuff": 0,
+			"ammoInMag": 0,
+			"ammoId": 8,
+			"durability": 250
+		},
+		{
+			"id": 15,
+			"eulerRotation": {
+				"x": -9.734457E-06,
+				"y": 10.22503,
+				"z": -5.850266E-06
+			},
+			"position": {
+				"x": -0.9898608,
+				"y": 0.03500001,
+				"z": -1.925701
+			},
+			"damageBuff": 0,
+			"speedBuff": 0,
+			"magSizeBuff": 0,
+			"accuracyBuff": 0,
+			"durabilityBuff": 0,
+			"ammoInMag": 20,
+			"ammoId": 2,
+			"durability": 100
+		},
+		{
+			"id": 16,
+			"eulerRotation": {
+				"x": 7.7568,
+				"y": 18.36252,
+				"z": -0.0003147205
+			},
+			"position": {
+				"x": -1.934026,
+				"y": 0.06391124,
+				"z": -42.57071
+			},
+			"damageBuff": 0,
+			"speedBuff": 0,
+			"magSizeBuff": 0,
+			"accuracyBuff": 0,
+			"durabilityBuff": 0,
+			"ammoInMag": 30,
+			"ammoId": 3,
+			"durability": 500
+		},
+		{
+			"id": 17,
+			"eulerRotation": {
+				"x": 1.331068,
+				"y": 14.63193,
+				"z": 0.0001153039
+			},
+			"position": {
+				"x": 0.4880496,
+				"y": 0.03325547,
+				"z": -80.53596
+			},
+			"damageBuff": 0,
+			"speedBuff": 0,
+			"magSizeBuff": 0,
+			"accuracyBuff": 0,
+			"durabilityBuff": 0,
+			"ammoInMag": 8,
+			"ammoId": 4,
+			"durability": 200
+		},
+		{
+			"id": 18,
+			"eulerRotation": {
+				"x": 359.8891,
+				"y": 0.06424341,
+				"z": 329.3516
+			},
+			"position": {
+				"x": 0.3101907,
+				"y": 0.2691179,
+				"z": -118.4421
+			},
+			"damageBuff": 0,
+			"speedBuff": 0,
+			"magSizeBuff": 0,
+			"accuracyBuff": 0,
+			"durabilityBuff": 0,
+			"ammoInMag": 0,
+			"ammoId": 5,
+			"durability": 100
+		}
+	],
+	"items": [
+		{
+			"position": {
+				"x": -1.660387,
+				"y": 0.002499245,
+				"z": -1.818421
+			},
+			"eulerRotation": {
+				"x": -0.0005316337,
+				"y": -0.0002664163,
+				"z": 0.004123523
+			},
+			"id": 2,
+			"count": 20
+		},
+		{
+			"position": {
+				"x": -0.9837703,
+				"y": 0.002932787,
+				"z": -42.3583
+			},
+			"eulerRotation": {
+				"x": -8.772186E-07,
+				"y": 1.960093E-06,
+				"z": -1.361265E-06
+			},
+			"id": 3,
+			"count": 300
+		},
+		{
+			"position": {
+				"x": 0.4438248,
+				"y": -0.002609611,
+				"z": -81.54045
+			},
+			"eulerRotation": {
+				"x": 2.356322E-08,
+				"y": 8.35338E-08,
+				"z": 1.112099E-06
+			},
+			"id": 4,
+			"count": 50
+		},
+		{
+			"position": {
+				"x": 0.4767246,
+				"y": -0.009161487,
+				"z": -117.6643
+			},
+			"eulerRotation": {
+				"x": -2.08603E-07,
+				"y": -1.346512E-05,
+				"z": 0.0001259416
+			},
+			"id": 5,
+			"count": 25
+		},
+		{
+			"position": {
+				"x": 0.238954,
+				"y": -0.009161491,
+				"z": -116.5249
+			},
+			"eulerRotation": {
+				"x": 7.200877E-07,
+				"y": -1.738467E-05,
+				"z": 0.0001260592
+			},
+			"id": 5,
+			"count": 15
+		}
+	]
+}

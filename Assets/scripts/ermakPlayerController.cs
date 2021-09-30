@@ -2,17 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ermakPlayerController : MonoBehaviour
+public class ermakPlayerController : MonoBehaviour//singltone
 {
+    static ermakPlayerController singltone = null;
     private float selectWeaponCoolDown = 0.2f;
 
     private bool isCanSelectWeapon=true;
-    public ermakFieldOfView fieldOfView;
+    public mainFieldOfView fieldOfView;
     public ermakLockControl ermakLockControl;
     public serednyakMeleeShoot meleeShoot;
     private float diagonalModifier;
     delegate void fire1();
     private fire1 fire;
+    public GameObject exitMessage;
+    IEnumerator waitToAddChoise()
+    {
+        yield return null;
+        exitMessage.SetActive(true);
+        gameObject.AddComponent<choiseMessage>();
+        enabled = false;
+        yield break;
+    }
     private IEnumerator selectCoolDown(float coolDownTime)
     {
         yield return new WaitForSeconds(coolDownTime);
@@ -73,7 +83,18 @@ public class ermakPlayerController : MonoBehaviour
     }
     private void Awake()
     {
-        fire = fireSingle;
+        if (singltone == null)
+        {
+            singltone = this;
+            saveSystem.mainHero = gameObject;
+            Gubernia502.playerController = this;
+            fire = fireSingle;
+            enabled = Gubernia502.gameIsActive;
+        }
+        else
+        {
+            Destroy(this);
+        }
     }
     private void LateUpdate()
     {
@@ -83,6 +104,10 @@ public class ermakPlayerController : MonoBehaviour
         }
         fieldOfView.generateAngle = ermakLockControl.viewBodyScript.ermakBody.transform.eulerAngles.y +
             (ermakLockControl.ermakAnim.GetFloat("HeadView") - 22.5f);
+        if (Input.GetButtonDown("Cancel"))
+        {
+            StartCoroutine(waitToAddChoise());
+        }
         if (ermakLockControl.iteractionScript.isActiveIteraction)
         {
             fire();

@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class serednyakInventory : ermakInventory
+public class serednyakInventory : ermakInventory//singltone
 {
+    static serednyakInventory singltone = null;
     float stateToSelectDurIndic = 0.3f;
     const float ammoGroupPlaceStep =85f;
 
@@ -264,7 +265,15 @@ public class serednyakInventory : ermakInventory
     }
     private void Awake()
     {
-        hideWeaponCoroutine = hideWeaponGui();
-        hideAmmoCoroutine = hideAmmoGui();
+        if (singltone == null)
+        {
+            singltone = this;
+            hideWeaponCoroutine = hideWeaponGui();
+            hideAmmoCoroutine = hideAmmoGui();
+        }
+        else
+        {
+            Destroy(this);
+        }
     }
 }

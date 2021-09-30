@@ -2,14 +2,81 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ermakFieldOfView : MonoBehaviour
+public abstract class ermakFieldOfView : MonoBehaviour
 {
-	public float generateAngle;
-	public LayerMask obstacleMask;
-	public MeshFilter viewMeshFilter;
-	Mesh viewMesh;
-	public float test;
-	public Vector3 test2;
+	protected class fieldCorrecter
+    {
+        public fieldCorrecter(ermakFieldOfView owner,ViewCastInfo leftViewCast,ViewCastInfo rightViewCast,float range)
+        {
+			this.owner = owner;
+			this.leftViewCast = leftViewCast;
+			this.rightViewCast = rightViewCast;
+			this.range = range;
+        }
+		void correctCycle(float viewCastAngle,ViewCastInfo leftViewCast, ViewCastInfo rightViewCast,in int iteraction)
+        {
+			ViewCastInfo newViewCast = ViewCast(owner,viewCastAngle, range);
+			bool leftCast = edgeLineCast(leftViewCast.point, newViewCast.point)||
+				Mathf.Abs(leftViewCast.dst-newViewCast.dst)>Gubernia502.constData.fieldOfViewEdgeDstThreshold;
+			bool rightCast =edgeLineCast(rightViewCast.point,newViewCast.point)||
+				Mathf.Abs(rightViewCast.dst - newViewCast.dst) > Gubernia502.constData.fieldOfViewEdgeDstThreshold;
+			if (leftCast)
+			{
+				if (iteraction < Gubernia502.constData.fieldOfViewEdgeResolveIterations)
+				{
+					correctCycle((newViewCast.angle + leftViewCast.angle) / 2, leftViewCast, newViewCast, iteraction + 1);
+				}
+				else
+				{
+					correctPoint.Add(leftViewCast.point);
+					correctPoint.Add(newViewCast.point);
+				}
+			}
+			if (rightCast)
+			{
+				if (iteraction < Gubernia502.constData.fieldOfViewEdgeResolveIterations)
+				{
+					correctCycle((newViewCast.angle + rightViewCast.angle) / 2, newViewCast, rightViewCast, iteraction + 1);
+				}
+				else
+				{
+					if (!leftCast)
+					{
+						correctPoint.Add(newViewCast.point);
+					}
+					correctPoint.Add(rightViewCast.point);
+				}
+			}
+			if ((!leftCast) && (!rightCast))
+			{
+                if (iteraction > 1)
+                {
+					correctPoint.Add(leftViewCast.point);
+					correctPoint.Add(newViewCast.point);
+					correctPoint.Add(rightViewCast.point);
+                }
+                else
+				{
+					correctPoint.Add(newViewCast.point);
+				}
+			}
+		}
+		public List<Vector3> startCorrect()
+        {
+			correctPoint = new List<Vector3> { };
+			correctCycle((rightViewCast.angle+leftViewCast.angle)/2,leftViewCast,rightViewCast,1);
+			return correctPoint;
+        }
+
+        readonly ermakFieldOfView owner;
+		List<Vector3> correctPoint;
+		ViewCastInfo leftViewCast;
+		ViewCastInfo rightViewCast;
+		readonly float range;
+    }
+	[SerializeField]
+	protected MeshFilter viewMeshFilter;
+	protected Mesh viewMesh;
 	void Start()
 	{
 		viewMesh = new Mesh();
@@ -18,17 +85,6 @@ public class ermakFieldOfView : MonoBehaviour
 	void LateUpdate()
 	{
 		generateFieldOfViewMesh();
-	}
-	public struct EdgeInfo//ребро меша
-	{
-		public Vector3 pointA;
-		public Vector3 pointB;
-
-		public EdgeInfo(Vector3 pointA, Vector3 pointB)
-		{
-			this.pointA = pointA;
-			this.pointB = pointB;
-		}
 	}
 	public struct ViewCastInfo//информация о рейкасте для построения поля
 	{
@@ -45,107 +101,55 @@ public class ermakFieldOfView : MonoBehaviour
 			this.angle = angle;
 		}
 	}
-	ViewCastInfo ViewCast(float globalAngle,float rayCastRange)
+	public static bool edgeLineCast(Vector3 start, Vector3 end)
+	{
+		return Physics.Linecast(new Vector3(start.x, Gubernia502.constData.fieldOfViewRayCastHeight, start.z),
+			new Vector3(end.x, Gubernia502.constData.fieldOfViewRayCastHeight, end.z), 512, QueryTriggerInteraction.Ignore)|| 
+			Physics.Linecast(new Vector3(end.x, Gubernia502.constData.fieldOfViewRayCastHeight, end.z),
+			new Vector3(start.x, Gubernia502.constData.fieldOfViewRayCastHeight, start.z), 512, QueryTriggerInteraction.Ignore);
+	}
+	protected ViewCastInfo ViewCast(float globalAngle,float rayCastRange)
+	{
+		return ViewCast(this, globalAngle, rayCastRange);
+	}
+	protected static ViewCastInfo ViewCast(ermakFieldOfView fieldOfView,float globalAngle, float rayCastRange)
 	{
 		Vector3 dir = Gubernia502.directionFromAngle(globalAngle);//направление для рейкаста
 		RaycastHit hit;
-		if (Physics.Raycast(new Vector3(viewMeshFilter.transform.position.x,
+		if (Physics.Raycast(new Vector3(fieldOfView.viewMeshFilter.transform.position.x,
 										Gubernia502.constData.fieldOfViewRayCastHeight,
-										viewMeshFilter.transform.position.z), 
-							dir, out hit, rayCastRange, obstacleMask,QueryTriggerInteraction.Ignore))
+										fieldOfView.viewMeshFilter.transform.position.z),
+							dir, out hit, rayCastRange, 512, QueryTriggerInteraction.Ignore))
 		{
-			return new ViewCastInfo(true, new Vector3(hit.point.x, Gubernia502.constData.fieldOfViewRayCastHeight,hit.point.z),
-									hit.distance, globalAngle);
+			return new ViewCastInfo(true,new Vector3( hit.point.x,fieldOfView.transform.position.y,hit.point.z),
+				hit.distance, globalAngle);
 		}
 		else
 		{
-			return new ViewCastInfo(false, new Vector3(transform.position.x+ dir.x * rayCastRange, Gubernia502.constData.fieldOfViewRayCastHeight, transform.position.z+dir.z * rayCastRange),
-									rayCastRange, globalAngle);
+			return new ViewCastInfo(false, fieldOfView.transform.position + dir * rayCastRange, rayCastRange, globalAngle);
 		}
 	}
-	void generateMeshCycle(float startAngle,int stepCount,float stepAngleSize,ref List<Vector3>viewPoints,ref ViewCastInfo oldViewCast,
+	protected void generateMeshCycle(float startAngle,int stepCount,float stepAngleSize,ref List<Vector3>viewPoints,ref ViewCastInfo oldViewCast,
 							ref ViewCastInfo newViewCast,int startIteraction,in float rayCastRange)
 	{
-		for (; startIteraction <= stepCount; startIteraction++,startAngle+=stepAngleSize)//цикл рейкастов для генерации меша поля
+		for (; startIteraction < stepCount; startIteraction++,startAngle+=stepAngleSize)//цикл рейкастов для генерации меша поля
 		{
 			newViewCast = ViewCast(startAngle, rayCastRange);
-			if (oldViewCast.hit != newViewCast.hit || (oldViewCast.hit &&
-				Mathf.Abs(oldViewCast.dst - newViewCast.dst) > Gubernia502.constData.fieldOfViewEdgeDstThreshold))
+			if (edgeLineCast(newViewCast.point,oldViewCast.point))
 			{
-				EdgeInfo edge = FindEdge(oldViewCast, newViewCast,rayCastRange);
-				if (edge.pointA != oldViewCast.point)
-				{
-					viewPoints.Add(edge.pointA);
-				}
-				if (edge.pointB != newViewCast.point)
-				{
-					viewPoints.Add(edge.pointB);
-				}
+				fieldCorrecter corrector = new fieldCorrecter(this, oldViewCast, newViewCast, rayCastRange);
+				viewPoints.AddRange(corrector.startCorrect());
 			}
 			viewPoints.Add(newViewCast.point);
 			oldViewCast = newViewCast;
 		}
 	}
-	void generateFieldOfViewMesh()//генерирует меш поля
-	{
-		int stepCount = Mathf.RoundToInt(Gubernia502.constData.ermakFieldOfViewAngle * Gubernia502.constData.FieldOfviewMeshResolution);//количество рейкастов для построения поля
-		float stepAngleSize = Gubernia502.constData.ermakFieldOfViewAngle / stepCount;//промежуток между рейкастами
-		List<Vector3> viewPoints = new List<Vector3>();//точки попадания рейкастом
-		ViewCastInfo oldViewCast;//предыдущий рейкаст
-		ViewCastInfo newViewCast = ViewCast(generateAngle - Gubernia502.constData.ermakFieldOfViewAngle / 2,
-			Gubernia502.constData.ermakFieldOfViewRange);
-		viewPoints.Add(newViewCast.point);
-		oldViewCast = newViewCast;
-		generateMeshCycle(newViewCast.angle + stepAngleSize,stepCount, stepAngleSize,ref viewPoints, ref oldViewCast, ref newViewCast,1,
-						Gubernia502.constData.ermakFieldOfViewRange);
-		int secondStepCount = Mathf.RoundToInt((360 - Gubernia502.constData.ermakFieldOfViewAngle) * Gubernia502.constData.FieldOfviewMeshResolution)-1;
-		generateMeshCycle(newViewCast.angle + stepAngleSize, secondStepCount, stepAngleSize, ref viewPoints, ref oldViewCast,
-						ref newViewCast, 0, Gubernia502.constData.ermakSecondFieldOfViewRange);
-		viewPoints.Add(viewPoints[0]);
-		int vertexCount = viewPoints.Count + 1;
-		Vector3[] vertices = new Vector3[vertexCount];
-		int[] triangles = new int[(vertexCount - 2) * 3];
-
-		vertices[0] = transform.InverseTransformPoint(new Vector3(transform.position.x, 0.01f, transform.position.z)) ;
-		for (int i = 0; i < vertexCount - 1; i++)
-		{
-			vertices[i + 1] = transform.InverseTransformPoint(new Vector3(viewPoints[i].x,0.01f,viewPoints[i].z));
-
-			if (i < vertexCount - 2)
-			{
-				triangles[i * 3] = 0;
-				triangles[i * 3 + 1] = i + 1;
-				triangles[i * 3 + 2] = i + 2;
-			}
-		}
-		viewMesh.Clear();
-		viewMesh.vertices = vertices;
-		viewMesh.triangles = triangles;
-		viewMesh.RecalculateNormals();
-	}
-	EdgeInfo FindEdge(ViewCastInfo leftViewCast, ViewCastInfo rightViewCast,in float rayCastRange)
-	{
-		float leftAngle = leftViewCast.angle;
-		float rightAngle = rightViewCast.angle;
-		ViewCastInfo newLeftViewCast = leftViewCast;
-		ViewCastInfo newRightViewCast = rightViewCast;
-
-		for (int i = 0; i < Gubernia502.constData.fieldOfViewEdgeResolveIterations; i++)
-		{
-			float angle = (leftAngle + rightAngle) / 2;
-			ViewCastInfo newViewCast = ViewCast(angle, rayCastRange);
-			if (newViewCast.hit == newLeftViewCast.hit &&
-				!(Mathf.Abs(leftViewCast.dst - newViewCast.dst) > Gubernia502.constData.fieldOfViewEdgeDstThreshold))
-			{
-				leftAngle = angle;
-				newLeftViewCast = newViewCast;
-			}
-			else
-			{
-				rightAngle = angle;
-				newRightViewCast = newViewCast;
-			}
-		}
-		return new EdgeInfo(newLeftViewCast.point, newRightViewCast.point);
-	}
+	protected void setTriangle(ref int[]triangles,int triangleIndex,int firstPoint,int secondPoint,int thirdPoint)
+    {
+		int index = triangleIndex * 3;
+		triangles[index] = firstPoint;
+		triangles[index + 1] = secondPoint;
+		triangles[index + 2] = thirdPoint;
+    }
+	protected abstract void generateFieldOfViewMesh();
 }

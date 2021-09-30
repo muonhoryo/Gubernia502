@@ -11,7 +11,7 @@ public class batrakMeleeShootExit : StateMachineBehaviour
         if (batrakBehavior.meleeFrontHitBox.coll.enabled)
         {
             batrakBehavior.meleeFrontHitBox.coll.enabled = false;
-            batrakBehavior.meleeShoot.hitBox.coll.enabled = false;
+            batrakBehavior.meleeShoot.disableHitBox();
         }
         if (animator.GetInteger("punchNum") != nextPunchNum)
         {

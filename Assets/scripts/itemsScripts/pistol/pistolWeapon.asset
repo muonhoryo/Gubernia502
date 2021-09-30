@@ -15,8 +15,8 @@ MonoBehaviour:
   parentObj: 0
   damage: 25
   fireCoolDown: 8
-  soundVolume: 12
-  magSize: 8
+  soundVolume: 4
+  magSize: 15
   dispersion: 10
   isDistant: 1
   isAuto: 0

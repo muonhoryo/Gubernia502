@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainCamera : MonoBehaviour
+public class MainCamera : MonoBehaviour//singltone
 {
+    static MainCamera singltone=null;
     public enum cameraMode
     {
         smoothTrack,
@@ -204,6 +205,15 @@ public class MainCamera : MonoBehaviour
     }
     private void Awake()
     {
-        changeToDefaultTrack();
+        if (singltone == null)
+        {
+            singltone = this;
+            Gubernia502.mainCamera = this;
+            changeToDefaultTrack();
+        }
+        else
+        {
+            Destroy(this);
+        }
     }
 }

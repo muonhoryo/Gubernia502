@@ -46,12 +46,11 @@ public class bullet : MonoBehaviour
     }
     public virtual void OnTriggerEnter(Collider other)
     {
-        hitPointSystem hpSystem= other.GetComponent<hitPointSystem>();
-        if (hpSystem != null&& hpSystem.gameObject!=bulletOwner) 
+        if (other.gameObject != bulletOwner && other.TryGetComponent(out hitPointSystem hpSystem))
         {
-            hpSystem.takeNormalDamage(hitDmg,transform.rotation.eulerAngles.y,transform.position);//передается направление полета пули
+            hpSystem.takeNormalDamage(hitDmg, transform.rotation.eulerAngles.y, transform.position);//передается направление полета пули
+            StartCoroutine(bulletIsHit(trail.time));
         }
-        StartCoroutine(bulletIsHit(trail.time));
     }
     private void Awake()
     {

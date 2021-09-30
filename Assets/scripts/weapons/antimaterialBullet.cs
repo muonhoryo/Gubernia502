@@ -22,13 +22,16 @@ public class antimaterialBullet : bullet
     }
     public override void OnTriggerEnter(Collider other)
     {
-        hitPointSystem hpSystem = other.GetComponent < hitPointSystem >();
-        if (hpSystem != null && hpSystem.gameObject != bulletOwner)
+        if (other.gameObject != bulletOwner && other.TryGetComponent(out hitPointSystem hpSystem))
         {
-            hpSystem.takeNormalDamage(hitDmg,transform.rotation.eulerAngles.y,transform.position);
             if (!hpSystem.takingDamageObjData.isAlife)
             {
                 StartCoroutine(bulletIsHit(particles[0].main.startLifetimeMultiplier));
+                hpSystem.takeNormalDamage(hitDmg, transform.rotation.eulerAngles.y, transform.position);
+            }
+            else
+            {
+                GetComponent<alifeDmgSystem>().getNormalStunDmg(hitDmg, transform.rotation.eulerAngles.y, transform.position);
             }
         }
     }

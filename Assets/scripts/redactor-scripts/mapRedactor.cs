@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class mapRedactor : MonoBehaviour
+public class mapRedactor : MonoBehaviour//singltone
 {
+    static mapRedactor singltone = null;
     [SerializeField]
     private GameObject patrulPointSphere;
     Camera cameraComp;
@@ -626,6 +627,14 @@ public class mapRedactor : MonoBehaviour
     }
     private void Awake()
     {
-        cameraComp = GetComponent<Camera>();
+        if (singltone == null)
+        {
+            singltone = this;
+            cameraComp = GetComponent<Camera>();
+        }
+        else
+        {
+            Destroy(this);
+        }
     }
 }

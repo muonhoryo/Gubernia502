@@ -16,15 +16,15 @@ public class enemyViewZone : MonoBehaviour
         {
             objInViewZone.Add(dmgSystem);
             enabled = true;
+            trackEnemies();
         }
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.TryGetComponent(out alifeDmgSystem dmgSystem) &&objInViewZone.Contains(dmgSystem))
         {
-            objInViewZone.RemoveAt(objInViewZone.IndexOf(dmgSystem));
-            
-                if (other.transform == batrakBehavior.targetEnemy)
+            objInViewZone.Remove(dmgSystem);
+                if (dmgSystem == batrakBehavior.targetEnemy)
                 {
                     enemyWasLosted();
                 }
@@ -55,7 +55,8 @@ public class enemyViewZone : MonoBehaviour
     private void enemyWasLosted()
     {
         updateAction = trackEnemies;
-        batrakBehavior.onLostVisibleEnemy();
+        batrakBehavior.enemyLastPosition = batrakBehavior.targetEnemy.transform.position;
+        batrakBehavior.currentState.onLostVisibleEnemy(batrakBehavior);
         batrakBehavior.targetEnemy.huntEnd(batrakBehavior.dmgSystem);
         batrakBehavior.targetEnemy = null;
     }
@@ -64,7 +65,7 @@ public class enemyViewZone : MonoBehaviour
         updateAction = trackVisibleTarget;
         batrakBehavior.targetEnemy = targetEnemy;
         targetEnemy.becameTarget(batrakBehavior.dmgSystem);
-        batrakBehavior.onVisibleFoundEnemy(targetEnemy);
+        batrakBehavior.currentState.onVisibleFoundEnemy(batrakBehavior,targetEnemy);
     }
     private void trackEnemies()
     {
@@ -81,6 +82,10 @@ public class enemyViewZone : MonoBehaviour
                     enemyWasFounded(objInViewZone[i]);
                 }
             }
+        }
+        else
+        {
+            enabled = false;
         }
     }
     private void trackVisibleTarget()

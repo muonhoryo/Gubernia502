@@ -4,87 +4,87 @@ using UnityEngine;
 
 public class batrakBodyRotateForView : bodyRotateForView
 {
-    private float onAttackRotationSpeed=2f;
-
     [SerializeField]
     batrakBehavior batrakBehavior;
     public Gubernia502.simpleFun rotateMode;
     private Gubernia502.simpleFun onRotationDone;
-    private Gubernia502.simpleFun onDisable;
-    [SerializeField]
-    private float RotationSpeed;
+    private Gubernia502.simpleFun onDisable=delegate() { };
     protected override float rotationSpeed
     {
-        get => RotationSpeed;
+        get => batrakBehavior.currentState.rotationSpeed();
     }
-    public void setPeacefulSpeed()
+    protected override void enableThisScript( bool enable = true)
     {
-        RotationSpeed = Gubernia502.constData.batrakPassiveRotationSpeed;
-    }
-    public void setAggressiveSpeed()
-    {
-        RotationSpeed = Gubernia502.constData.batrakActiveRotationSpeed;
-    }
-    public void setAttackSpeed()
-    {
-        RotationSpeed = onAttackRotationSpeed;
-    }
-    protected override void enableThisScript(bool enable = true)
-    {
-        bool isDesactiveMove = false;
-        if (enable==false)
+        if (!enable)
         {
             onRotationDone();
         }
-        if (Gubernia502.differenceOf2Angle(NeededDirectionAngle, rotatedBody.rotation.eulerAngles.y) > Gubernia502.constData.batrakSlowedMoveRotationAngle)
+        else
         {
-            isDesactiveMove = true;
+            bool isHighAngle = Gubernia502.differenceOf2Angle(NeededDirectionAngle, rotatedBody.rotation.eulerAngles.y) >
+                Gubernia502.constData.batrakSlowedMoveRotationAngle;
+            if (isHighAngle)
+            {
+                onRotationDone += rotationDoneOnHighAngle;
+                onDisable += rotationDoneOnHighAngle;
+            }
+            batrakBehavior.moveScript.setSpeed(isHighAngle);
         }
         enabled = enable;
-        batrakBehavior.moveScript.setSpeed(isDesactiveMove);
     }
     protected override void Awake()
     {
-        onDisable = defaultOnDisable;
-        onRotationDone = delegate() { };
+        setDefaultRotate();
+    }
+    private void DISonTrackTarget()
+    {
+        batrakBehavior.moveScript.setSpeed();
         rotateMode = rotateWithMove;
+    }
+    private void DISonlyRotate()
+    {
+        rotateMode = rotateWithMove;
+        onRotationDone = delegate () { };
     }
     public void setTrackTarget()
     {
-        enableThisScript();
+        OnDisable();
+        enabled = true;
         rotateMode = rotateToTarget;
-        onRotationDone = delegate () { };
-        setAttackSpeed();
-        onDisable = disableOnTrackTarget;
+        onDisable += DISonTrackTarget;
     }
     public void setOnlyRotate()
     {
+        onDisable();
+        enabled = true;
         rotateMode = rotateWithOutMove;
         onRotationDone = rotationDone;
+        onDisable += DISonlyRotate;
     }
     public void setRotateForMove()
     {
+        onDisable();
+        enableThisScript();
+    }
+    public void setDefaultRotate()
+    {
+        OnDisable();
         rotateMode = rotateWithMove;
-        onRotationDone = delegate() { };
+        onRotationDone = delegate () { };
     }
     private void rotationDone()
     {
         batrakBehavior.onRotateMoveDone();
     }
-    private void defaultOnDisable()
+    private void rotationDoneOnHighAngle()
     {
         batrakBehavior.moveScript.setSpeed();
-        setRotateForMove();
-    }
-    private void disableOnTrackTarget()
-    {
-        defaultOnDisable();
-        setAggressiveSpeed();
-        onDisable = defaultOnDisable;
+        onRotationDone -= rotationDoneOnHighAngle;
     }
     protected void OnDisable()
     {
         onDisable();
+        onDisable = delegate () { };
     }
     private void rotateWithMove()
     {

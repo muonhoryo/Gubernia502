@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: shotgunWeapon
   m_EditorClassIdentifier: 
   parentObj: 0
-  damage: 6
+  damage: 9
   fireCoolDown: 14
-  soundVolume: 20
+  soundVolume: 6
   magSize: 8
   dispersion: 20
   isDistant: 1

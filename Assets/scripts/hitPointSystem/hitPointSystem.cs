@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class hitPointSystem : MonoBehaviour
 {
+    public Gubernia502.fraction Fraction=Gubernia502.fraction.other;
     public takingDamageObjData takingDamageObjData;
     protected List<hitPointSystem> hunters = new List<hitPointSystem> { };
     public virtual int shieldDurability { get; set; } = 0;

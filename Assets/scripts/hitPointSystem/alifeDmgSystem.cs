@@ -7,7 +7,6 @@ public class alifeDmgSystem : hitPointSystem
     [SerializeField]
     protected ParticleSystem destroyedShieldEffect;
     public bool isDead { get; private set; } = false;
-    public Gubernia502.fraction Fraction;
     public regenData regenData;
     private int regenCoolDown;
     public Animator anim;
@@ -24,7 +23,15 @@ public class alifeDmgSystem : hitPointSystem
         StopAllCoroutines();
         getStunned(rotation, 3);
     }
-    protected virtual void getSimpleStunned(float rotation)
+    public void getNormalStunDmg(int dmg,float hitAngle,Vector3 hitPos)
+    {
+        takeNormalDamage(dmg, hitAngle, hitPos);
+        if (shieldDurability > 0)
+        {
+            getShieldStunned((hitAngle+180)%360);
+        }
+    }
+    protected virtual void getShieldStunned(float rotation)
     {
         getStunned(rotation, 2);
     }
@@ -44,7 +51,7 @@ public class alifeDmgSystem : hitPointSystem
                 if (dmgResult >= shieldDurability)
                 {
                     shieldDurability = 0;
-                    getSimpleStunned(hitAngle);
+                getShieldStunned((hitAngle+180)%360);
                     destroyedShieldEffect.Play();
                 }
                 else
@@ -60,7 +67,7 @@ public class alifeDmgSystem : hitPointSystem
                 hitPoint -= dmgResult;
                 if (hitPoint <= 0 && !isDead)
                 {
-                    death(hitAngle);
+                    death((hitAngle+180)%360);
                 Instantiate(takingDamageObjData.onDeathEffect, transform.position, Quaternion.Euler(transform.eulerAngles.x, (hitAngle+180)%360, transform.eulerAngles.z));
                     isDead = true;
                 }

@@ -22,7 +22,6 @@ public class ermakMove : MonoBehaviour
         }
     }
     public CapsuleCollider hitBox;
-    //public float minHitDistance = 0.07f;
     public float colliderRadius;
     private void move()
     {

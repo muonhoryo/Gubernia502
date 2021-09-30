@@ -209,19 +209,22 @@ public static class saveSystem
         }
         return items;
     }
-    public static void loadSave()
+    /*public static void loadSave()
     {
+        loadStatus = true;
+        //saveInit
         StreamReader reader = new StreamReader(@"C:\Users\muon1\Desktop\create\unity\Gubernia502\Gubernia502\Assets\saves\test.json");
         json = reader.ReadToEnd();
         sceneSave level = JsonUtility.FromJson<sceneSave>(json);
         if (level.levelName != null)
         {
+            //loadMainHero
             level.mainHero = loadMainHero(json);
             Gubernia502.playerController.ermakLockControl.transform.position = level.mainHero.position.vector;
             Gubernia502.playerController.ermakLockControl.hpSystem.hitPoint = level.mainHero.HPpoint;
             Gubernia502.playerController.ermakLockControl.hpSystem.shieldDurability = level.mainHero.shieldDuration;
             Gubernia502.playerController.ermakLockControl.bodyRotateScript.rotatedBody.rotation = Quaternion.Euler(0, level.mainHero.yRotation, 0);
-
+            //loadWalls
             level.walls = loadWalls(json);
             if (level.walls.Count > 0)
             {
@@ -232,7 +235,7 @@ public static class saveSystem
                     wall.hitPoint = level.walls[i].HPpoint;
                 }
             }
-
+            //loadEnemies
             level.enemies = loadEnemies(json);
             if (level.enemies.Count > 0)
             {
@@ -266,7 +269,7 @@ public static class saveSystem
                     enemy.changeDefaultState();
                 }
             }
-
+            //loadWeapons
             level.weapons = loadWeapons(json);
             if (level.weapons.Count > 0)
             {
@@ -285,7 +288,7 @@ public static class saveSystem
                     weapon.durability = level.weapons[i].durability;
                 }
             }
-
+            //loadItems
             level.items = loadItems(json);
             if (level.items.Count > 0)
             {
@@ -297,17 +300,55 @@ public static class saveSystem
                     item.count = level.items[i].count;
                 }
             }
+        }
+        reader.Close();
+        loadStatus = false ;
+        Gubernia502.gameIsActive = true;
+    }*/
+    public static void loadSaveAsync(saveLoader saveLoader)
+    {
+        saveLoader.currentState = saveLoader.loadState.loadInit;
+        StreamReader reader = new StreamReader(@"C:\Users\muon1\Desktop\create\unity\Gubernia502\Gubernia502\Assets\saves\"+
+            Gubernia502.saveFileName+".json");
+        json = reader.ReadToEnd();
+        sceneSave level = JsonUtility.FromJson<sceneSave>(json);
+        if (level != null)
+        {
+            level.mainHero = loadMainHero(json);
+            level.walls = loadWalls(json);
+            level.enemies = loadEnemies(json);
+            level.weapons = loadWeapons(json);
+            level.items = loadItems(json);
+            saveLoader.waitHandler.Reset();
+            Gubernia502.threadManager.startLoadLevel(saveLoader, level);
+            saveLoader.waitHandler.WaitOne();
             reader.Close();
         }
-        Gubernia502.gameIsActive = true;
+        else
+        {
+            reader.Close();
+            StreamWriter writer = new StreamWriter(@"C:\Users\muon1\Desktop\create\unity\Gubernia502\Gubernia502\Assets\saves\" +
+            Gubernia502.saveFileName + ".json",false);
+            writer.Write("{\n\t\"levelName\":\""+ Gubernia502.saveFileName + "\",\n\t\"walls\":"+
+                "[\n\t],\n\t\"mainHero\": {\n\t\t\"position\": {\n\t\t\t\"x\": 0,\n\t\t\t\"y\":"+
+                " 0,\n\t\t\t\"z\": 0\n\t\t},\n\t\t\"yRotation\": 0,\n\t\t\"shieldDuration\": 100," +
+            "\n\t\t\"HPpoint\": 1\n\t},\n\t\"enemies\": [\n\t],\n\t\"weapons\": [\n\t],\n\t\"items\": [\n\t]\n}");
+            Debug.Log("createSave \""+ Gubernia502.saveFileName + "\"");
+            writer.Close();
+        }
+        loadStatus = false;
     }
     public static void loadMap()
     {
-        GameObject.Instantiate(Gubernia502.constData.saveLoader);
+        GameObject.Instantiate(Gubernia502.constData.saveLoader).GetComponent<saveLoader>().startLoad();
+    }
+    public static void loadMainMenu()
+    {
+        GameObject.Instantiate(Gubernia502.constData.saveLoader).GetComponent<saveLoader>().startLoad(false);
     }
     public static void saveMap()
     {
-        string str="{\n\t\"levelName\": \"" + "test" + "\",\n\t\"walls\": [\n";
+        string str="{\n\t\"levelName\": \"" + Gubernia502.saveFileName + "\",\n\t\"walls\": [\n";
         if (Gubernia502.walls.Count > 0)
         {
             for(int i = 0; i <= Gubernia502.walls.Count-1; i++)
@@ -422,7 +463,8 @@ public static class saveSystem
         }
         str = string.Concat(str, "\t]\n}");
         Debug.Log(str);
-        StreamWriter writer = new StreamWriter(@"C:\Users\muon1\Desktop\create\unity\Gubernia502\Gubernia502\Assets\saves\test.json", false);
+        StreamWriter writer = new StreamWriter(@"C:\Users\muon1\Desktop\create\unity\Gubernia502\Gubernia502\Assets\saves\" +
+            Gubernia502.saveFileName + ".json", false);
         writer.Write(str);
         writer.Close();
     }

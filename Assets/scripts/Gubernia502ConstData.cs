@@ -6,7 +6,16 @@ using UnityEngine;
 public class Gubernia502ConstData: ScriptableObject
 {
     public List<Gubernia502.fraction> batrakEnemyFractions=new List<Gubernia502.fraction> { };
+    public List<Gubernia502.fraction> batrakFriendFractions = new List<Gubernia502.fraction> { };
+    public TextAsset saveFile;
     //global const
+    [Tooltip("time to working thread in one frame(in seconds)")]
+    [Range(0,10)]
+    public float threadFrameTime;
+    [Range(0.0001f,100)]
+    public float mainMenuSelectorDeadZone;
+    [Range(0.0001f,1000)]
+    public float mainMenuSelectorSpeed;
     [Range(0.1f, 10)]
     public float soundDegressSpeed;
     [Range(0, 100)]
@@ -64,6 +73,10 @@ public class Gubernia502ConstData: ScriptableObject
     public float ermakMinSoundVolume;
     [Range(0.1f, 100)]
     public float ermakHandsSoundVolume;
+    [Range(0.1f,100)]
+    public float absolutVisionDistance;
+    [Range(3,1000)]
+    public int absolutVisionQuality;
     [Tooltip("second field of view range")]
     [Range(0.1f, 100)]
     public float ermakSecondFieldOfViewRange;
@@ -71,14 +84,14 @@ public class Gubernia502ConstData: ScriptableObject
     [Range(0, 3)]
     public float fieldOfViewRayCastHeight;
     [Tooltip("field of view edge distant threshold")]
-    [Range(0.1f, 100)]
+    [Range(0f, 100)]
     public float fieldOfViewEdgeDstThreshold;
     [Tooltip("field of view edge resolve iteractions")]
     [Range(1, 100)]
     public int fieldOfViewEdgeResolveIterations;
-    [Tooltip("field of view mesh resolution")]
-    [Range(0.1f, 5)]
-    public float FieldOfviewMeshResolution;
+    [Tooltip("count of raycast to generate field")]
+    [Range(3,1000)]
+    public int ermakFieldOfViewQuality;
     [Tooltip("field of view angle")]
     [Range(0.1f, 360)]
     public float ermakFieldOfViewAngle;
@@ -101,13 +114,15 @@ public class Gubernia502ConstData: ScriptableObject
     public float ermakMoveSpeed;
     //batrak const
     [Range(0,1000)]
+    public int batrakJerkDmg;
+    [Tooltip("minimum difference between batrak move angle and target move angle to jerk")]
+    [Range(0,360)]
+    public float batrakJerkMinAngle;
+    [Range(0,1000)]
     public int batrakSimpleAttackDmg;
     [Range(0, 10)]
     [Tooltip("min hit distance to move")]
     public float moveMinHitDistance;
-    [Tooltip("minimum hit distance to accept raycast hit")]
-    [Range(0, 10)]
-    public float moveMinRayHitDistance;
     [Range(0.1f, 100)]
     public float batrakTimeToDeath;
     [Tooltip("batrak path finding iteractions count")]
@@ -120,6 +135,9 @@ public class Gubernia502ConstData: ScriptableObject
     [Tooltip("direction between needed and current angle,when move speed is slowed")]
     [Range(0.1f, 360)]
     public float batrakSlowedMoveRotationAngle;
+    [Tooltip("batrak simple attack rotation speed")]
+    [Range(0.1f, 360)]
+    public float batrakSimpleAtkRotSpeed;
     [Tooltip("batrak active rotation speed")]
     [Range(0.1f, 360)]
     public float batrakActiveRotationSpeed;

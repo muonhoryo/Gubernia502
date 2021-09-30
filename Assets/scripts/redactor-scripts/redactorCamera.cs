@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class redactorCamera : MonoBehaviour
+public class redactorCamera : MonoBehaviour//singltone
 {
+    static redactorCamera singltone=null;
     [SerializeField]
     [Range(0.1f,250)]
     private float redactorCameraHeight=30;
@@ -25,6 +26,17 @@ public class redactorCamera : MonoBehaviour
             transform.position = new Vector3(transform.position.x + (moveStep.x * speedMod),
                                            redactorCameraHeight,
                                            transform.position.z + (moveStep.y * speedMod));
+        }
+    }
+    private void Awake()
+    {
+        if (singltone == null)
+        {
+            singltone = this;
+        }
+        else
+        {
+            Destroy(this);
         }
     }
 }

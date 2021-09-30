@@ -6,12 +6,12 @@ public class batrakMeleeFrontHitBox : batrakWeaponHitBox
 {
     protected override void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject != batrakBehavior.gameObject && other.TryGetComponent(out hitPointSystem hitPointSystem) &&
-            !batrakBehavior.meleeShoot.hitBox.damagedHPSys.Contains(hitPointSystem))
+        if (other.gameObject != batrakBehavior.gameObject && 
+            other.TryGetComponent(out hitPointSystem hitPointSystem) &&
+            !batrakBehavior.meleeShoot.hitBox.damagedHPSys.Contains(hitPointSystem)&&
+            !Gubernia502.constData.batrakFriendFractions.Contains(hitPointSystem.Fraction))
         {
-            hitPointSystem.takeNormalDamage(Gubernia502.constData.batrakSimpleAttackDmg,
-                batrakBehavior.bodyRotateScript.rotatedBody.rotation.eulerAngles.y, transform.position);
-            damagedHPSys.Add(hitPointSystem);
+            dmgHPsystem(other, hitPointSystem);
         }
     }
 }

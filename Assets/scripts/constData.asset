@@ -13,6 +13,11 @@ MonoBehaviour:
   m_Name: constData
   m_EditorClassIdentifier: 
   batrakEnemyFractions: 00000000
+  batrakFriendFractions: 01000000
+  saveFile: {fileID: 4900000, guid: 96324b1d0960f5c40b8e1e9ee27014f1, type: 3}
+  threadFrameTime: 0.008
+  mainMenuSelectorDeadZone: 0.1
+  mainMenuSelectorSpeed: 40
   soundDegressSpeed: 0.5
   alifeObjColliderRadius: 0.25
   rifleBulletSpeed: 25
@@ -27,7 +32,7 @@ MonoBehaviour:
   invasiveOnHitDmgPenalty: 8
   invasiveOnHitDispersion: 45
   bulletMaxMoveDistant: 100
-  subSonicSoundLevel: 5
+  subSonicSoundLevel: 3
   hideGuiDelayTime: 7
   soundIndicMax: 15
   soundIndicMin: 1.5
@@ -39,27 +44,31 @@ MonoBehaviour:
   ermakMoveSoundVolume: 3
   ermakMinSoundVolume: 0.5
   ermakHandsSoundVolume: 1.5
+  absolutVisionDistance: 10
+  absolutVisionQuality: 15
   ermakSecondFieldOfViewRange: 1
-  fieldOfViewRayCastHeight: 1.79
-  fieldOfViewEdgeDstThreshold: 5
-  fieldOfViewEdgeResolveIterations: 8
-  FieldOfviewMeshResolution: 0.41
+  fieldOfViewRayCastHeight: 1.66
+  fieldOfViewEdgeDstThreshold: 0.01
+  fieldOfViewEdgeResolveIterations: 12
+  ermakFieldOfViewQuality: 19
   ermakFieldOfViewAngle: 80
-  ermakFieldOfViewRange: 3
+  ermakFieldOfViewRange: 4.5
   ermakPickUpItemAnimDelay: 1
   ermakPickUpItemAnimSpeed: 2
   ermakBodyRotationSpeed: 6
   ermakHandsDmg: 20
   ermakHeadRotationSpeed: 8
   ermakMoveSpeed: 2.5
-  batrakSimpleAttackDmg: 30
+  batrakJerkDmg: 10
+  batrakJerkMinAngle: 90
+  batrakSimpleAttackDmg: 25
   moveMinHitDistance: 0.07
-  moveMinRayHitDistance: 0.07
   batrakTimeToDeath: 3
   batrakPathFindingIteractionsCount: 30
   batrakPassiveMoveSpeed: 0.007
   batrakActiveMoveSpeed: 0.073
-  batrakSlowedMoveRotationAngle: 60
+  batrakSlowedMoveRotationAngle: 50
+  batrakSimpleAtkRotSpeed: 2
   batrakActiveRotationSpeed: 8
   batrakPassiveRotationSpeed: 2
   batrakMaxSimpleCombatDistance: 1.2

@@ -13,7 +13,7 @@ public class notAlifeDmgSystem : hitPointSystem
         hitPoint -= dmg;
         if (hitPoint <= 0&&!isDead)
         {
-            death(bulletAngle);
+            death((bulletAngle+180)%360);
         }
         else
         {

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: automatWeapon
   m_EditorClassIdentifier: 
   parentObj: 0
-  damage: 15
-  fireCoolDown: 6
-  soundVolume: 14
+  damage: 20
+  fireCoolDown: 4
+  soundVolume: 4
   magSize: 30
   dispersion: 15
   isDistant: 1

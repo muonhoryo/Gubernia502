@@ -7,19 +7,15 @@ public class batrakDmgSystem : alifeDmgSystem
     batrakBehavior batrakBehavior;
     protected override void onTakeDmg(float hitAngle)
     {
-        batrakBehavior.onTakeDamage((hitAngle + 180) % 360);//передается направление получения урона
+        batrakBehavior.currentState.onTakeDamage(batrakBehavior,(hitAngle + 180) % 360);//передается направление получения урона
     }
     protected override void death(float rotation)
     {
-        batrakBehavior.onDeath((rotation + 180) % 360);
+        batrakBehavior.currentState.onDeath(batrakBehavior,(rotation + 180) % 360);
     }
-    protected override void getSimpleStunned(float rotation)
+    protected override void getShieldStunned(float rotation)
     {
-        batrakBehavior.onGetStuned((rotation + 180) % 360);
-    }
-    protected override void getStunned(float rotation, int stunType)
-    {
-        base.getStunned(rotation, stunType);
+        batrakBehavior.currentState.onGetStuned(batrakBehavior,(rotation + 180) % 360);
     }
     private void Start()
     {

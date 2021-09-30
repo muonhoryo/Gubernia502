@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class serednyakMeleeShoot : meleeShoot
+public class serednyakMeleeShoot : meleeShoot//singltone
 {
+    static serednyakMeleeShoot singltone=null;
     public bool isNextAttack = false;
     public override void takeSignal2()
     {
@@ -22,6 +23,17 @@ public class serednyakMeleeShoot : meleeShoot
         {
             ermakLockControl.unlockCtrl();
             ermakLockControl.meleeLockRotation();
+        }
+    }
+    private void Awake()
+    {
+        if (singltone == null)
+        {
+            singltone = this;
+        }
+        else
+        {
+            Destroy(this);
         }
     }
 }

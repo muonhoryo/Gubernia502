@@ -5,6 +5,8 @@ using UnityEngine;
 public class ermakDmgSystem : alifeDmgSystem
 {
     [SerializeField]
+    targetStatsCollector statsCollector;
+    [SerializeField]
     ermakLockControl ermakLockControl;
     protected override void getStunned(float rotation, int stunType)
     {
@@ -17,5 +19,21 @@ public class ermakDmgSystem : alifeDmgSystem
         ermakLockControl.weaponDispersion.gameObject.SetActive(false);
         Gubernia502.mainCamera.changeToTargetTracking(gameObject);
         ermakLockControl.soundGenerator.disableSoundGen();
+    }
+    public override void becameTarget(hitPointSystem hunter)
+    {
+        if (hunters.Count == 0)
+        {
+            statsCollector.enabled = true;
+        }
+        base.becameTarget(hunter);
+    }
+    public override void huntEnd(hitPointSystem hunter)
+    {
+        base.huntEnd(hunter);
+        if (hunters.Count == 0)
+        {
+            statsCollector.enabled = false;
+        }
     }
 }

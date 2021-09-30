@@ -2,21 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class abstractClassesStart : MonoBehaviour
+public class abstractClassesStart : MonoBehaviour//singltone
 {
-    public debugConsole dbgConsole;
-    public MainCamera mainCam;
-    public multiThreadManager threadManager;
+    static abstractClassesStart singltone=null;
+    static bool isStarted = false;
     //Gubernia502ConstData.cs
     public Gubernia502ConstData constData;
     void Awake()
     {
-        Gubernia502.threadManager = threadManager;
-        Gubernia502.constData = constData;
-        Gubernia502.debugConsole = dbgConsole;
-        Gubernia502.mainCamera = mainCam;
-        Gubernia502.playerController = mainCam.playerController;
-        saveSystem.mainHero = Gubernia502.playerController.gameObject;
-        Destroy(GetComponent<abstractClassesStart>());
+        if(singltone == null)
+        {
+            singltone = this;
+            if (!isStarted)
+            {
+                Gubernia502.constData = constData;
+                Gubernia502.saveFileName = constData.saveFile.name;
+            }
+        }
+        Destroy(this);
     }
 }

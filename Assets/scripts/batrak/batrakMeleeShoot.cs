@@ -9,13 +9,46 @@ public class batrakMeleeShoot : MonoBehaviour
     private Vector3 animMoveVector;
     public float AnimMoveSpeed = 0;
     public int cantMoveLayers = 8960;
+    [SerializeField]
+    private TrailRenderer trailRenderer;
+    IEnumerator disactiveEffect(float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+        trailRenderer.enabled = false;
+        yield break;
+    }
+    public void disableHitBox()
+    {
+        if (trailRenderer.emitting)
+        {
+            trailRenderer.emitting = false;
+            StartCoroutine(disactiveEffect(trailRenderer.time));
+        }
+        hitBox.enabled = false;
+    }
+    private void disableTrailHitBox()
+    {
+        trailRenderer.emitting = false;
+        StartCoroutine(disactiveEffect(trailRenderer.time));
+    }
+    void enableTrailHitBox()
+    {
+        trailRenderer.emitting = true;
+        StopAllCoroutines();
+        trailRenderer.enabled = true;
+    }
     public void takeSignal1()
     {
         if (hitBox != null)
         {
             hitBox.coll.enabled = true;
         }
-        batrakBehavior.meleeFrontHitBox.coll.enabled = true; ;
+        batrakBehavior.meleeFrontHitBox.coll.enabled = true;
+    }
+    public void takeJerkSignal1()
+    {
+        takeSignal1();
+        enableTrailHitBox();
     }
     public void takeSignal2()
     {
@@ -26,20 +59,37 @@ public class batrakMeleeShoot : MonoBehaviour
         batrakBehavior.meleeFrontHitBox.coll.enabled = false;
         if (batrakBehavior.targetEnemy != null)
         {
-            if (Vector3.Distance(transform.position, batrakBehavior.targetEnemy.transform.position) > 
+            if (Vector3.Distance(batrakBehavior.transform.position, batrakBehavior.targetEnemy.transform.position) >
                 Gubernia502.constData.batrakMaxSimpleCombatDistance)
             {
-                batrakBehavior.newAction(1);
+                batrakBehavior.currentState = batrakBehavior.batrakBehaviorStateMachine.BShunt;
             }
             else
             {
-                batrakBehavior.newAction(2);
+                batrakBehavior.currentState.onStateEnter(batrakBehavior);
             }
         }
-        else
+    }
+    public void takeJerkSignal2()
+    {
+        if (hitBox != null)
         {
-                batrakBehavior.newAction(3);
+            hitBox.coll.enabled = false;
         }
+        batrakBehavior.meleeFrontHitBox.coll.enabled = false;
+        if (batrakBehavior.targetEnemy != null)
+        {
+            if (Vector3.Distance(batrakBehavior.transform.position, batrakBehavior.targetEnemy.transform.position) >
+                Gubernia502.constData.batrakMaxSimpleCombatDistance)
+            {
+                batrakBehavior.currentState = batrakBehavior.batrakBehaviorStateMachine.BShunt;
+            }
+            else
+            {
+                batrakBehavior.currentState=batrakBehavior.batrakBehaviorStateMachine.BSsimpleAttack;
+            }
+        }
+        disableTrailHitBox();
     }
     public void takeSignal3()
     {

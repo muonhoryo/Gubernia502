@@ -28,7 +28,7 @@ public class soundHear : MonoBehaviour
                 {
                     enabled = false;
                 StopAllCoroutines();
-                    batrakBehavior.onLostHearedSound(sound.transform.position);
+                    batrakBehavior.currentState.onLostHearedSound(batrakBehavior,sound.transform.position);
                 }
                 soundHears.RemoveAt(soundHears.IndexOf(sound));
         }
@@ -37,7 +37,7 @@ public class soundHear : MonoBehaviour
     {
         while (soundHears.Count>0)
         {
-            batrakBehavior.onHearedSound(soundHears[0].transform.position);
+            batrakBehavior.currentState.onHearedSound(batrakBehavior,soundHears[0].transform.position);
             yield return new WaitForSeconds(delayTime);
         }
         enabled = false;

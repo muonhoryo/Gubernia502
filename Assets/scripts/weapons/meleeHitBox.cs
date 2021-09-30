@@ -19,7 +19,7 @@ public class meleeHitBox : MonoBehaviour
         {
             if (other.TryGetComponent(out hitPointSystem hpSystem)&&!ermakLockControl.meleeShoot.hitBox.damagedHPSys.Contains(hpSystem))
             {
-                hpSystem.takeNormalDamage(hitDmg, ermakLockControl.transform.rotation.eulerAngles.y,transform.position);
+                hpSystem.takeNormalDamage(hitDmg, ermakLockControl.transform.rotation.eulerAngles.y, ermakLockControl.transform.position);
                 if (ermakLockControl.ermakInventory.hand.enabled == false)
                 {
                     if (ermakLockControl.ermakSelectedWeapon.GetComponentInChildren<weapon>().takeDurabilityDmg())

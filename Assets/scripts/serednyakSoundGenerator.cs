@@ -1,8 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class serednyakSoundGenerator : soundGenerator
+public class serednyakSoundGenerator : soundGenerator//singltone
 {
+    static serednyakSoundGenerator singltone = null;
     [SerializeField]
     private Image soundIndicator;
     protected override float SoundLevel
@@ -30,5 +31,16 @@ public class serednyakSoundGenerator : soundGenerator
     {
         base.Start();
         SoundLevel = SoundLevel;
+    }
+    private void Awake()
+    {
+        if (singltone == null)
+        {
+            singltone = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
     }
 }

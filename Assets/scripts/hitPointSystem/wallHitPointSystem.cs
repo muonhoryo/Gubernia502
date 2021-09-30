@@ -9,7 +9,8 @@ public class wallHitPointSystem : notAlifeDmgSystem
         Gubernia502.walls.Remove(this);
     }
     [SerializeField]
-    public int phase { get; private set; } = 1;
+    int Phase = 1;
+    public int phase { get=>Phase; private set=>Phase=value; }
     [SerializeField]
     GameObject deletingObj;
     [SerializeField]
@@ -47,7 +48,7 @@ public class wallHitPointSystem : notAlifeDmgSystem
         }
         else
         {
-            base.death(bulletAngle);
+            base.death((bulletAngle+180)%360);
             OnDestroy();
         }
     }
