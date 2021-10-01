@@ -12,7 +12,7 @@ public class magazineAnim : ermakSelectedWeapon
     }
     protected override void Start()
     {
-        parentObj = ermakLockControl.hands[hand].transform;
+        parentObj = NPCLockControl.hands[hand].transform;
     }
     public void signal(int num)
     {

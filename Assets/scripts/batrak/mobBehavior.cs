@@ -3,46 +3,40 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Threading;
 
-public class batrakBehavior : MonoBehaviour
+public class mobBehavior : MonoBehaviour
 {
-    public static class batrakBehaviorStateMachine
+    public static class mobBehaviorStateMachine
     {
-        public static void SRonDeath(batrakBehavior owner, float hitAngle)
+        public static void SRonDeath(mobBehavior owner, float hitAngle)
         {
             owner.enemyDirection = hitAngle;
             owner.currentState = BSdeath;
         }
-        public static void SRonGetStun(batrakBehavior owner, float hitAngle)
+        public static void SRonGetStun(mobBehavior owner, float hitAngle)
         {
-            owner.disableMoveScripts();
-            owner.batrakAnim.SetInteger("stan", 2);
-            if (!owner.isAggressive)
-            {
-                owner.isAggressive = true;
-                owner.batrakAnim.SetBool("isAggressive", true);
-            }
             owner.bodyRotateScript.rotatedBody.rotation = Quaternion.Euler(0f, hitAngle, 0f);
             owner.enemyDirection = hitAngle;
+            owner.currentState = BSstun;
         }
-        public static void SRonPassiveStateEnter(batrakBehavior owner)
+        public static void SRonPassiveStateEnter(mobBehavior owner)
         {
             if (owner.isAggressive)
             {
                 owner.disableMoveScripts();
                 owner.isAggressive = false;
-                owner.batrakAnim.SetBool("isAggressive", false);
+                owner.animator.SetBool("isAggressive", false);
             }
         }
-        public static void SRonAggressiveStateEnter(batrakBehavior owner)
+        public static void SRonAggressiveStateEnter(mobBehavior owner)
         {
             if (!owner.isAggressive)
             {
                 owner.disableMoveScripts();
                 owner.isAggressive = true;
-                owner.batrakAnim.SetBool("isAggressive", true);
+                owner.animator.SetBool("isAggressive", true);
             }
         }
-        public static void SRonPatrulMoveDone(batrakBehavior owner)
+        public static void SRonPatrulMoveDone(mobBehavior owner)
         {
             if (owner.patrulPointNum == owner.patrulPoint.Count)
             {
@@ -50,7 +44,7 @@ public class batrakBehavior : MonoBehaviour
             }
             owner.setMoveTarget(owner.patrulPoint[owner.patrulPointNum++]);
         }
-        public static void onCantMoveToPoint(batrakBehavior owner)
+        public static void onCantMoveToPoint(mobBehavior owner)
         {
             if (owner.currentPathMoveIndex <= 0)
             {
@@ -62,30 +56,30 @@ public class batrakBehavior : MonoBehaviour
                 owner.moveScript.moveTarget = owner.pathMove[--owner.currentPathMoveIndex];
             }
         }
-        public static void SRonHuntCantMove(batrakBehavior owner)
+        public static void SRonHuntCantMove(mobBehavior owner)
         {
             owner.setMoveTarget(owner.targetEnemy.transform.position);
             owner.currentState = BSmoveToEnemyPosition;
         }
-        public delegate void RAsimple(batrakBehavior owner);
-        public delegate void RAonTakeDamage(batrakBehavior owner, float hitAngle);
-        public delegate void RAonTakeEnemyPosition(batrakBehavior owner, Vector3 position);
-        public delegate void RAonFoundEnemy(batrakBehavior owner, hitPointSystem targetEnemy);
-        public static readonly RAonTakeDamage emptyTakeDmg = delegate (batrakBehavior i, float j) { };
-        public static readonly RAonFoundEnemy emptyFoundEnemy = delegate (batrakBehavior i, hitPointSystem j) { };
-        public static readonly RAonTakeEnemyPosition emptyTakePos = delegate (batrakBehavior i, Vector3 j) { };
-        public static readonly RAsimple emptySimple = delegate (batrakBehavior i) { };
+        public delegate void RAsimple(mobBehavior owner);
+        public delegate void RAonTakeDamage(mobBehavior owner, float hitAngle);
+        public delegate void RAonTakeEnemyPosition(mobBehavior owner, Vector3 position);
+        public delegate void RAonFoundEnemy(mobBehavior owner, hitPointSystem targetEnemy);
+        public static readonly RAonTakeDamage emptyTakeDmg = delegate (mobBehavior i, float j) { };
+        public static readonly RAonFoundEnemy emptyFoundEnemy = delegate (mobBehavior i, hitPointSystem j) { };
+        public static readonly RAonTakeEnemyPosition emptyTakePos = delegate (mobBehavior i, Vector3 j) { };
+        public static readonly RAsimple emptySimple = delegate (mobBehavior i) { };
         public static readonly Gubernia502.getFloatFun getZero = delegate () { return 0; };
         public static readonly Gubernia502.getFloatFun getPassiveMoveSpeed =
-            delegate () { return Gubernia502.constData.batrakPassiveMoveSpeed; };
+            delegate () { return Gubernia502.constData.mobPassiveMoveSpeed; };
         public static readonly Gubernia502.getFloatFun getPassiveRotSpeed =
-            delegate () { return Gubernia502.constData.batrakPassiveRotationSpeed; };
+            delegate () { return Gubernia502.constData.mobPassiveRotationSpeed; };
         public static readonly Gubernia502.getFloatFun getActiveMoveSpeed =
-            delegate () { return Gubernia502.constData.batrakActiveMoveSpeed; };
+            delegate () { return Gubernia502.constData.mobActiveMoveSpeed; };
         public static readonly Gubernia502.getFloatFun getActiveRotSpeed =
-            delegate () { return Gubernia502.constData.batrakActiveRotationSpeed; };
+            delegate () { return Gubernia502.constData.mobActiveRotationSpeed; };
         public static readonly Gubernia502.getFloatFun getOnAttackMoveDoneDis =
-            delegate () { return Gubernia502.constData.batrakOnAttackMoveDoneDistance; };
+            delegate () { return Gubernia502.constData.mobOnAttackMoveDoneDistance; };
         public static primBehaviorState BSdeath { get; private set; } = new primBehaviorState
             (
                 emptyTakeDmg,
@@ -97,19 +91,61 @@ public class batrakBehavior : MonoBehaviour
                 emptySimple,
                 emptySimple,
                 emptySimple,
-                delegate (batrakBehavior owner)
+                delegate (mobBehavior owner)
                 {
-                    GameObject.Destroy(owner.moveScript.batrakCollider);
+                    GameObject.Destroy(owner.moveScript.mobCollider);
                     owner.disableMoveScripts();
-                    owner.StartCoroutine(owner.idleDelay(Gubernia502.constData.batrakTimeToDeath,
+                    owner.StartCoroutine(owner.idleDelay(Gubernia502.constData.mobTimeToDeath,
                         delegate () { GameObject.Destroy(owner.gameObject); }));
                     if (Gubernia502.differenceOf2Angle(owner.enemyDirection, owner.bodyRotateScript.rotatedBody.eulerAngles.y) > 90)
                     {
-                        owner.batrakAnim.SetInteger("stan", 4);
+                        owner.animator.SetInteger("stan", 4);
                     }
                     else
                     {
-                        owner.batrakAnim.SetInteger("stan", 3);
+                        owner.animator.SetInteger("stan", 3);
+                    }
+                },
+                emptySimple,
+                emptySimple,
+                getZero,
+                getZero,
+                getZero,
+                "BSdeath"
+            );
+        public static primBehaviorState BSstun { get; private set; } = new primBehaviorState
+        (
+                SRonDeath,
+                SRonGetStun,//on get stun
+                emptyTakeDmg,//on take damage
+                emptyTakePos,//on hear sound
+                emptyTakePos,//on lost sound
+                emptyFoundEnemy,//on found enemy
+                emptySimple,//on lost enemy
+                emptySimple,//on path not found
+                delegate (mobBehavior owner)//on body move done
+                {
+                    if (owner.targetEnemy != null)
+                    {
+                        owner.currentState = BShunt;
+                    }
+                    else if (owner.soundHear.soundHears.Count > 0)
+                    {
+                        owner.currentState = BSmoveToSoundPosition;
+                    }
+                    else
+                    {
+                        owner.currentState = BSfindEnemy;
+                    }
+                },
+                delegate (mobBehavior owner)//on state enter
+                {
+                    owner.disableMoveScripts();
+                    owner.animator.SetInteger("stan", 2);
+                    if (!owner.isAggressive)
+                    {
+                        owner.isAggressive = true;
+                        owner.animator.SetBool("isAggressive", true);
                     }
                 },
                 emptySimple,
@@ -117,14 +153,14 @@ public class batrakBehavior : MonoBehaviour
                 getZero,
                 getZero,
                 getZero,
-                "BSdeath"
-            );
+                "BSstun"
+        );
         public static primBehaviorState BSpotato { get; private set; } = new primBehaviorState
             (
                 SRonDeath,
-                delegate (batrakBehavior owner, float hitAngle)
+                delegate (mobBehavior owner, float hitAngle)
                 {
-                    owner.batrakAnim.SetInteger("stan", 2);
+                    owner.animator.SetInteger("stan", 2);
                     owner.bodyRotateScript.rotatedBody.rotation = Quaternion.Euler(0f, hitAngle, 0f);
                 },
                 emptyTakeDmg,
@@ -145,33 +181,29 @@ public class batrakBehavior : MonoBehaviour
         public static primBehaviorState BSpatrul { get; private set; } = new primBehaviorState
                 (
                     SRonDeath,
-                    delegate (batrakBehavior owner, float hitAngle)//on get stunned
-                {
-                        SRonGetStun(owner, hitAngle);
-                        owner.currentState = BSactivizationTakeDmg;
-                    },
-                    delegate (batrakBehavior owner, float hitAngle)//on take damage
+                    SRonGetStun,
+                    delegate (mobBehavior owner, float hitAngle)//on take damage
                 {
                         owner.enemyDirection = hitAngle;
                         owner.currentState = BSactivizationTakeDmg;
                     },
-                    delegate (batrakBehavior owner, Vector3 soundPosition)//on hear sound
+                    delegate (mobBehavior owner, Vector3 soundPosition)//on hear sound
                 {
                         owner.enemyLastPosition = soundPosition;
                         owner.currentState = BSactivizationHearSound;
                     },
                     emptyTakePos,//on lost heared sound
-                    delegate (batrakBehavior owner, hitPointSystem targetEnemy)//on found enemy
+                    delegate (mobBehavior owner, hitPointSystem targetEnemy)//on found enemy
                 {
                         owner.currentState = BSactivizationFoundEnemy;
                     },
                     emptySimple,//on lost visible enemy
-                    delegate (batrakBehavior owner)//on path not found
+                    delegate (mobBehavior owner)//on path not found
                 {
                         owner.currentState = BSstayOnPoint;
                     },
                     SRonPatrulMoveDone,//on body move done
-                    delegate (batrakBehavior owner)//on state enter
+                    delegate (mobBehavior owner)//on state enter
                 {
                         SRonPassiveStateEnter(owner);
                         SRonPatrulMoveDone(owner);
@@ -186,35 +218,31 @@ public class batrakBehavior : MonoBehaviour
         public static primBehaviorState BSstayOnPoint { get; private set; } = new primBehaviorState
                 (
                     SRonDeath,
-                    delegate (batrakBehavior owner, float hitAngle)//on get stunned
-                {
-                        SRonGetStun(owner, hitAngle);
-                        owner.currentState = BSactivizationTakeDmg;
-                    },
-                    delegate (batrakBehavior owner, float hitAngle)//on take damage
+                    SRonGetStun,
+                    delegate (mobBehavior owner, float hitAngle)//on take damage
                 {
                         owner.enemyDirection = hitAngle;
                         owner.currentState = BSactivizationTakeDmg;
                     },
-                    delegate (batrakBehavior owner, Vector3 soundPosition)//on hear sound
+                    delegate (mobBehavior owner, Vector3 soundPosition)//on hear sound
                 {
                         owner.enemyLastPosition = soundPosition;
                         owner.currentState = BSactivizationHearSound;
                     },
                     emptyTakePos,//on lost heared sound
-                    delegate (batrakBehavior owner, hitPointSystem targetEnemy)//on found enemy
+                    delegate (mobBehavior owner, hitPointSystem targetEnemy)//on found enemy
                 {
                         owner.currentState = BSactivizationFoundEnemy;
                     },
                     emptySimple,//on lost visible enemy
-                    delegate (batrakBehavior owner)//on path not found
+                    delegate (mobBehavior owner)//on path not found
                 {
                         owner.currentState = BSstayOnPoint;
                         owner.StartCoroutine(owner.idleDelay(owner.repeatPathFindDelay,
                             delegate () { owner.setMoveTarget(owner.patrulPoint[0]); }));
                     },
                     emptySimple,//on body move done
-                    delegate (batrakBehavior owner)//on state enter
+                    delegate (mobBehavior owner)//on state enter
                 {
                         SRonPassiveStateEnter(owner);
                         if (owner.patrulPoint.Count == 0)
@@ -240,27 +268,24 @@ public class batrakBehavior : MonoBehaviour
         public static primBehaviorState BSactivizationTakeDmg { get; private set; } = new primBehaviorState
                 (
                     SRonDeath,
-                    delegate (batrakBehavior owner, float hitAngle)//on get stunned
-                {
-                        SRonGetStun(owner, hitAngle);
-                    },
-                    delegate (batrakBehavior owner, float hitAngle)//on take damage
+                    SRonGetStun,
+                    delegate (mobBehavior owner, float hitAngle)//on take damage
                 {
                         owner.enemyDirection = hitAngle;
                     },
-                    delegate (batrakBehavior owner, Vector3 soundPosition)//on hear sound
+                    delegate (mobBehavior owner, Vector3 soundPosition)//on hear sound
                 {
                         owner.enemyLastPosition = soundPosition;
                         owner.currentState = BSactivizationHearSound;
                     },
                     emptyTakePos,//on lost heared sound
-                    delegate (batrakBehavior owner, hitPointSystem targetEnemy)//on found enemy
+                    delegate (mobBehavior owner, hitPointSystem targetEnemy)//on found enemy
                 {
                         owner.currentState = BSactivizationFoundEnemy;
                     },
                     emptySimple,//on lost visible enemy
                     emptySimple,//on path not found
-                    delegate (batrakBehavior owner)//on body move done
+                    delegate (mobBehavior owner)//on body move done
                 {
                         owner.currentState = BSfindEnemy;
                     },
@@ -275,26 +300,23 @@ public class batrakBehavior : MonoBehaviour
         public static primBehaviorState BSactivizationHearSound { get; private set; } = new primBehaviorState
                 (
                     SRonDeath,
-                    delegate (batrakBehavior owner, float hitAngle)//on get stunned
-                {
-                        SRonGetStun(owner, hitAngle);
-                    },
+                    SRonGetStun,
                     emptyTakeDmg,//on take dmg
-                    delegate (batrakBehavior owner, Vector3 soundPosition)//on hear sound
+                    delegate (mobBehavior owner, Vector3 soundPosition)//on hear sound
                 {
                         owner.enemyLastPosition = soundPosition;
                     },
-                    delegate (batrakBehavior owner, Vector3 soundPosition)//on lost heared sound
+                    delegate (mobBehavior owner, Vector3 soundPosition)//on lost heared sound
                 {
                         owner.enemyLastPosition = soundPosition;
                     },
-                    delegate (batrakBehavior owner, hitPointSystem targetEnemy)//on found enemy
+                    delegate (mobBehavior owner, hitPointSystem targetEnemy)//on found enemy
                 {
                         owner.currentState = BSactivizationFoundEnemy;
                     },
                     emptySimple,//on lost visible enemy
                     emptySimple,//on path not found
-                    delegate (batrakBehavior owner)//on body move done
+                    delegate (mobBehavior owner)//on body move done
                 {
                         owner.currentState = BSmoveToSoundPosition;
                     },
@@ -309,20 +331,17 @@ public class batrakBehavior : MonoBehaviour
         public static primBehaviorState BSactivizationFoundEnemy { get; private set; } = new primBehaviorState
                 (
                     SRonDeath,
-                    delegate (batrakBehavior owner, float hitAngle)//on get stunned
-                {
-                        SRonGetStun(owner, hitAngle);
-                    },
+                    SRonGetStun,
                     emptyTakeDmg,//on take dmg
                     emptyTakePos,//on hear sound
                     emptyTakePos,//on lost heared sound
                     emptyFoundEnemy,//on found enemy
-                    delegate (batrakBehavior owner)//on lost visible enemy
+                    delegate (mobBehavior owner)//on lost visible enemy
                 {
                         owner.currentState = BSactivizationHearSound;
                     },
                     emptySimple,//on path not found
-                    delegate (batrakBehavior owner)//on body move done
+                    delegate (mobBehavior owner)//on body move done
                 {
                         owner.currentState = BShunt;
                     },
@@ -337,38 +356,34 @@ public class batrakBehavior : MonoBehaviour
         public static primBehaviorState BSfindEnemy { get; private set; } = new primBehaviorState
                 (
                     SRonDeath,
-                    delegate (batrakBehavior owner, float hitAngle)//on get stunned
-                {
-                        SRonGetStun(owner, hitAngle);
-                        owner.bodyRotateScript.neededDirectionAngle = owner.enemyDirection;
-                    },
-                    delegate (batrakBehavior owner, float hitAngle)//on take dmg
+                    SRonGetStun,
+                    delegate (mobBehavior owner, float hitAngle)//on take dmg
                 {
                         owner.enemyDirection = hitAngle;
                         owner.bodyRotateScript.neededDirectionAngle = owner.enemyDirection;
                     },
-                    delegate (batrakBehavior owner, Vector3 soundPosition)//on hear sound
+                    delegate (mobBehavior owner, Vector3 soundPosition)//on hear sound
                 {
                         owner.enemyLastPosition = soundPosition;
                         owner.currentState = BSmoveToSoundPosition;
                     },
                     emptyTakePos,//on lost heared sound
-                    delegate (batrakBehavior owner, hitPointSystem targetEnemy)//on found enemy
+                    delegate (mobBehavior owner, hitPointSystem targetEnemy)//on found enemy
                 {
                         owner.currentState = BShunt;
                     },
                     emptySimple,//on lost visible enemy
                     emptySimple,//on path not found
-                    delegate (batrakBehavior owner)//on body move done
+                    delegate (mobBehavior owner)//on body move done
                 {
                         owner.currentState = BSsearchTarget;
                     },
-                    delegate (batrakBehavior owner)//on state enter
+                    delegate (mobBehavior owner)//on state enter
                 {
                         owner.bodyRotateScript.neededDirectionAngle = owner.enemyDirection;
                         owner.bodyRotateScript.setOnlyRotate();
                     },
-                    delegate (batrakBehavior owner)//on state exit
+                    delegate (mobBehavior owner)//on state exit
                 {
                         owner.bodyRotateScript.setRotateForMove();
                     },
@@ -381,37 +396,33 @@ public class batrakBehavior : MonoBehaviour
         public static primBehaviorState BSsearchTarget { get; private set; } = new primBehaviorState
                 (
                     SRonDeath,
-                    delegate (batrakBehavior owner, float hitAngle)//on get stunned
-                {
-                        SRonGetStun(owner, hitAngle);
-                        owner.currentState = BSactivizationTakeDmg;
-                    },
-                    delegate (batrakBehavior owner, float hitAngle)//on take damage
+                    SRonGetStun,
+                    delegate (mobBehavior owner, float hitAngle)//on take damage
                 {
                         owner.enemyDirection = hitAngle;
                         owner.currentState = BSactivizationTakeDmg;
                     },
-                    delegate (batrakBehavior owner, Vector3 soundPosition)//on hear sound
+                    delegate (mobBehavior owner, Vector3 soundPosition)//on hear sound
                 {
                         owner.enemyLastPosition = soundPosition;
                         owner.currentState = BSmoveToSoundPosition;
                     },
                     emptyTakePos,//on lost heared sound
-                    delegate (batrakBehavior owner, hitPointSystem targetEnemy)//on found enemy
+                    delegate (mobBehavior owner, hitPointSystem targetEnemy)//on found enemy
                 {
                         owner.currentState = BShunt;
                     },
                     emptySimple,//on lost visible enemy
                     emptySimple,//on path not found
-                    delegate (batrakBehavior owner)//on body move done
+                    delegate (mobBehavior owner)//on body move done
                 {
-                        owner.StartCoroutine(owner.idleDelay(Gubernia502.constData.batrakPatrulIdleStateTime,
+                        owner.StartCoroutine(owner.idleDelay(Gubernia502.constData.mobPatrulIdleStateTime,
                             owner.setDefaultBehavior));
                     },
-                    delegate (batrakBehavior owner)//on state enter
+                    delegate (mobBehavior owner)//on state enter
                 {
                         owner.disableMoveScripts();
-                        owner.batrakAnim.SetTrigger("search");
+                        owner.animator.SetTrigger("search");
                     },
                     emptySimple,//on state exit
                     emptySimple,
@@ -425,33 +436,33 @@ public class batrakBehavior : MonoBehaviour
                    SRonDeath,
                    SRonGetStun,//on get stunned
                    emptyTakeDmg,//on take dmg
-                   delegate (batrakBehavior owner, Vector3 soundPosition)//on hear sound
+                   delegate (mobBehavior owner, Vector3 soundPosition)//on hear sound
                {
                        owner.setMoveTarget(owner.enemyLastPosition = soundPosition);
                    },
-                   delegate (batrakBehavior owner, Vector3 soundPosition)//on lost heared sound
+                   delegate (mobBehavior owner, Vector3 soundPosition)//on lost heared sound
                {
                        owner.setMoveTarget(owner.enemyLastPosition = soundPosition);
                        owner.currentState = BSmoveToLastEnemyPosition;
                    },
-                   delegate (batrakBehavior owner, hitPointSystem targetEnemy)//on found enemy
+                   delegate (mobBehavior owner, hitPointSystem targetEnemy)//on found enemy
                {
                        owner.currentState = BShunt;
                    },
-                   delegate(batrakBehavior owner)
+                   delegate(mobBehavior owner)
                    {
                        owner.currentState = BSmoveToLastEnemyPosition;
                    },
-                   delegate (batrakBehavior owner)//on path not found
+                   delegate (mobBehavior owner)//on path not found
                {
                        owner.enemyDirection = Gubernia502.angleFromDirection((owner.enemyLastPosition - owner.transform.position).normalized);
                        owner.currentState = BSfindEnemy;
                    },
-                   delegate (batrakBehavior owner)//on body move done
+                   delegate (mobBehavior owner)//on body move done
                {
                        owner.currentState = BSsearchTarget;
                    },
-                   delegate (batrakBehavior owner)//on state enter
+                   delegate (mobBehavior owner)//on state enter
                {
                        owner.setMoveTarget(owner.enemyLastPosition);
                    },
@@ -465,30 +476,26 @@ public class batrakBehavior : MonoBehaviour
         public static primBehaviorState BSmoveToLastEnemyPosition { get; private set; } = new primBehaviorState
                (
                    SRonDeath,
-                   delegate (batrakBehavior owner, float hitAngle)//on get stunned
-               {
-                       SRonGetStun(owner, hitAngle);
-                       owner.currentState = BSfindEnemy;
-                   },
-                   delegate (batrakBehavior owner, float hitAngle)//on get stunned
+                   SRonGetStun,
+                   delegate (mobBehavior owner, float hitAngle)//on get stunned
                {
                        owner.enemyDirection = hitAngle;
                        owner.currentState = BSfindEnemy;
                    },
-                   delegate (batrakBehavior owner, Vector3 soundPosition)//on hear sound
+                   delegate (mobBehavior owner, Vector3 soundPosition)//on hear sound
                {
                        owner.enemyLastPosition = soundPosition;
                        owner.currentState = BSmoveToSoundPosition;
                    },
-                   delegate (batrakBehavior owner, Vector3 soundPosition)//on lost heared sound
+                   delegate (mobBehavior owner, Vector3 soundPosition)//on lost heared sound
                    {
                        owner.enemyLastPosition = soundPosition;
                    },
-                   delegate (batrakBehavior owner, hitPointSystem targetEnemy)//on found enemy
+                   delegate (mobBehavior owner, hitPointSystem targetEnemy)//on found enemy
                {
                        owner.currentState = BShunt;
                    },
-                   delegate (batrakBehavior owner)//on lost visible enemy
+                   delegate (mobBehavior owner)//on lost visible enemy
                {
                    if (owner.soundHear.soundHears.Count > 0)
                    {
@@ -499,16 +506,16 @@ public class batrakBehavior : MonoBehaviour
                        owner.currentState.onStateEnter(owner);
                    }
                    },
-                   delegate (batrakBehavior owner)//on path not found
+                   delegate (mobBehavior owner)//on path not found
                {
                        owner.enemyDirection = Gubernia502.angleFromDirection((owner.enemyLastPosition - owner.transform.position).normalized);
                        owner.currentState = BSfindEnemy;
                    },
-                   delegate (batrakBehavior owner)//on body move done
+                   delegate (mobBehavior owner)//on body move done
                {
                        owner.currentState = BSsearchTarget;
                    },
-                   delegate (batrakBehavior owner)//on state enter
+                   delegate (mobBehavior owner)//on state enter
                {
                        owner.setMoveTarget(owner.enemyLastPosition);
                    },
@@ -526,11 +533,11 @@ public class batrakBehavior : MonoBehaviour
                    emptyTakeDmg,//on take dmg
                    emptyTakePos,//on hear sound
                    emptyTakePos,//on lost sound
-                   delegate (batrakBehavior owner, hitPointSystem targetEnemy)//on found enemy
+                   delegate (mobBehavior owner, hitPointSystem targetEnemy)//on found enemy
                    {
                        owner.currentState = BShunt;
                    },
-                   delegate (batrakBehavior owner)//on lost enemy
+                   delegate (mobBehavior owner)//on lost enemy
                    {
                        if (owner.soundHear.soundHears.Count > 0)
                        {
@@ -541,16 +548,16 @@ public class batrakBehavior : MonoBehaviour
                            owner.currentState = BSmoveToLastEnemyPosition;
                        }
                    },
-                   delegate (batrakBehavior owner)//on path not found
+                   delegate (mobBehavior owner)//on path not found
                    {
                        owner.disableMoveScripts();
                        owner.currentState = BStrackTarget;
                    },
-                   delegate (batrakBehavior owner)//on body move done
+                   delegate (mobBehavior owner)//on body move done
                    {
                        owner.currentState = BShunt;
                    },
-                   delegate (batrakBehavior owner)//on state enter
+                   delegate (mobBehavior owner)//on state enter
                    {
                        owner.setMoveTarget(owner.targetEnemy.transform.position);
                    },
@@ -569,7 +576,7 @@ public class batrakBehavior : MonoBehaviour
                    emptyTakePos,//on hear sound
                    emptyTakePos,//on lost heared sound
                    emptyFoundEnemy,//on found enemy
-                   delegate (batrakBehavior owner)//on lost enemy
+                   delegate (mobBehavior owner)//on lost enemy
                {
                        if (!owner.viewZone.foundNewTarget())
                        {
@@ -583,17 +590,17 @@ public class batrakBehavior : MonoBehaviour
                            }
                        }
                    },
-                   delegate (batrakBehavior owner)//on path not found
+                   delegate (mobBehavior owner)//on path not found
                {
                        owner.disableMoveScripts();
                        owner.currentState = BStrackTarget;
                    },
-                   delegate (batrakBehavior owner)//on body move done
+                   delegate (mobBehavior owner)//on body move done
                {
                        targetStatsCollector targetStats = owner.targetEnemy.GetComponent<targetStatsCollector>();
                        if (targetStats.targetMoveDirection != Vector3.zero &&
                        Mathf.Abs(targetStats.targetMoveAngle - owner.bodyRotateScript.rotatedBody.eulerAngles.y) <
-                       Gubernia502.constData.batrakJerkMinAngle)
+                       Gubernia502.constData.mobJerkMinAngle)
                        {
                            owner.currentState = BSjerk;
                        }
@@ -602,7 +609,7 @@ public class batrakBehavior : MonoBehaviour
                            owner.currentState = BSsimpleAttack;
                        }
                    },
-                   delegate (batrakBehavior owner)//on state enter
+                   delegate (mobBehavior owner)//on state enter
                {
                        Vector3 target = new Vector3(owner.targetEnemy.transform.position.x, owner.transform.position.y, 
                            owner.targetEnemy.transform.position.z);
@@ -620,7 +627,7 @@ public class batrakBehavior : MonoBehaviour
                        BShunt.onCantMoveToPoint(owner);
                        }
                    },
-                   delegate (batrakBehavior owner)//on state exit
+                   delegate (mobBehavior owner)//on state exit
                {
                        owner.moveScript.setDefaultSettings();
                    },
@@ -633,15 +640,15 @@ public class batrakBehavior : MonoBehaviour
         public static primBehaviorState BSsimpleAttack { get; private set; } = new primBehaviorState
                 (
                     SRonDeath,
-                    emptyTakeDmg,//on get stunned
+                    SRonGetStun,//on get stunned
                     emptyTakeDmg,//on take dmg
                     emptyTakePos,//on hear sound
                     emptyTakePos,//on lost heared sound
-                    delegate (batrakBehavior owner, hitPointSystem targetEnemy)//on found enemy
+                    delegate (mobBehavior owner, hitPointSystem targetEnemy)//on found enemy
                 {
                         owner.bodyRotateScript.setTrackTarget();
                     },
-                    delegate (batrakBehavior owner)//on lost enemy
+                    delegate (mobBehavior owner)//on lost enemy
                 {
                         if (!owner.viewZone.foundNewTarget())
                         {
@@ -649,12 +656,12 @@ public class batrakBehavior : MonoBehaviour
                         }
                     },
                     emptySimple,//on path not found
-                    delegate (batrakBehavior owner)//on body move done
+                    delegate (mobBehavior owner)//on body move done
                 {
                         if (owner.targetEnemy != null)
                         {
                             if (Vector3.Distance(owner.transform.position, owner.targetEnemy.transform.position) >
-                                Gubernia502.constData.batrakMaxSimpleCombatDistance)
+                                Gubernia502.constData.mobMaxSimpleCombatDistance)
                             {
                                 owner.currentState = BShunt;
                             }
@@ -668,45 +675,45 @@ public class batrakBehavior : MonoBehaviour
                             owner.currentState = BSmoveToLastEnemyPosition;
                         }
                     },
-                    delegate (batrakBehavior owner)//on state enter
+                    delegate (mobBehavior owner)//on state enter
                 {
                         owner.bodyRotateScript.setTrackTarget();
                         owner.soundHear.enabled = false;
-                        int punchNum = owner.batrakAnim.GetInteger("punchNum");
+                        int punchNum = owner.animator.GetInteger("punchNum");
                         if (punchNum == 2 || punchNum == 0)
                         {
                             owner.meleeShoot.hitBox = owner.rightHand;
-                            owner.batrakAnim.SetInteger("punchNum", 1);
+                            owner.animator.SetInteger("punchNum", 1);
                         }
                         else
                         {
                             owner.meleeShoot.hitBox = owner.leftHand;
-                            owner.batrakAnim.SetInteger("punchNum", 2);
+                            owner.animator.SetInteger("punchNum", 2);
                         }
-                        owner.batrakAnim.SetTrigger("shoot");
+                        owner.animator.SetTrigger("shoot");
                     },
-                    delegate (batrakBehavior owner)//on state exit
+                    delegate (mobBehavior owner)//on state exit
                 {
                         owner.moveScript.setDefaultSettings();
                     },
                     SRonHuntCantMove,
                     getActiveMoveSpeed,
-                    delegate () { return Gubernia502.constData.batrakSimpleAtkRotSpeed; },
+                    delegate () { return Gubernia502.constData.mobSimpleAtkRotSpeed; },
                     getOnAttackMoveDoneDis,
                     "BSsimpleAttack"
                 );
         public static primBehaviorState BSjerk { get; private set; } = new primBehaviorState
              (
                  SRonDeath,
-                 emptyTakeDmg,//on get stunned
+                 SRonGetStun,//on get stunned
                  emptyTakeDmg,//on take dmg
                  emptyTakePos,//on hear sound
                  emptyTakePos,//on lost heared sound
-                 delegate (batrakBehavior owner, hitPointSystem targetEnemy)//on found enemy
+                 delegate (mobBehavior owner, hitPointSystem targetEnemy)//on found enemy
              {
                      owner.bodyRotateScript.setTrackTarget();
                  },
-                 delegate (batrakBehavior owner)//on lost enemy
+                 delegate (mobBehavior owner)//on lost enemy
              {
                      if (!owner.viewZone.foundNewTarget())
                      {
@@ -714,12 +721,12 @@ public class batrakBehavior : MonoBehaviour
                      }
                  },
                  emptySimple,//on path not found
-                 delegate (batrakBehavior owner)//on body move done
+                 delegate (mobBehavior owner)//on body move done
              {
                      if (owner.targetEnemy != null)
                      {
                          if (Vector3.Distance(owner.transform.position, owner.targetEnemy.transform.position) >
-                             Gubernia502.constData.batrakMaxSimpleCombatDistance)
+                             Gubernia502.constData.mobMaxSimpleCombatDistance)
                          {
                              owner.currentState = BShunt;
                          }
@@ -733,25 +740,25 @@ public class batrakBehavior : MonoBehaviour
                          owner.currentState = BSmoveToLastEnemyPosition;
                      }
                  },
-                 delegate (batrakBehavior owner)//on state enter
+                 delegate (mobBehavior owner)//on state enter
              {
-                     owner.meleeDmg = Gubernia502.constData.batrakJerkDmg;
+                     owner.meleeDmg = Gubernia502.constData.mobJerkDmg;
                      owner.isStunnedDmg = true;
                      owner.bodyRotateScript.setTrackTarget();
                      owner.soundHear.enabled = false;
                      owner.meleeShoot.hitBox = owner.rightHand;
-                     owner.batrakAnim.SetInteger("punchNum", 3);
-                     owner.batrakAnim.SetTrigger("shoot");
+                     owner.animator.SetInteger("punchNum", 3);
+                     owner.animator.SetTrigger("shoot");
                  },
-                 delegate (batrakBehavior owner)//on state exit
+                 delegate (mobBehavior owner)//on state exit
              {
-                     owner.meleeDmg = Gubernia502.constData.batrakSimpleAttackDmg;
+                     owner.meleeDmg = Gubernia502.constData.mobSimpleAttackDmg;
                      owner.isStunnedDmg = false;
                      owner.moveScript.setDefaultSettings();
                  },
                  SRonHuntCantMove,
                  getActiveMoveSpeed,
-                 delegate () { return Gubernia502.constData.batrakSimpleAtkRotSpeed; },
+                 delegate () { return Gubernia502.constData.mobSimpleAtkRotSpeed; },
                  getOnAttackMoveDoneDis,
                  "BSjerk"
              );
@@ -762,12 +769,12 @@ public class batrakBehavior : MonoBehaviour
                 emptyTakeDmg,//on take dmg
                 emptyTakePos,//on hear sound
                 emptyTakePos,//on lost heared sound
-                delegate (batrakBehavior owner, hitPointSystem targetEnemy)//on found enemy
+                delegate (mobBehavior owner, hitPointSystem targetEnemy)//on found enemy
             {
                     owner.disableMoveScripts();
                     owner.currentState = BShunt;
                 },
-                delegate (batrakBehavior owner)//on lost enemy
+                delegate (mobBehavior owner)//on lost enemy
             {
                     owner.disableMoveScripts();
                     owner.enemyDirection = Gubernia502.angleFromDirection((owner.enemyLastPosition - owner.transform.position).normalized);
@@ -775,11 +782,11 @@ public class batrakBehavior : MonoBehaviour
                 },
                 emptySimple,//on path not found
                 emptySimple,//on body move done
-                delegate (batrakBehavior owner)//on state enter
+                delegate (mobBehavior owner)//on state enter
             {
                     owner.bodyRotateScript.setTrackTarget();
                 },
-                delegate (batrakBehavior owner)//on state exit
+                delegate (mobBehavior owner)//on state exit
             {
                     owner.bodyRotateScript.setRotateForMove();
                 },
@@ -1059,8 +1066,8 @@ public class batrakBehavior : MonoBehaviour
     private Vector3 moveTarget;
     private Vector3 nextMovetarget;
     private bool isNextTarget = false;
-    private batrakBehaviorStateMachine.primBehaviorState CurrentState = batrakBehaviorStateMachine.BSdeath;
-    public batrakBehaviorStateMachine.primBehaviorState currentState
+    private mobBehaviorStateMachine.primBehaviorState CurrentState = mobBehaviorStateMachine.BSdeath;
+    public mobBehaviorStateMachine.primBehaviorState currentState
     {
         get => CurrentState;
         set
@@ -1071,7 +1078,7 @@ public class batrakBehavior : MonoBehaviour
             value.onStateEnter(this);
         }
     }
-    ~batrakBehavior()
+    ~mobBehavior()
     {
         Gubernia502.enemies.Remove(this);
     }
@@ -1087,16 +1094,16 @@ public class batrakBehavior : MonoBehaviour
     }
     public startMode startBehavior=startMode.desactiveIdle;
     public enemyViewZone viewZone;
-    public Rigidbody batrakRGbody;
-    public Animator batrakAnim;
-    public batrakMeleeShoot meleeShoot;
-    public batrakWeaponHitBox rightHand;
-    public batrakWeaponHitBox leftHand;
-    public batrakDmgSystem dmgSystem;
-    public batrakMove moveScript;
-    public batrakBodyRotateForView bodyRotateScript;
+    public Rigidbody RGbody;
+    public Animator animator;
+    public mobMeleeShoot meleeShoot;
+    public mobWeaponHitBox rightHand;
+    public mobWeaponHitBox leftHand;
+    public mobDmgSystem dmgSystem;
+    public mobMove moveScript;
+    public mobBodyRotateForView bodyRotateScript;
     public soundHear soundHear;
-    public batrakMeleeFrontHitBox meleeFrontHitBox;
+    public mobMeleeFrontHitBox meleeFrontHitBox;
 
     public readonly float repeatPathFindDelay = 3f;
 
@@ -1106,16 +1113,7 @@ public class batrakBehavior : MonoBehaviour
     public hitPointSystem targetEnemy=null;
     public List<Vector3> patrulPoint=new List<Vector3> { };
     public int patrulPointNum;
-    batrakBehaviorStateMachine.primBehaviorState defaultState;
-    /// <summary>
-    /// Передаваемая в качестве второго параметра 
-    /// функция автоматически сработает по истечению 
-    /// заданного времени
-    /// </summary>
-    /// <param name="delayTime"></param>
-    /// <param name="actionOnExit"></param>
-    /// <returns></returns>
-    /// 
+    mobBehaviorStateMachine.primBehaviorState defaultState;
     public IEnumerator idleDelay(float delayTime, Gubernia502.simpleFun actionOnExit)
     {
         yield return new WaitForSeconds(delayTime);
@@ -1159,13 +1157,13 @@ public class batrakBehavior : MonoBehaviour
         }
         else
         {
-            currentState = batrakBehaviorStateMachine.BSpotato;
+            currentState = mobBehaviorStateMachine.BSpotato;
         }
-        meleeDmg = Gubernia502.constData.batrakSimpleAttackDmg;
+        meleeDmg = Gubernia502.constData.mobSimpleAttackDmg;
     }
     public void disableBatrak()
     {
-        currentState = batrakBehaviorStateMachine.BSpotato;
+        currentState = mobBehaviorStateMachine.BSpotato;
     }
     public void setDefaultBehavior()
     {
@@ -1183,23 +1181,23 @@ public class batrakBehavior : MonoBehaviour
             case startMode.passivePatrul:
                 if (patrulPoint.Count > 1)
                 {
-                    defaultState = batrakBehaviorStateMachine.BSpatrul;
+                    defaultState = mobBehaviorStateMachine.BSpatrul;
                 }
                 else
                 {
                     startBehavior = startMode.stayOnPoint;
-                    defaultState = batrakBehaviorStateMachine.BSstayOnPoint;
+                    defaultState = mobBehaviorStateMachine.BSstayOnPoint;
                 }
                 break;
             case startMode.desactiveIdle:
-                defaultState = batrakBehaviorStateMachine.BSpotato;
+                defaultState = mobBehaviorStateMachine.BSpotato;
                 break;
             case startMode.stayOnPoint:
-                defaultState = batrakBehaviorStateMachine.BSstayOnPoint;
+                defaultState = mobBehaviorStateMachine.BSstayOnPoint;
                 break;
             default:
                 patrulPoint = new List<Vector3> { transform.position };
-                defaultState = batrakBehaviorStateMachine.BSstayOnPoint;
+                defaultState = mobBehaviorStateMachine.BSstayOnPoint;
                 break;
         }
     }

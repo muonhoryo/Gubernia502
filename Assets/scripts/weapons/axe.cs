@@ -6,23 +6,23 @@ public class axe : hand
 {
     public override void generateSound()
     {
-        generateSound(ermakLockControl.ermakInventory.EquippedWeapons.weaponsItem.soundVolume);
+        generateSound(NPCLockControl.Inventory.EquippedWeapons.weaponsItem.soundVolume);
     }
     public override void meleeHitEnabled()
     {
-        ermakLockControl.meleeShoot.hitBox = leftHand;
-        if (ermakLockControl.ermakAnim.GetInteger("punchNum") != 1)
+        NPCLockControl.meleeShoot.hitBox = leftHand;
+        if (NPCLockControl.animator.GetInteger("punchNum") != 1)
         {
-            ermakLockControl.ermakAnim.SetInteger("punchNum", 1);
+            NPCLockControl.animator.SetInteger("punchNum", 1);
         }
         else
         {
-            ermakLockControl.ermakAnim.SetInteger("punchNum", 2);
+            NPCLockControl.animator.SetInteger("punchNum", 2);
         }
     }
     protected override void Start()
     {
         base.Start();
-        leftHand.ermakLockControl = ermakLockControl;
+        leftHand.NPCLockControl = NPCLockControl;
     }
 }

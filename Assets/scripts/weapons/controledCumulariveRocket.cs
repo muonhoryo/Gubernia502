@@ -6,7 +6,7 @@ public class controledCumulariveRocket : cumulativeRocket
 {
     private void OnDestroy()
     {
-        bulletOwner.GetComponent<ermakLockControl>().ermakAnim.SetInteger("punchNum", 1);
+        bulletOwner.GetComponent<NPCLockControl>().animator.SetInteger("punchNum", 1);
         Gubernia502.mainCamera.changeToDefaultTrack();
     }
     protected override void Start()

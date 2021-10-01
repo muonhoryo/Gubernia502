@@ -45,7 +45,7 @@ public class cumulativeRocket : bullet
             }
         }
     }
-    public override void OnTriggerEnter(Collider other)
+    protected override void onHit(Collider other)
     {
             action(other);
     }

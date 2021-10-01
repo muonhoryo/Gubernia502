@@ -118,11 +118,11 @@ public class multiThreadManager : MonoBehaviour//singltone
         }
         loader.currentState = saveLoader.loadState.mainHeroLoad;
         Gubernia502.mainMenu.updateLoadingInfo(loader.currentState);
-        Gubernia502.playerController.ermakLockControl.transform.position = sceneSave.mainHero.position.vector;
-        Gubernia502.playerController.ermakLockControl.bodyRotateScript.rotatedBody.rotation =
+        Gubernia502.playerController.NPCLockControl.transform.position = sceneSave.mainHero.position.vector;
+        Gubernia502.playerController.NPCLockControl.bodyRotateScript.rotatedBody.rotation =
             Quaternion.Euler(0, sceneSave.mainHero.yRotation, 0);
-        Gubernia502.playerController.ermakLockControl.hpSystem.hitPoint = sceneSave.mainHero.HPpoint;
-        Gubernia502.playerController.ermakLockControl.hpSystem.shieldDurability = sceneSave.mainHero.shieldDuration;
+        Gubernia502.playerController.NPCLockControl.hpSystem.hitPoint = sceneSave.mainHero.HPpoint;
+        Gubernia502.playerController.NPCLockControl.hpSystem.shieldDurability = sceneSave.mainHero.shieldDuration;
         if (Time.realtimeSinceStartup - startTime>Gubernia502.constData.threadFrameTime)
         {
             return;
@@ -152,9 +152,9 @@ public class multiThreadManager : MonoBehaviour//singltone
         {
             for (; stateLoading < sceneSave.enemies.Count; )
             {
-                batrakBehavior enemy = GameObject.Instantiate(Gubernia502.constData.enemies[0],
+                mobBehavior enemy = GameObject.Instantiate(Gubernia502.constData.enemies[0],
                     sceneSave.enemies[stateLoading].position.vector,
-                    Quaternion.Euler(Vector3.zero)).GetComponent<batrakBehavior>();
+                    Quaternion.Euler(Vector3.zero)).GetComponent<mobBehavior>();
                 enemy.bodyRotateScript.rotatedBody.rotation = Quaternion.Euler(new Vector3(0, sceneSave.enemies[stateLoading].yRotation, 0));
                 enemy.dmgSystem.hitPoint = sceneSave.enemies[stateLoading].HPpoint;
                 enemy.dmgSystem.shieldDurability = sceneSave.enemies[stateLoading].shieldDuration;
@@ -168,13 +168,13 @@ public class multiThreadManager : MonoBehaviour//singltone
                 switch (sceneSave.enemies[stateLoading].behavior)
                 {
                     case "desactiveIdle":
-                        enemy.startBehavior = batrakBehavior.startMode.desactiveIdle;
+                        enemy.startBehavior = mobBehavior.startMode.desactiveIdle;
                         break;
                     case "passivePatrul":
-                        enemy.startBehavior = batrakBehavior.startMode.passivePatrul;
+                        enemy.startBehavior = mobBehavior.startMode.passivePatrul;
                         break;
                     case "stayOnPoint":
-                        enemy.startBehavior = batrakBehavior.startMode.stayOnPoint;
+                        enemy.startBehavior = mobBehavior.startMode.stayOnPoint;
                         break;
                 }
                 enemy.changeDefaultState();

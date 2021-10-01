@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class invasiveBullet : antimaterialBullet
 {
-    public override void OnTriggerEnter(Collider other)
+    protected override void onHit(Collider other)
     {
         if (other.gameObject != bulletOwner && other.TryGetComponent(out hitPointSystem hpSystem))
         {

@@ -2,30 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ermakLockControl : MonoBehaviour
+public class NPCLockControl : MonoBehaviour
 {
     public float bodyRotationSpeed;
     public bool isLockedCtrl { get; private set; } = false;
-    public ermakColliderMove collMove;
+    public NPCColliderMove collMove;
     public GameObject[] hands = new GameObject[2]//0-right,1-leftS
     {
         null,
         null
     };
-    public Animator ermakAnim;
+    public Animator animator;
     public meleeShoot meleeShoot;
     public distantShoot distantShoot;
     public ermakWeaponDispersion weaponDispersion;
-    public ermakSelectedWeapon ermakSelectedWeapon;
+    public ermakSelectedWeapon selectedWeaponScript;
     public soundGenerator soundGenerator;
     public meleeHitBox meleeFrontHitBox;
-    public ermakDmgSystem hpSystem;
-    public ermakBodyRotateForView bodyRotateScript;
+    public NPCDmgSystem hpSystem;
+    public NPCBodyRotateForView bodyRotateScript;
     public ermakMove moveScript;
-    public ermakIteraction iteractionScript;
+    public NPCIteraction iteractionScript;
     public ermakViewBody viewBodyScript;
-    public Rigidbody ermakRGBody;
-    public ermakInventory ermakInventory;
+    public Rigidbody RGBody;
+    public NPCInventory Inventory;
     /// <summary>
     /// full lock control
     /// </summary>
@@ -75,20 +75,20 @@ public class ermakLockControl : MonoBehaviour
     }
     public void setFullAnim()
     {
-        ermakAnim.SetLayerWeight(ermakAnim.GetLayerIndex("arms"), 0);
+        animator.SetLayerWeight(animator.GetLayerIndex("arms"), 0);
         stopPickUpAnim();
     }
     public void stopPickUpAnim()
     {
         StopCoroutine(pickUpItemAnim());
         StopCoroutine(smoothPickUpLayerWeight());
-        if (ermakInventory.selectedWeaponIndex != 0 && ermakInventory.EquippedWeapons.weaponsItem.parentObj == 1)
+        if (Inventory.selectedWeaponIndex != 0 && Inventory.EquippedWeapons.weaponsItem.parentObj == 1)
         {
-            ermakSelectedWeapon.parentObj = hands[ermakInventory.EquippedWeapons.weaponsItem.parentObj].transform;
-            iteractionScript.selectedWeaponScript.transform.localPosition = ermakInventory.EquippedWeapons.weaponsItem.positionOnSelected;
-            iteractionScript.selectedWeaponScript.transform.localRotation = ermakInventory.EquippedWeapons.weaponsItem.rotationOnSelected;
+            selectedWeaponScript.parentObj = hands[Inventory.EquippedWeapons.weaponsItem.parentObj].transform;
+            iteractionScript.selectedWeaponScript.transform.localPosition = Inventory.EquippedWeapons.weaponsItem.positionOnSelected;
+            iteractionScript.selectedWeaponScript.transform.localRotation = Inventory.EquippedWeapons.weaponsItem.rotationOnSelected;
         }
-        ermakAnim.SetLayerWeight(ermakAnim.GetLayerIndex("interaction"), 0);
+        animator.SetLayerWeight(animator.GetLayerIndex("interaction"), 0);
     }
     public void stopPickUpAnim(float speedModifier)
     {
@@ -98,7 +98,7 @@ public class ermakLockControl : MonoBehaviour
     }
     public void setSeparratedAnim()
     {
-        ermakAnim.SetLayerWeight(ermakAnim.GetLayerIndex("arms"), 1);
+        animator.SetLayerWeight(animator.GetLayerIndex("arms"), 1);
     }
     public void isBreakWeapon(float rotation)
     {
@@ -110,53 +110,53 @@ public class ermakLockControl : MonoBehaviour
     }
     private void getStunned(float rotation, int stunType)
     {
-        ermakAnim.SetInteger("stan", stunType);
-        viewBodyScript.ermakBody.transform.rotation = Quaternion.Euler(0f, rotation, 0f);
+        animator.SetInteger("stan", stunType);
+        viewBodyScript.transfmoredBody.transform.rotation = Quaternion.Euler(0f, rotation, 0f);
         weaponDispersion.gameObject.SetActive(false);
     }
     private IEnumerator smoothPickUpLayerWeight(bool isIncrease=true,float speedModifier = 1)
     {
-        float animSpeed = Gubernia502.constData.ermakPickUpItemAnimSpeed;
+        float animSpeed = Gubernia502.constData.NPCPickUpItemAnimSpeed;
         if (isIncrease)
         {
-            if (ermakInventory.selectedWeaponIndex != 0 && ermakInventory.EquippedWeapons.weaponsItem.parentObj == 1  )
+            if (Inventory.selectedWeaponIndex != 0 && Inventory.EquippedWeapons.weaponsItem.parentObj == 1  )
             {
-                ermakSelectedWeapon.parentObj = hands[0].transform;
+                selectedWeaponScript.parentObj = hands[0].transform;
                 iteractionScript.selectedWeaponScript.transform.localPosition = 
-                    ermakInventory.EquippedWeapons.weaponsItem.secondEquipedPos.positionOnSelected;
+                    Inventory.EquippedWeapons.weaponsItem.secondEquipedPos.positionOnSelected;
                 iteractionScript.selectedWeaponScript.transform.localRotation = 
-                    ermakInventory.EquippedWeapons.weaponsItem.secondEquipedPos.rotationOnSelected;
+                    Inventory.EquippedWeapons.weaponsItem.secondEquipedPos.rotationOnSelected;
             }
-            for (float weightStart= ermakAnim.GetLayerWeight(ermakAnim.GetLayerIndex("interaction"));
+            for (float weightStart= animator.GetLayerWeight(animator.GetLayerIndex("interaction"));
                 weightStart < 1; weightStart += animSpeed/100 * speedModifier)
             {
                 if (weightStart + (animSpeed/100 * speedModifier) > 1)
                 {
                     weightStart = 1;
                 }
-                ermakAnim.SetLayerWeight(ermakAnim.GetLayerIndex("interaction"), weightStart);
+                animator.SetLayerWeight(animator.GetLayerIndex("interaction"), weightStart);
                 yield return null;
             }
         }
         else
         {
-            for (float weightStart = ermakAnim.GetLayerWeight(ermakAnim.GetLayerIndex("interaction"));
+            for (float weightStart = animator.GetLayerWeight(animator.GetLayerIndex("interaction"));
                 weightStart > 0; weightStart -= animSpeed/100 * speedModifier)
             {
                 if(weightStart+(animSpeed/100*speedModifier)<0)
                 {
                     weightStart = 0;
                 }
-                ermakAnim.SetLayerWeight(ermakAnim.GetLayerIndex("interaction"), weightStart);
+                animator.SetLayerWeight(animator.GetLayerIndex("interaction"), weightStart);
                 yield return null;
             }
-            if (ermakInventory.selectedWeaponIndex != 0 && ermakInventory.EquippedWeapons.weaponsItem.parentObj == 1)
+            if (Inventory.selectedWeaponIndex != 0 && Inventory.EquippedWeapons.weaponsItem.parentObj == 1)
             {
-                ermakSelectedWeapon.parentObj = hands[ermakInventory.EquippedWeapons.weaponsItem.parentObj].transform;
+                selectedWeaponScript.parentObj = hands[Inventory.EquippedWeapons.weaponsItem.parentObj].transform;
                 iteractionScript.selectedWeaponScript.transform.localPosition = 
-                    ermakInventory.EquippedWeapons.weaponsItem.positionOnSelected;
+                    Inventory.EquippedWeapons.weaponsItem.positionOnSelected;
                 iteractionScript.selectedWeaponScript.transform.localRotation = 
-                    ermakInventory.EquippedWeapons.weaponsItem.rotationOnSelected;
+                    Inventory.EquippedWeapons.weaponsItem.rotationOnSelected;
             }
         }
         yield break;
@@ -164,7 +164,7 @@ public class ermakLockControl : MonoBehaviour
     private IEnumerator pickUpItemAnim()
     {
         StartCoroutine(smoothPickUpLayerWeight());
-        yield return new WaitForSeconds(Gubernia502.constData.ermakPickUpItemAnimDelay);
+        yield return new WaitForSeconds(Gubernia502.constData.NPCPickUpItemAnimDelay);
         StartCoroutine(smoothPickUpLayerWeight(false));
         yield break;
     }
@@ -175,6 +175,6 @@ public class ermakLockControl : MonoBehaviour
     }
     private void Awake()
     {
-        bodyRotationSpeed = Gubernia502.constData.ermakBodyRotationSpeed;
+        bodyRotationSpeed = Gubernia502.constData.NPCBodyRotationSpeed;
     }
 }

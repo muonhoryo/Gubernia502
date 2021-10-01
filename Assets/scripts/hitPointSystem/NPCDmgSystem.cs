@@ -2,23 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ermakDmgSystem : alifeDmgSystem
+public class NPCDmgSystem : alifeDmgSystem
 {
     [SerializeField]
     targetStatsCollector statsCollector;
     [SerializeField]
-    ermakLockControl ermakLockControl;
+    NPCLockControl NPCLockControl;
     protected override void getStunned(float rotation, int stunType)
     {
         base.getStunned(rotation, stunType);
-        ermakLockControl.weaponDispersion.gameObject.SetActive(false);
+        NPCLockControl.weaponDispersion.gameObject.SetActive(false);
     }
     protected override void death(float rotation)
     {
         base.death(rotation);
-        ermakLockControl.weaponDispersion.gameObject.SetActive(false);
+        NPCLockControl.weaponDispersion.gameObject.SetActive(false);
         Gubernia502.mainCamera.changeToTargetTracking(gameObject);
-        ermakLockControl.soundGenerator.disableSoundGen();
+        NPCLockControl.soundGenerator.disableSoundGen();
     }
     public override void becameTarget(hitPointSystem hunter)
     {

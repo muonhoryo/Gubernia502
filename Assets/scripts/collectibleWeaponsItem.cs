@@ -41,8 +41,8 @@ public class collectibleWeaponsItem : collectiblleItem
     public override void OnMouseOver()
     {
         base.OnMouseOver();
-        Gubernia502.playerController.ermakLockControl.iteractionScript.usedObj = gameObject;
-        Gubernia502.playerController.ermakLockControl.iteractionScript.usedObjScript = this;
+        Gubernia502.playerController.NPCLockControl.iteractionScript.usedObj = gameObject;
+        Gubernia502.playerController.NPCLockControl.iteractionScript.usedObjScript = this;
         if (magMesh != null)
         {
             magMesh.materials[0].SetFloat("selectBloomLevel", 1);
@@ -56,9 +56,9 @@ public class collectibleWeaponsItem : collectiblleItem
             magMesh.materials[0].SetFloat("selectBloomLevel", 0);
         }
     }
-    public override void addItem(ermakLockControl ermakLockControl)
+    public override void addItem(NPCLockControl ermakLockControl)
     {
-        ermakLockControl.ermakInventory.addWeapon(this);
+        ermakLockControl.Inventory.addWeapon(this);
     }
     private void Awake()
     {

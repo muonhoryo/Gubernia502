@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class meleeShoot : MonoBehaviour
 {
-    public ermakLockControl ermakLockControl;
+    public NPCLockControl NPCLockControl;
     public trailRenHitBox hitBox;
     [SerializeReference]
     private Vector3 animMoveVector;
@@ -12,22 +12,22 @@ public class meleeShoot : MonoBehaviour
     public int cantMoveLayers = 8960;
     public void takeSignal1()
     {
-        ermakLockControl.meleeFrontHitBox.setActiveHitBox(true);
-        ermakLockControl.iteractionScript.selectedWeaponScript.generateSound();
+        NPCLockControl.meleeFrontHitBox.setActiveHitBox(true);
+        NPCLockControl.iteractionScript.selectedWeaponScript.generateSound();
     }
     public virtual void takeSignal2()
     {
-        ermakLockControl.unlockCtrl();//анлок управления
+        NPCLockControl.unlockCtrl();//анлок управления
         if (hitBox != null)
         {
             hitBox.setActiveHitBox(false);
         }
-        ermakLockControl.meleeFrontHitBox.setActiveHitBox(false);
-        ermakLockControl.meleeLockRotation();
+        NPCLockControl.meleeFrontHitBox.setActiveHitBox(false);
+        NPCLockControl.meleeLockRotation();
     }
     public void takeSignal3()
     {
-        ermakLockControl.ermakAnim.SetInteger("punchNum", 0);
+        NPCLockControl.animator.SetInteger("punchNum", 0);
     }
     public void takeSignal4()
     {
@@ -37,25 +37,25 @@ public class meleeShoot : MonoBehaviour
     {
         if (AnimMoveSpeed != 0)
         {
-            animMoveVector=Gubernia502.directionFromAngle(ermakLockControl.viewBodyScript.ermakBody.transform.rotation.eulerAngles.y);
-            Vector3 rayStartPos = new Vector3(ermakLockControl.transform.position.x ,
+            animMoveVector=Gubernia502.directionFromAngle(NPCLockControl.viewBodyScript.transfmoredBody.transform.rotation.eulerAngles.y);
+            Vector3 rayStartPos = new Vector3(NPCLockControl.transform.position.x ,
                                              0f,
-                                             ermakLockControl.transform.position.z );
-            float moveSpeed = AnimMoveSpeed * ermakLockControl.ermakAnim.GetCurrentAnimatorStateInfo(0).speed;
+                                             NPCLockControl.transform.position.z );
+            float moveSpeed = AnimMoveSpeed * NPCLockControl.animator.GetCurrentAnimatorStateInfo(0).speed;
             RaycastHit hit;
-            if(Physics.SphereCast(rayStartPos, ermakLockControl.moveScript.colliderRadius,
+            if(Physics.SphereCast(rayStartPos, NPCLockControl.moveScript.colliderRadius,
                                                       new Vector3(animMoveVector.x, 0, animMoveVector.z),out hit,
                                                       moveSpeed, cantMoveLayers, QueryTriggerInteraction.Ignore))
             {
-                if (hit.distance > Gubernia502.constData.moveMinHitDistance)
+                if (hit.distance > Gubernia502.constData.mobMoveMinHitDistance)
                 {
-                    ermakLockControl.transform.Translate(animMoveVector * (hit.distance- Gubernia502.constData.moveMinHitDistance)*
-                        ermakLockControl.ermakAnim.GetCurrentAnimatorStateInfo(0).speed);
+                    NPCLockControl.transform.Translate(animMoveVector * (hit.distance- Gubernia502.constData.mobMoveMinHitDistance)*
+                        NPCLockControl.animator.GetCurrentAnimatorStateInfo(0).speed);
                 }
             }
             else
             {
-                ermakLockControl.transform.Translate(animMoveVector * moveSpeed);
+                NPCLockControl.transform.Translate(animMoveVector * moveSpeed);
             }
         }
     }

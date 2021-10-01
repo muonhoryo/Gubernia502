@@ -25,7 +25,7 @@ public class mapRedactor : MonoBehaviour//singltone
         wall,
         enemy
     }
-    private batrakBehavior.startMode enemyStartBehavior = batrakBehavior.startMode.desactiveIdle;
+    private mobBehavior.startMode enemyStartBehavior = mobBehavior.startMode.desactiveIdle;
     private addingObj addingObjType = addingObj.weapon;
     private redactorMode mode = redactorMode.adding;
     private Gubernia502.simpleFun updateAction;
@@ -55,7 +55,7 @@ public class mapRedactor : MonoBehaviour//singltone
     public Text[] propertiesFields = new Text[] { };
 
     public List<GameObject> enemyPatrulPoints = new List<GameObject> { };
-    public List<batrakBehavior> noneActiveEnemy = new List<batrakBehavior> { };
+    public List<mobBehavior> noneActiveEnemy = new List<mobBehavior> { };
     private void setMovingMode()
     {
         mode = redactorMode.moving;
@@ -219,16 +219,16 @@ public class mapRedactor : MonoBehaviour//singltone
     {
         switch (enemyStartBehavior)
         {
-            case batrakBehavior.startMode.passivePatrul:
-                enemyStartBehavior = batrakBehavior.startMode.desactiveIdle;
+            case mobBehavior.startMode.passivePatrul:
+                enemyStartBehavior = mobBehavior.startMode.desactiveIdle;
                 addingEnemyBehavior.text = "desactiveIdle";
                 break;
-            case batrakBehavior.startMode.desactiveIdle:
-                enemyStartBehavior = batrakBehavior.startMode.stayOnPoint;
+            case mobBehavior.startMode.desactiveIdle:
+                enemyStartBehavior = mobBehavior.startMode.stayOnPoint;
                 addingEnemyBehavior.text = "stayOnPoint";
                 break;
-            case batrakBehavior.startMode.stayOnPoint:
-                enemyStartBehavior = batrakBehavior.startMode.passivePatrul;
+            case mobBehavior.startMode.stayOnPoint:
+                enemyStartBehavior = mobBehavior.startMode.passivePatrul;
                 addingEnemyBehavior.text = "passivePatrul";
                 break;
         }
@@ -376,8 +376,8 @@ public class mapRedactor : MonoBehaviour//singltone
             RaycastHit[] hits = Physics.SphereCastAll(new Ray(pos, Vector3.down), 0.5f, 1, 9984,QueryTriggerInteraction.Ignore);
             if (hits.Length == 0)
             {
-                batrakBehavior enemy = Instantiate(Gubernia502.constData.enemies[0], new Vector3(pos.x, 0, pos.z),
-                    Quaternion.Euler(Vector3.zero)).GetComponent<batrakBehavior>();
+                mobBehavior enemy = Instantiate(Gubernia502.constData.enemies[0], new Vector3(pos.x, 0, pos.z),
+                    Quaternion.Euler(Vector3.zero)).GetComponent<mobBehavior>();
                 if (enemyPatrulPoints.Count > 0)
                 {
                     for(int i=0,j=enemyPatrulPoints.Count;i<j;i++)

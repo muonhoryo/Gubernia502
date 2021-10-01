@@ -20,12 +20,12 @@ public class debugConsole : MonoBehaviour//singltone
                 debugConsoleText.text = null;
                 enabled = false;
         debugConsolePanel.SetActive(false);
-        Gubernia502.playerController.ermakLockControl.unlockCtrl();
-        Gubernia502.playerController.ermakLockControl.unlockRotate();
+        Gubernia502.playerController.NPCLockControl.unlockCtrl();
+        Gubernia502.playerController.NPCLockControl.unlockRotate();
     }
     private void Update()
     {
-        if (Input.anyKeyDown)
+        if (Input.anyKeyDown&&Gubernia502.constData.debugStatus)
         {
             if (Input.GetKeyDown(KeyCode.Return))
             {
@@ -41,22 +41,22 @@ public class debugConsole : MonoBehaviour//singltone
                 switch (command)
                 {
                     case "killGG":
-                        Gubernia502.playerController.ermakLockControl.hpSystem.takeNormalDamage(10000, 0, 0f,Vector3.zero);
-                        Gubernia502.playerController.ermakLockControl.hpSystem.takeNormalDamage(10000, 0, 0f,Vector3.zero);
+                        Gubernia502.playerController.NPCLockControl.hpSystem.takeNormalDamage(10000, 0, 0f,Vector3.zero);
+                        Gubernia502.playerController.NPCLockControl.hpSystem.takeNormalDamage(10000, 0, 0f,Vector3.zero);
                         break;
                     case "takeDmg":
                         command = debugConsoleText.text.Substring(debugConsoleText.text.IndexOf("_") + 1);
                         command = command.Replace(" ", "");
                         if(int.TryParse(command,out int dmg) && dmg > 0)
                         {
-                            Gubernia502.playerController.ermakLockControl.hpSystem.takeNormalDamage(dmg,0, 0, Vector3.zero);
+                            Gubernia502.playerController.NPCLockControl.hpSystem.takeNormalDamage(dmg,0, 0, Vector3.zero);
                         }
                         break;
                     case "deleteWpn":
-                        Gubernia502.playerController.ermakLockControl.iteractionScript.selectedWeaponScript.takeDurabilityDmg(
-                            Gubernia502.playerController.ermakLockControl.ermakInventory.EquippedWeapons.durability + 1);
-                        Gubernia502.playerController.ermakLockControl.isBreakWeapon(
-                            Gubernia502.playerController.ermakLockControl.transform.rotation.eulerAngles.y);
+                        Gubernia502.playerController.NPCLockControl.iteractionScript.selectedWeaponScript.takeDurabilityDmg(
+                            Gubernia502.playerController.NPCLockControl.Inventory.EquippedWeapons.durability + 1);
+                        Gubernia502.playerController.NPCLockControl.isBreakWeapon(
+                            Gubernia502.playerController.NPCLockControl.transform.rotation.eulerAngles.y);
                         break;
                     case "loadMap":
                         saveSystem.loadMap();

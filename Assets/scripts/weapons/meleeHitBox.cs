@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class meleeHitBox : MonoBehaviour
 {
-    public ermakLockControl ermakLockControl;
+    public NPCLockControl NPCLockControl;
     public int hitDmg=1;
     [SerializeField]
     private Collider hitBox;
@@ -15,17 +15,17 @@ public class meleeHitBox : MonoBehaviour
     }
     protected virtual void OnTriggerEnter(Collider other)
     {
-        if ( other.gameObject!=ermakLockControl.gameObject) 
+        if ( other.gameObject!=NPCLockControl.gameObject) 
         {
-            if (other.TryGetComponent(out hitPointSystem hpSystem)&&!ermakLockControl.meleeShoot.hitBox.damagedHPSys.Contains(hpSystem))
+            if (other.TryGetComponent(out hitPointSystem hpSystem)&&!NPCLockControl.meleeShoot.hitBox.damagedHPSys.Contains(hpSystem))
             {
-                hpSystem.takeNormalDamage(hitDmg, ermakLockControl.transform.rotation.eulerAngles.y, ermakLockControl.transform.position);
-                if (ermakLockControl.ermakInventory.hand.enabled == false)
+                hpSystem.takeNormalDamage(hitDmg, NPCLockControl.transform.rotation.eulerAngles.y, NPCLockControl.transform.position);
+                if (NPCLockControl.Inventory.hand.enabled == false)
                 {
-                    if (ermakLockControl.ermakSelectedWeapon.GetComponentInChildren<weapon>().takeDurabilityDmg())
+                    if (NPCLockControl.selectedWeaponScript.GetComponentInChildren<weapon>().takeDurabilityDmg())
                     {
-                        ermakLockControl.ermakAnim.SetInteger("punchNum", -1);
-                        ermakLockControl.isBreakWeapon(ermakLockControl.viewBodyScript.ermakBody.transform.rotation.eulerAngles.y);
+                        NPCLockControl.animator.SetInteger("punchNum", -1);
+                        NPCLockControl.isBreakWeapon(NPCLockControl.viewBodyScript.transfmoredBody.transform.rotation.eulerAngles.y);
                     }
                 }
                 damagedHPSys.Add(hpSystem);

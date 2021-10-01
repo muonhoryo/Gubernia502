@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class batrakMeleeShoot : MonoBehaviour
+public class mobMeleeShoot : MonoBehaviour
 {
-    public batrakWeaponHitBox hitBox;
-    public batrakBehavior batrakBehavior;
+    public mobWeaponHitBox hitBox;
+    public mobBehavior mobBehavior;
     private Vector3 animMoveVector;
     public float AnimMoveSpeed = 0;
     public int cantMoveLayers = 8960;
@@ -43,7 +43,7 @@ public class batrakMeleeShoot : MonoBehaviour
         {
             hitBox.coll.enabled = true;
         }
-        batrakBehavior.meleeFrontHitBox.coll.enabled = true;
+        mobBehavior.meleeFrontHitBox.coll.enabled = true;
     }
     public void takeJerkSignal1()
     {
@@ -56,17 +56,17 @@ public class batrakMeleeShoot : MonoBehaviour
         {
             hitBox.coll.enabled = false;
         }
-        batrakBehavior.meleeFrontHitBox.coll.enabled = false;
-        if (batrakBehavior.targetEnemy != null)
+        mobBehavior.meleeFrontHitBox.coll.enabled = false;
+        if (mobBehavior.targetEnemy != null)
         {
-            if (Vector3.Distance(batrakBehavior.transform.position, batrakBehavior.targetEnemy.transform.position) >
-                Gubernia502.constData.batrakMaxSimpleCombatDistance)
+            if (Vector3.Distance(mobBehavior.transform.position, mobBehavior.targetEnemy.transform.position) >
+                Gubernia502.constData.mobMaxSimpleCombatDistance)
             {
-                batrakBehavior.currentState = batrakBehavior.batrakBehaviorStateMachine.BShunt;
+                mobBehavior.currentState = mobBehavior.mobBehaviorStateMachine.BShunt;
             }
             else
             {
-                batrakBehavior.currentState.onStateEnter(batrakBehavior);
+                mobBehavior.currentState.onStateEnter(mobBehavior);
             }
         }
     }
@@ -76,53 +76,53 @@ public class batrakMeleeShoot : MonoBehaviour
         {
             hitBox.coll.enabled = false;
         }
-        batrakBehavior.meleeFrontHitBox.coll.enabled = false;
-        if (batrakBehavior.targetEnemy != null)
+        mobBehavior.meleeFrontHitBox.coll.enabled = false;
+        if (mobBehavior.targetEnemy != null)
         {
-            if (Vector3.Distance(batrakBehavior.transform.position, batrakBehavior.targetEnemy.transform.position) >
-                Gubernia502.constData.batrakMaxSimpleCombatDistance)
+            if (Vector3.Distance(mobBehavior.transform.position, mobBehavior.targetEnemy.transform.position) >
+                Gubernia502.constData.mobMaxSimpleCombatDistance)
             {
-                batrakBehavior.currentState = batrakBehavior.batrakBehaviorStateMachine.BShunt;
+                mobBehavior.currentState = mobBehavior.mobBehaviorStateMachine.BShunt;
             }
             else
             {
-                batrakBehavior.currentState=batrakBehavior.batrakBehaviorStateMachine.BSsimpleAttack;
+                mobBehavior.currentState=mobBehavior.mobBehaviorStateMachine.BSsimpleAttack;
             }
         }
         disableTrailHitBox();
     }
     public void takeSignal3()
     {
-        batrakBehavior.batrakAnim.SetInteger("punchNum", 0);
-        batrakBehavior.bodyRotateScript.enabled = false;
+        mobBehavior.animator.SetInteger("punchNum", 0);
+        mobBehavior.bodyRotateScript.enabled = false;
     }
     public void takeSignal4()
     {
-        batrakBehavior.onRotateMoveDone();
+        mobBehavior.onRotateMoveDone();
     }
     public void Update()
     {
         if (AnimMoveSpeed != 0)
         {
-            animMoveVector = Gubernia502.directionFromAngle(batrakBehavior.bodyRotateScript.rotatedBody.transform.rotation.eulerAngles.y);
-            Vector3 rayStartPos = new Vector3(batrakBehavior.transform.position.x,
+            animMoveVector = Gubernia502.directionFromAngle(mobBehavior.bodyRotateScript.rotatedBody.transform.rotation.eulerAngles.y);
+            Vector3 rayStartPos = new Vector3(mobBehavior.transform.position.x,
                                              0,
-                                             batrakBehavior.transform.position.z);
-            float moveSpeed = AnimMoveSpeed * batrakBehavior.batrakAnim.GetCurrentAnimatorStateInfo(0).speed;
+                                             mobBehavior.transform.position.z);
+            float moveSpeed = AnimMoveSpeed * mobBehavior.animator.GetCurrentAnimatorStateInfo(0).speed;
             RaycastHit hit;
-            if (Physics.SphereCast( rayStartPos, batrakBehavior.moveScript.sphereCastRadius,
+            if (Physics.SphereCast( rayStartPos, mobBehavior.moveScript.sphereCastRadius,
                                                       new Vector3(animMoveVector.x, 0, animMoveVector.z), out hit,
                                                       moveSpeed, cantMoveLayers, QueryTriggerInteraction.Ignore))
             {
-                if (hit.distance > Gubernia502.constData.moveMinHitDistance)
+                if (hit.distance > Gubernia502.constData.mobMoveMinHitDistance)
                 {
-                    batrakBehavior.transform.Translate(animMoveVector * (hit.distance- Gubernia502.constData.moveMinHitDistance) *
-                        batrakBehavior.batrakAnim.GetCurrentAnimatorStateInfo(0).speed);
+                    mobBehavior.transform.Translate(animMoveVector * (hit.distance- Gubernia502.constData.mobMoveMinHitDistance) *
+                        mobBehavior.animator.GetCurrentAnimatorStateInfo(0).speed);
                 }
             }
             else
             {
-                batrakBehavior.transform.Translate(animMoveVector * moveSpeed);
+                mobBehavior.transform.Translate(animMoveVector * moveSpeed);
             }
         }
     }

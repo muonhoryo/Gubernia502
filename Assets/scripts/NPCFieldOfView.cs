@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class ermakFieldOfView : MonoBehaviour
+public abstract class NPCFieldOfView : MonoBehaviour
 {
 	protected class fieldCorrecter
     {
-        public fieldCorrecter(ermakFieldOfView owner,ViewCastInfo leftViewCast,ViewCastInfo rightViewCast,float range)
+        public fieldCorrecter(NPCFieldOfView owner,ViewCastInfo leftViewCast,ViewCastInfo rightViewCast,float range)
         {
 			this.owner = owner;
 			this.leftViewCast = leftViewCast;
@@ -68,7 +68,7 @@ public abstract class ermakFieldOfView : MonoBehaviour
 			return correctPoint;
         }
 
-        readonly ermakFieldOfView owner;
+        readonly NPCFieldOfView owner;
 		List<Vector3> correctPoint;
 		ViewCastInfo leftViewCast;
 		ViewCastInfo rightViewCast;
@@ -112,7 +112,7 @@ public abstract class ermakFieldOfView : MonoBehaviour
 	{
 		return ViewCast(this, globalAngle, rayCastRange);
 	}
-	protected static ViewCastInfo ViewCast(ermakFieldOfView fieldOfView,float globalAngle, float rayCastRange)
+	protected static ViewCastInfo ViewCast(NPCFieldOfView fieldOfView,float globalAngle, float rayCastRange)
 	{
 		Vector3 dir = Gubernia502.directionFromAngle(globalAngle);//направление для рейкаста
 		RaycastHit hit;

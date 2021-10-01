@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc94d15bc72b1684f9c55be947208f89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  batrakBehavior: {fileID: 0}
+  mobBehavior: {fileID: 0}
   nextPunchNum: 2
 --- !u!1102 &-7602604064002717309
 AnimatorState:
@@ -494,7 +494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc94d15bc72b1684f9c55be947208f89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  batrakBehavior: {fileID: 0}
+  mobBehavior: {fileID: 0}
   nextPunchNum: 1
 --- !u!114 &-5302003191718682456
 MonoBehaviour:
@@ -894,7 +894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc94d15bc72b1684f9c55be947208f89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  batrakBehavior: {fileID: 0}
+  mobBehavior: {fileID: 0}
   nextPunchNum: 0
 --- !u!1101 &-1651565165581629606
 AnimatorStateTransition:

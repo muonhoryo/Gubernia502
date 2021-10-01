@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class batrakBodyRotateForView : bodyRotateForView
+public class mobBodyRotateForView : bodyRotateForView
 {
     [SerializeField]
-    batrakBehavior batrakBehavior;
+    mobBehavior mobBehavior;
     public Gubernia502.simpleFun rotateMode;
     private Gubernia502.simpleFun onRotationDone;
     private Gubernia502.simpleFun onDisable=delegate() { };
     protected override float rotationSpeed
     {
-        get => batrakBehavior.currentState.rotationSpeed();
+        get => mobBehavior.currentState.rotationSpeed();
     }
     protected override void enableThisScript( bool enable = true)
     {
@@ -22,13 +22,13 @@ public class batrakBodyRotateForView : bodyRotateForView
         else
         {
             bool isHighAngle = Gubernia502.differenceOf2Angle(NeededDirectionAngle, rotatedBody.rotation.eulerAngles.y) >
-                Gubernia502.constData.batrakSlowedMoveRotationAngle;
+                Gubernia502.constData.mobSlowedMoveRotationAngle;
             if (isHighAngle)
             {
                 onRotationDone += rotationDoneOnHighAngle;
                 onDisable += rotationDoneOnHighAngle;
             }
-            batrakBehavior.moveScript.setSpeed(isHighAngle);
+            mobBehavior.moveScript.setSpeed(isHighAngle);
         }
         enabled = enable;
     }
@@ -38,7 +38,7 @@ public class batrakBodyRotateForView : bodyRotateForView
     }
     private void DISonTrackTarget()
     {
-        batrakBehavior.moveScript.setSpeed();
+        mobBehavior.moveScript.setSpeed();
         rotateMode = rotateWithMove;
     }
     private void DISonlyRotate()
@@ -74,11 +74,11 @@ public class batrakBodyRotateForView : bodyRotateForView
     }
     private void rotationDone()
     {
-        batrakBehavior.onRotateMoveDone();
+        mobBehavior.onRotateMoveDone();
     }
     private void rotationDoneOnHighAngle()
     {
-        batrakBehavior.moveScript.setSpeed();
+        mobBehavior.moveScript.setSpeed();
         onRotationDone -= rotationDoneOnHighAngle;
     }
     protected void OnDisable()
@@ -89,7 +89,7 @@ public class batrakBodyRotateForView : bodyRotateForView
     private void rotateWithMove()
     {
         base.Update();
-        batrakBehavior.moveScript.directionAngle = rotatedBody.rotation.eulerAngles.y;
+        mobBehavior.moveScript.directionAngle = rotatedBody.rotation.eulerAngles.y;
     }
     private void rotateWithOutMove()
     {
@@ -97,9 +97,9 @@ public class batrakBodyRotateForView : bodyRotateForView
     }
     private void rotateToTarget()
     {
-        if (batrakBehavior.targetEnemy != null)
+        if (mobBehavior.targetEnemy != null)
         {
-            neededDirectionAngle = Gubernia502.angleFromDirection(batrakBehavior.targetEnemy.transform.position - transform.position);
+            neededDirectionAngle = Gubernia502.angleFromDirection(mobBehavior.targetEnemy.transform.position - transform.position);
             if (rotatedBody.rotation.eulerAngles.y < minRotationAngle ||
                 rotatedBody.rotation.eulerAngles.y > maxRotationAngle)
             {

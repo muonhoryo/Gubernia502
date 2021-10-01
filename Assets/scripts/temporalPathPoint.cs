@@ -18,15 +18,4 @@ public class temporalPathPoint : MonoBehaviour
     {
         position = gameObject.transform.position;
     }
-    /*protected void Update()
-    {
-        test = new List<string> { };
-        if (ways.Count > 0)
-        {
-            for (int i = 0; i < ways.Count; i++)
-            {
-                test.Add(ways[i].endPoint.gameObject.name);
-            }
-        }
-    }*/
 }

@@ -367,13 +367,13 @@ public static class saveSystem
             }
         }
         str = string.Concat(str,"\t],\n\t\"mainHero\": {\n\t\t\"position\": {\n\t\t\t\"x\": "+
-            Gubernia502.playerController.ermakLockControl.transform.position.x.ToString().Replace(",", ".") + ",\n\t\t\t\"y\": "+
-            Gubernia502.playerController.ermakLockControl.transform.position.y.ToString().Replace(",", ".") + ",\n\t\t\t\"z\": "+
-            Gubernia502.playerController.ermakLockControl.transform.position.z.ToString().Replace(",", ".") + 
+            Gubernia502.playerController.NPCLockControl.transform.position.x.ToString().Replace(",", ".") + ",\n\t\t\t\"y\": "+
+            Gubernia502.playerController.NPCLockControl.transform.position.y.ToString().Replace(",", ".") + ",\n\t\t\t\"z\": "+
+            Gubernia502.playerController.NPCLockControl.transform.position.z.ToString().Replace(",", ".") + 
             "\n\t\t},\n\t\t\"yRotation\": "+
-            Gubernia502.playerController.ermakLockControl.bodyRotateScript.rotatedBody.eulerAngles.y.ToString().Replace(",", ".") + 
-            ",\n\t\t\"shieldDuration\": "+Gubernia502.playerController.ermakLockControl.hpSystem.shieldDurability+",\n\t\t\"HPpoint\": "+
-            Gubernia502.playerController.ermakLockControl.hpSystem.hitPoint+"\n\t},\n\t\"enemies\": [\n");
+            Gubernia502.playerController.NPCLockControl.bodyRotateScript.rotatedBody.eulerAngles.y.ToString().Replace(",", ".") + 
+            ",\n\t\t\"shieldDuration\": "+Gubernia502.playerController.NPCLockControl.hpSystem.shieldDurability+",\n\t\t\"HPpoint\": "+
+            Gubernia502.playerController.NPCLockControl.hpSystem.hitPoint+"\n\t},\n\t\"enemies\": [\n");
         if (Gubernia502.enemies.Count > 0)
         {
             for(int i = 0; i <= Gubernia502.enemies.Count-1; i++)

@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Threading;
 
-public class batrakMove : MonoBehaviour
+public class mobMove : MonoBehaviour
 {
     public Gubernia502.getFloatFun moveSpeed { get; private set; }
-    public CapsuleCollider batrakCollider;
+    public CapsuleCollider mobCollider;
     public float sphereCastRadius { get; private set; }
-    public batrakBehavior batrakBehavior;
+    public mobBehavior mobBehavior;
     private Gubernia502.simpleFun onDisable=delegate() { };
     private Gubernia502.simpleFun updateMove;
     [SerializeReference]
@@ -30,7 +30,7 @@ public class batrakMove : MonoBehaviour
         set
         {
             NeededDirection = value;
-            batrakBehavior.bodyRotateScript.neededDirectionAngle = Gubernia502.angleFromDirection(value);
+            mobBehavior.bodyRotateScript.neededDirectionAngle = Gubernia502.angleFromDirection(value);
         }
     }
     [SerializeField]
@@ -44,7 +44,7 @@ public class batrakMove : MonoBehaviour
     }
     private void DISsetDefaultSpeed()
     {
-        moveSpeed = delegate () { return batrakBehavior.currentState.moveSpeed(); };
+        moveSpeed = delegate () { return mobBehavior.currentState.moveSpeed(); };
     }
     private void DISsetDefaultMove()
     {
@@ -73,9 +73,9 @@ public class batrakMove : MonoBehaviour
         OnDisable();
         updateMove = delegate () 
         {
-            if (batrakBehavior.targetEnemy != null)
+            if (mobBehavior.targetEnemy != null)
             {
-                moveTarget = batrakBehavior.targetEnemy.transform.position;
+                moveTarget = mobBehavior.targetEnemy.transform.position;
                 neededDirection = (moveTarget - transform.position).normalized;
             }
         };
@@ -101,9 +101,9 @@ public class batrakMove : MonoBehaviour
             }
             else
             {
-                if (hit.distance > Gubernia502.constData.moveMinHitDistance)
+                if (hit.distance > Gubernia502.constData.mobMoveMinHitDistance)
                 {
-                    return DirectionMove * (hit.distance - Gubernia502.constData.moveMinHitDistance);
+                    return DirectionMove * (hit.distance - Gubernia502.constData.mobMoveMinHitDistance);
                 }
                 else
                 {
@@ -117,43 +117,43 @@ public class batrakMove : MonoBehaviour
     {
         if (!searchMoveble())
         {
-            batrakBehavior.currentState.onCantMoveToPoint(batrakBehavior);
-            batrakBehavior.batrakAnim.SetFloat("Move", 0);
+            mobBehavior.currentState.onCantMoveToPoint(mobBehavior);
+            mobBehavior.animator.SetFloat("Move", 0);
             neededDirection = (moveTarget - transform.position).normalized;
             return;
         }
         Vector3 dir = setMoveTraectory();
         if(dir != Vector3.zero)
         {
-            if (Vector3.Distance(moveTarget, transform.position) > moveSpeed() + batrakBehavior.currentState.moveDoneDistance())
+            if (Vector3.Distance(moveTarget, transform.position) > moveSpeed() + mobBehavior.currentState.moveDoneDistance())
             {
                 transform.position += dir;
-                batrakBehavior.batrakAnim.SetFloat("Move", 1);
+                mobBehavior.animator.SetFloat("Move", 1);
             }
             else
             {
                 enabled = false;
-                if (batrakBehavior.currentState.moveDoneDistance() <= 0)
+                if (mobBehavior.currentState.moveDoneDistance() <= 0)
                 {
                     transform.position = moveTarget;
-                    batrakBehavior.onMovePointDone();
+                    mobBehavior.onMovePointDone();
                 }
                 else
                 {
                     transform.position += dir;
-                    batrakBehavior.currentState.onBodyMoveDone(batrakBehavior);
+                    mobBehavior.currentState.onBodyMoveDone(mobBehavior);
                 }
             }
         }
         else
         {
-            batrakBehavior.batrakAnim.SetFloat("Move", 0);
+            mobBehavior.animator.SetFloat("Move", 0);
         }
         neededDirection = (moveTarget - transform.position).normalized;
     }
     private void OnDisable()
     {
-        batrakBehavior.batrakAnim.SetFloat("Move", 0);
+        mobBehavior.animator.SetFloat("Move", 0);
         onDisable();
         onDisable = delegate () { };
     }
@@ -163,7 +163,7 @@ public class batrakMove : MonoBehaviour
     }
     private void Awake()
     {
-        sphereCastRadius = batrakCollider.radius * transform.localScale.y;
+        sphereCastRadius = mobCollider.radius * transform.localScale.y;
         DISsetDefaultMove();
     }
     private void Start()

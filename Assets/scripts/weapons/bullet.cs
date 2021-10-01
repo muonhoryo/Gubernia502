@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class bullet : MonoBehaviour
 {
+    protected bool isHit = false;
     public int hitDmg;
     public float speed;
     public Vector3 moveTraectory;
@@ -26,27 +27,26 @@ public class bullet : MonoBehaviour
         Destroy(gameObject);
         yield break;
     }
-    protected void FixedUpdate()
+    protected void LateUpdate()
     {
         if (moveDistant >= Gubernia502.constData.bulletMaxMoveDistant) { Destroy(gameObject); }
-        float newSpeed =Time.deltaTime * speed;
-        RaycastHit hit; 
-        Physics.SphereCast(transform.position, collRadius, moveTraectory, out hit, newSpeed+coll.height,
+        float newSpeed = speed*Time.deltaTime;
+        RaycastHit[] hits=Physics.SphereCastAll(transform.position, collRadius, moveTraectory, newSpeed + coll.height,
              8960, QueryTriggerInteraction.Collide);
         moveDistant += newSpeed;
-        if (hit.collider!=null&&hit.collider.gameObject!=bulletOwner)
+        if ( hits.Length>0&&hits[0].collider.gameObject!=bulletOwner)
         {
-            gameObject.transform.position += moveTraectory * hit.distance;
-            OnTriggerEnter(hit.collider);
+            gameObject.transform.position += moveTraectory * hits[0].distance;
+            onHit(hits[0].collider);
         }
         else
         {
             gameObject.transform.position += moveTraectory * newSpeed;
         }
     }
-    public virtual void OnTriggerEnter(Collider other)
+    protected virtual void onHit(Collider other)
     {
-        if (other.gameObject != bulletOwner && other.TryGetComponent(out hitPointSystem hpSystem))
+        if ( other.gameObject != bulletOwner && other.TryGetComponent(out hitPointSystem hpSystem))
         {
             hpSystem.takeNormalDamage(hitDmg, transform.rotation.eulerAngles.y, transform.position);//передается направление полета пули
             StartCoroutine(bulletIsHit(trail.time));

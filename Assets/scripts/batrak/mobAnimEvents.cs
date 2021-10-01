@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class batrakAnimEvents : MonoBehaviour
+public class mobAnimEvents : MonoBehaviour
 {
     [SerializeField]
-    batrakBehavior batrakBehavior;
+    mobBehavior mobBehavior;
     public void onAnimExit()
     {
-        batrakBehavior.onRotateMoveDone();
+        mobBehavior.onRotateMoveDone();
     }
 }

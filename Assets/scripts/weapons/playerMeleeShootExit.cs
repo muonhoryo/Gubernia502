@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class serednyakMeleeShootExit : meleeShootExit//singltone
+public class playerMeleeShootExit : meleeShootExit//singltone
 {
-    static serednyakMeleeShootExit singltone = null;
+    static playerMeleeShootExit singltone = null;
     public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         if (Gubernia502.playerController.meleeShoot.isNextAttack)

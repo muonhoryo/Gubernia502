@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3965151dfdcf527439edce7cfae0d6b7, type: 3}
   m_Name: constData
   m_EditorClassIdentifier: 
-  batrakEnemyFractions: 00000000
-  batrakFriendFractions: 01000000
+  mobsEnemyFractions: 
+  mobsFriendFractions: 
   saveFile: {fileID: 4900000, guid: 96324b1d0960f5c40b8e1e9ee27014f1, type: 3}
   threadFrameTime: 0.008
   mainMenuSelectorDeadZone: 0.1
-  mainMenuSelectorSpeed: 40
+  mainMenuSelectorSpeed: 400
   soundDegressSpeed: 0.5
   alifeObjColliderRadius: 0.25
   rifleBulletSpeed: 25
@@ -36,45 +36,45 @@ MonoBehaviour:
   hideGuiDelayTime: 7
   soundIndicMax: 15
   soundIndicMin: 1.5
-  mainCameraMoveSpeed: 3
+  mainCameraMoveSpeed: 0.3
   mainCameraHeight: 20
   redactorCameraMoveSpeedMod: 0.0002
   mainCameraMaxMoveRadius: 0.8
-  ermakMeleeBodyRotSpeed: 1
-  ermakMoveSoundVolume: 3
-  ermakMinSoundVolume: 0.5
-  ermakHandsSoundVolume: 1.5
+  NPCMeleeBodyRotSpeed: 0
+  NPCMoveSoundVolume: 0
+  NPCMinSoundVolume: 0
+  NPCHandsSoundVolume: 0
   absolutVisionDistance: 10
   absolutVisionQuality: 15
-  ermakSecondFieldOfViewRange: 1
+  SecondFieldOfViewRange: 0
   fieldOfViewRayCastHeight: 1.66
   fieldOfViewEdgeDstThreshold: 0.01
   fieldOfViewEdgeResolveIterations: 12
-  ermakFieldOfViewQuality: 19
-  ermakFieldOfViewAngle: 80
-  ermakFieldOfViewRange: 4.5
-  ermakPickUpItemAnimDelay: 1
-  ermakPickUpItemAnimSpeed: 2
-  ermakBodyRotationSpeed: 6
-  ermakHandsDmg: 20
-  ermakHeadRotationSpeed: 8
-  ermakMoveSpeed: 2.5
-  batrakJerkDmg: 10
-  batrakJerkMinAngle: 90
-  batrakSimpleAttackDmg: 25
-  moveMinHitDistance: 0.07
-  batrakTimeToDeath: 3
-  batrakPathFindingIteractionsCount: 30
-  batrakPassiveMoveSpeed: 0.007
-  batrakActiveMoveSpeed: 0.073
-  batrakSlowedMoveRotationAngle: 50
-  batrakSimpleAtkRotSpeed: 2
-  batrakActiveRotationSpeed: 8
-  batrakPassiveRotationSpeed: 2
-  batrakMaxSimpleCombatDistance: 1.2
-  batrakPatrulIdleStateTime: 3
-  batrakOnAttackMoveDoneDistance: 0.6
-  batrakCheckSoundDelay: 0.25
+  FieldOfViewQuality: 0
+  FieldOfViewAngle: 0
+  FieldOfViewRange: 0
+  NPCPickUpItemAnimDelay: 0
+  NPCPickUpItemAnimSpeed: 0
+  NPCBodyRotationSpeed: 0
+  NPCHandsDmg: 0
+  NPCHeadRotationSpeed: 0
+  NPCMoveSpeed: 0
+  mobJerkDmg: 0
+  mobJerkMinAngle: 0
+  mobSimpleAttackDmg: 0
+  mobMoveMinHitDistance: 0
+  mobTimeToDeath: 0
+  mobPathFindingIteractionsCount: 0
+  mobPassiveMoveSpeed: 0
+  mobActiveMoveSpeed: 0
+  mobSlowedMoveRotationAngle: 0
+  mobSimpleAtkRotSpeed: 0
+  mobActiveRotationSpeed: 0
+  mobPassiveRotationSpeed: 0
+  mobMaxSimpleCombatDistance: 0
+  mobPatrulIdleStateTime: 0
+  mobOnAttackMoveDoneDistance: 0
+  mobCheckSoundDelay: 0
   saveLoader: {fileID: 8781439751362166634, guid: a23f10da67370794fa445105d348d6ea, type: 3}
   drawingSphere: {fileID: 7813979459902944508, guid: 8f9fa112053f211499ff9cb8ba99b824, type: 3}
   gamingItems:

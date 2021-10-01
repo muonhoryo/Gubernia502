@@ -2,28 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class batrakMeleeShootExit : StateMachineBehaviour
+public class mobMeleeShootExit : StateMachineBehaviour
 {
-    public batrakBehavior batrakBehavior;
+    public mobBehavior mobBehavior;
     public int nextPunchNum;
     public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if (batrakBehavior.meleeFrontHitBox.coll.enabled)
+        if (mobBehavior.meleeFrontHitBox.coll.enabled)
         {
-            batrakBehavior.meleeFrontHitBox.coll.enabled = false;
-            batrakBehavior.meleeShoot.disableHitBox();
+            mobBehavior.meleeFrontHitBox.coll.enabled = false;
+            mobBehavior.meleeShoot.disableHitBox();
         }
         if (animator.GetInteger("punchNum") != nextPunchNum)
         {
             animator.SetInteger("punchNum", 0);
-            if (batrakBehavior.bodyRotateScript.enabled)
+            if (mobBehavior.bodyRotateScript.enabled)
             {
-                batrakBehavior.bodyRotateScript.enabled = false;
+                mobBehavior.bodyRotateScript.enabled = false;
             }
         }
     }
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        batrakBehavior = animator.GetComponent<batrakMeleeShoot>().batrakBehavior;
+        mobBehavior = animator.GetComponent<mobMeleeShoot>().mobBehavior;
     }
 }

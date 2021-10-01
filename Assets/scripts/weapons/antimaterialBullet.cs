@@ -20,7 +20,7 @@ public class antimaterialBullet : bullet
         }
         return base.bulletIsHit(delayTime);
     }
-    public override void OnTriggerEnter(Collider other)
+    protected override void onHit(Collider other)
     {
         if (other.gameObject != bulletOwner && other.TryGetComponent(out hitPointSystem hpSystem))
         {

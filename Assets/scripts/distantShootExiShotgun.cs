@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class distantShootExiShotgun : StateMachineBehaviour
 {
-    protected ermakLockControl ermakLockControl;
+    protected NPCLockControl NPCLockControl;
     public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.SetBool("reload", false);
-        Destroy(ermakLockControl.distantShoot.animatiedMagazine);
-        ermakLockControl.weaponDispersion.leftLine.gameObject.SetActive(true);
-        ermakLockControl.weaponDispersion.rightLine.gameObject.SetActive(true);
+        Destroy(NPCLockControl.distantShoot.animatiedMagazine);
+        NPCLockControl.weaponDispersion.leftLine.gameObject.SetActive(true);
+        NPCLockControl.weaponDispersion.rightLine.gameObject.SetActive(true);
     }
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        ermakLockControl = animator.GetComponent<distantShoot>().ermakLockControl;
-        ermakLockControl.weaponDispersion.leftLine.gameObject.SetActive(false);
-        ermakLockControl.weaponDispersion.rightLine.gameObject.SetActive(false);
+        NPCLockControl = animator.GetComponent<distantShoot>().NPCLockControl;
+        NPCLockControl.weaponDispersion.leftLine.gameObject.SetActive(false);
+        NPCLockControl.weaponDispersion.rightLine.gameObject.SetActive(false);
     }
 }

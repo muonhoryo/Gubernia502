@@ -5,20 +5,20 @@ using UnityEngine;
 public class ermakWeaponDispersion : MonoBehaviour
 {
     [SerializeField]
-    private ermakLockControl ermakLockControl;
+    private NPCLockControl NPCLockControl;
     public GameObject leftLine;
     public GameObject rightLine;
     public float dispersion = 1;
     public float rotateAngle=0;
     private void LateUpdate()
     {
-        rotateAngle = ermakLockControl.viewBodyScript.ermakBody.rotation.eulerAngles.y + ermakLockControl.ermakAnim.GetFloat("HeadView") - 22.5f;
+        rotateAngle = NPCLockControl.viewBodyScript.transfmoredBody.rotation.eulerAngles.y + NPCLockControl.animator.GetFloat("HeadView") - 22.5f;
         gameObject.transform.rotation = Quaternion.Euler(0f,
                                                     rotateAngle,
                                                     0f);
-        if (ermakLockControl.iteractionScript.selectedWeaponScript.gameObject != null)
+        if (NPCLockControl.iteractionScript.selectedWeaponScript.gameObject != null)
         {
-            gameObject.transform.position = ermakLockControl.iteractionScript.selectedWeaponScript.bulletStart.transform.position ;
+            gameObject.transform.position = NPCLockControl.iteractionScript.selectedWeaponScript.bulletStart.transform.position ;
         }
         else
         {

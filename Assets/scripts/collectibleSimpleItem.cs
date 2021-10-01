@@ -16,12 +16,12 @@ public class collectibleSimpleItem : collectiblleItem
     public override void OnMouseOver()
     {
         base.OnMouseOver();
-        Gubernia502.playerController.ermakLockControl.iteractionScript.usedObj = gameObject;
-        Gubernia502.playerController.ermakLockControl.iteractionScript.usedObjScript =this;
+        Gubernia502.playerController.NPCLockControl.iteractionScript.usedObj = gameObject;
+        Gubernia502.playerController.NPCLockControl.iteractionScript.usedObjScript =this;
     }
-    public override void addItem(ermakLockControl ermakLockControl)
+    public override void addItem(NPCLockControl ermakLockControl)
     {
-        ermakLockControl.ermakInventory.addItem(this);
+        ermakLockControl.Inventory.addItem(this);
     }
     private void Awake()
     {

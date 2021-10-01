@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ermakInventory : MonoBehaviour
+public class NPCInventory : MonoBehaviour
 {
     public class weaponSlot
     {
@@ -69,7 +69,7 @@ public class ermakInventory : MonoBehaviour
     private weapon Hand;
     public weapon hand { get=>Hand; private set=>Debug.LogError("trying to set hand"); }
     [SerializeField]
-    protected ermakLockControl ermakLockControl;
+    protected NPCLockControl NPCLockControl;
     public weaponSlot EquippedWeapons
     {
         get
@@ -160,35 +160,35 @@ public class ermakInventory : MonoBehaviour
         {
             if (selectedWeaponIndex != 0)
             {
-                Destroy(ermakLockControl.iteractionScript.selectedWeaponScript.gameObject);
+                Destroy(NPCLockControl.iteractionScript.selectedWeaponScript.gameObject);
             }
             else { hand.enabled = false; }
             selectedWeaponIndex = slot;
             if (slot!=0)
             {
                 int slotIndex = slot - 1;
-                ref weapon selectedWeaponScript = ref ermakLockControl.iteractionScript.selectedWeaponScript;
+                ref weapon selectedWeaponScript = ref NPCLockControl.iteractionScript.selectedWeaponScript;
                 selectedWeaponScript = Instantiate(equippedWeapons[slotIndex].weaponsItem.equippedWeaponPrefab,
-                                           ermakLockControl.ermakSelectedWeapon.gameObject.transform).GetComponent<weapon>();//инициализация оружия и присвоения его в выбранное
-                ermakLockControl.ermakSelectedWeapon.parentObj = 
-                    ermakLockControl.hands[equippedWeapons[slotIndex].weaponsItem.parentObj].transform;//присвоение руки,которой держится оружие
+                                           NPCLockControl.selectedWeaponScript.gameObject.transform).GetComponent<weapon>();//инициализация оружия и присвоения его в выбранное
+                NPCLockControl.selectedWeaponScript.parentObj = 
+                    NPCLockControl.hands[equippedWeapons[slotIndex].weaponsItem.parentObj].transform;//присвоение руки,которой держится оружие
                 selectedWeaponScript.transform.localPosition += equippedWeapons[slotIndex].weaponsItem.positionOnSelected;//выставление позиции удержания оружия
                 selectedWeaponScript.transform.localRotation = equippedWeapons[slotIndex].weaponsItem.rotationOnSelected;//выставление ротации удержания оружия
-                selectedWeaponScript.ermakLockControl = ermakLockControl;
-                ermakLockControl.ermakAnim.SetInteger("Weapon", equippedWeapons[slotIndex].weaponsItem.animWeaponModifier);
+                selectedWeaponScript.NPCLockControl = NPCLockControl;
+                NPCLockControl.animator.SetInteger("Weapon", equippedWeapons[slotIndex].weaponsItem.animWeaponModifier);
                 if (equippedWeapons[slotIndex].weaponsItem.isDistant == false)
                 {
-                    ermakLockControl.weaponDispersion.gameObject.SetActive(false);
-                    ermakLockControl.ermakAnim.SetBool("isDistant", false);
-                    ermakLockControl.viewBodyScript.isMeleeWeapon = 1;
-                    ermakLockControl.meleeFrontHitBox.hitDmg = equippedWeapons[slotIndex].dmg;
+                    NPCLockControl.weaponDispersion.gameObject.SetActive(false);
+                    NPCLockControl.animator.SetBool("isDistant", false);
+                    NPCLockControl.viewBodyScript.isMeleeWeapon = 1;
+                    NPCLockControl.meleeFrontHitBox.hitDmg = equippedWeapons[slotIndex].dmg;
                 }
                 else
                 {
-                    ermakLockControl.weaponDispersion.gameObject.SetActive(true);
-                    ermakLockControl.weaponDispersion.setDispersion(equippedWeapons[slotIndex].dispersion);
-                    ermakLockControl.ermakAnim.SetBool("isDistant", true);
-                    ermakLockControl.viewBodyScript.isMeleeWeapon = 0;
+                    NPCLockControl.weaponDispersion.gameObject.SetActive(true);
+                    NPCLockControl.weaponDispersion.setDispersion(equippedWeapons[slotIndex].dispersion);
+                    NPCLockControl.animator.SetBool("isDistant", true);
+                    NPCLockControl.viewBodyScript.isMeleeWeapon = 0;
                 }
                 if (gameObject.tag == "MainHero")
                 {
@@ -201,12 +201,12 @@ public class ermakInventory : MonoBehaviour
                 {
                     Gubernia502.playerController.changeAutoMode(false);
                 }
-                ermakLockControl.weaponDispersion.gameObject.SetActive(false);
-                ermakLockControl.ermakAnim.SetInteger("Weapon", 0);
-                ermakLockControl.ermakAnim.SetBool("isDistant", false);
+                NPCLockControl.weaponDispersion.gameObject.SetActive(false);
+                NPCLockControl.animator.SetInteger("Weapon", 0);
+                NPCLockControl.animator.SetBool("isDistant", false);
                 hand.enabled = true;
-                ermakLockControl.iteractionScript.selectedWeaponScript = hand;
-                ermakLockControl.meleeFrontHitBox.hitDmg = Gubernia502.constData.ermakHandsDmg;
+                NPCLockControl.iteractionScript.selectedWeaponScript = hand;
+                NPCLockControl.meleeFrontHitBox.hitDmg = Gubernia502.constData.NPCHandsDmg;
             }
         }
         else

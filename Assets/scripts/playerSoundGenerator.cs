@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class serednyakSoundGenerator : soundGenerator//singltone
+public class playerSoundGenerator : soundGenerator//singltone
 {
-    static serednyakSoundGenerator singltone = null;
+    static playerSoundGenerator singltone = null;
     [SerializeField]
     private Image soundIndicator;
     protected override float SoundLevel

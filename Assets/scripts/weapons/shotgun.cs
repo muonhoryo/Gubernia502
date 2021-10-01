@@ -8,21 +8,21 @@ public class shotgun : automat
     shootAction action=delegate() { };
     void setReload(bool mode)
     {
-        ermakLockControl.weaponDispersion.leftLine.SetActive(!mode);
-        ermakLockControl.weaponDispersion.rightLine.SetActive(!mode);
-        ermakLockControl.ermakAnim.SetBool("reload", mode);
+        NPCLockControl.weaponDispersion.leftLine.SetActive(!mode);
+        NPCLockControl.weaponDispersion.rightLine.SetActive(!mode);
+        NPCLockControl.animator.SetBool("reload", mode);
     }
     public override void reload()
     {
-        if (ermakLockControl.ermakAnim.GetBool("reload"))
+        if (NPCLockControl.animator.GetBool("reload"))
         {
             setReload(false);
         }
         else
         {
-            if (ermakLockControl.ermakInventory.EquippedWeapons.ammoInMag <
-                   ermakLockControl.ermakInventory.EquippedWeapons.maxAmmoInMag &&
-                   ermakLockControl.ermakInventory.isHaveAmmo(ermakLockControl.ermakInventory.EquippedWeapons.currentAmmoId))
+            if (NPCLockControl.Inventory.EquippedWeapons.ammoInMag <
+                   NPCLockControl.Inventory.EquippedWeapons.maxAmmoInMag &&
+                   NPCLockControl.Inventory.isHaveAmmo(NPCLockControl.Inventory.EquippedWeapons.currentAmmoId))
             {
                 setReload(true);
                 action = delegate () { setReload(false); action = delegate () { }; };

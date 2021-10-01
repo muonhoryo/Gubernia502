@@ -29,17 +29,17 @@ public class trailRenHitBox : meleeHitBox
     }
     protected override void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject != ermakLockControl.gameObject)
+        if (other.gameObject != NPCLockControl.gameObject)
         {
-            if (other.TryGetComponent(out hitPointSystem hpSystem) && !ermakLockControl.meleeFrontHitBox.damagedHPSys.Contains(hpSystem))
+            if (other.TryGetComponent(out hitPointSystem hpSystem) && !NPCLockControl.meleeFrontHitBox.damagedHPSys.Contains(hpSystem))
             {
-                hpSystem.takeNormalDamage(hitDmg, ermakLockControl.transform.rotation.eulerAngles.y, transform.position);
-                if (ermakLockControl.ermakInventory.hand.enabled == false)
+                hpSystem.takeNormalDamage(hitDmg, NPCLockControl.transform.rotation.eulerAngles.y, transform.position);
+                if (NPCLockControl.Inventory.hand.enabled == false)
                 {
-                    if (ermakLockControl.ermakSelectedWeapon.GetComponentInChildren<weapon>().takeDurabilityDmg())
+                    if (NPCLockControl.selectedWeaponScript.GetComponentInChildren<weapon>().takeDurabilityDmg())
                     {
-                        ermakLockControl.ermakAnim.SetInteger("punchNum", -1);
-                        ermakLockControl.isBreakWeapon(ermakLockControl.viewBodyScript.ermakBody.transform.rotation.eulerAngles.y);
+                        NPCLockControl.animator.SetInteger("punchNum", -1);
+                        NPCLockControl.isBreakWeapon(NPCLockControl.viewBodyScript.transfmoredBody.transform.rotation.eulerAngles.y);
                     }
                 }
                 damagedHPSys.Add(hpSystem);

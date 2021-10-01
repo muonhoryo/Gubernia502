@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class soundHear : MonoBehaviour
 {
-    public batrakBehavior batrakBehavior;
+    public mobBehavior mobBehavior;
     public List<soundGenerator> soundHears = new List<soundGenerator> { };
     private void OnTriggerEnter(Collider other)
     {
@@ -15,7 +15,7 @@ public class soundHear : MonoBehaviour
             if (!enabled&& soundHears.Count >= 1)
             {
                 enabled = true;
-                StartCoroutine(onHearedSoundDelay(Gubernia502.constData.batrakCheckSoundDelay));
+                StartCoroutine(onHearedSoundDelay(Gubernia502.constData.mobCheckSoundDelay));
             }
         }
     }
@@ -28,7 +28,7 @@ public class soundHear : MonoBehaviour
                 {
                     enabled = false;
                 StopAllCoroutines();
-                    batrakBehavior.currentState.onLostHearedSound(batrakBehavior,sound.transform.position);
+                    mobBehavior.currentState.onLostHearedSound(mobBehavior,sound.transform.position);
                 }
                 soundHears.RemoveAt(soundHears.IndexOf(sound));
         }
@@ -37,7 +37,7 @@ public class soundHear : MonoBehaviour
     {
         while (soundHears.Count>0)
         {
-            batrakBehavior.currentState.onHearedSound(batrakBehavior,soundHears[0].transform.position);
+            mobBehavior.currentState.onHearedSound(mobBehavior,soundHears[0].transform.position);
             yield return new WaitForSeconds(delayTime);
         }
         enabled = false;

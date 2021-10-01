@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class enemyViewZone : MonoBehaviour
 {
-    public batrakBehavior batrakBehavior;
+    public mobBehavior mobBehavior;
     private Gubernia502.simpleFun updateAction;
     public LayerMask ignoringLayers;
     private List<alifeDmgSystem> objInViewZone=new List<alifeDmgSystem>();
@@ -12,7 +12,7 @@ public class enemyViewZone : MonoBehaviour
     {
         alifeDmgSystem dmgSystem;
         other.TryGetComponent(out dmgSystem);
-        if (dmgSystem != null && Gubernia502.constData.batrakEnemyFractions.Contains(dmgSystem.Fraction))
+        if (dmgSystem != null && Gubernia502.constData.mobsEnemyFractions.Contains(dmgSystem.Fraction))
         {
             objInViewZone.Add(dmgSystem);
             enabled = true;
@@ -24,7 +24,7 @@ public class enemyViewZone : MonoBehaviour
         if (other.TryGetComponent(out alifeDmgSystem dmgSystem) &&objInViewZone.Contains(dmgSystem))
         {
             objInViewZone.Remove(dmgSystem);
-                if (dmgSystem == batrakBehavior.targetEnemy)
+                if (dmgSystem == mobBehavior.targetEnemy)
                 {
                     enemyWasLosted();
                 }
@@ -45,8 +45,8 @@ public class enemyViewZone : MonoBehaviour
                             objInViewZone[i].transform.position.z), out hit, 512, QueryTriggerInteraction.Ignore);
             if (hit.collider==null&&!objInViewZone[i].isDead)
             {
-                batrakBehavior.targetEnemy = objInViewZone[i];
-                objInViewZone[i].becameTarget(batrakBehavior.dmgSystem);
+                mobBehavior.targetEnemy = objInViewZone[i];
+                objInViewZone[i].becameTarget(mobBehavior.dmgSystem);
                 return true;
             }
         }
@@ -55,17 +55,17 @@ public class enemyViewZone : MonoBehaviour
     private void enemyWasLosted()
     {
         updateAction = trackEnemies;
-        batrakBehavior.enemyLastPosition = batrakBehavior.targetEnemy.transform.position;
-        batrakBehavior.currentState.onLostVisibleEnemy(batrakBehavior);
-        batrakBehavior.targetEnemy.huntEnd(batrakBehavior.dmgSystem);
-        batrakBehavior.targetEnemy = null;
+        mobBehavior.enemyLastPosition = mobBehavior.targetEnemy.transform.position;
+        mobBehavior.currentState.onLostVisibleEnemy(mobBehavior);
+        mobBehavior.targetEnemy.huntEnd(mobBehavior.dmgSystem);
+        mobBehavior.targetEnemy = null;
     }
     protected virtual void enemyWasFounded(hitPointSystem targetEnemy)
     {
         updateAction = trackVisibleTarget;
-        batrakBehavior.targetEnemy = targetEnemy;
-        targetEnemy.becameTarget(batrakBehavior.dmgSystem);
-        batrakBehavior.currentState.onVisibleFoundEnemy(batrakBehavior,targetEnemy);
+        mobBehavior.targetEnemy = targetEnemy;
+        targetEnemy.becameTarget(mobBehavior.dmgSystem);
+        mobBehavior.currentState.onVisibleFoundEnemy(mobBehavior,targetEnemy);
     }
     private void trackEnemies()
     {
@@ -90,13 +90,13 @@ public class enemyViewZone : MonoBehaviour
     }
     private void trackVisibleTarget()
     {
-        if (batrakBehavior.targetEnemy != null)
+        if (mobBehavior.targetEnemy != null)
         {
             RaycastHit hit;
             Physics.Linecast(new Vector3(transform.position.x, 0.8f, transform.position.z),
-                new Vector3(batrakBehavior.targetEnemy.transform.position.x,
+                new Vector3(mobBehavior.targetEnemy.transform.position.x,
                             0.8f,
-                            batrakBehavior.targetEnemy.transform.position.z), out hit, 512, QueryTriggerInteraction.Ignore);
+                            mobBehavior.targetEnemy.transform.position.z), out hit, 512, QueryTriggerInteraction.Ignore);
             if (hit.collider!=null)
             {
                 enemyWasLosted();

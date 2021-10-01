@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class ermakSelectedWeapon : MonoBehaviour
 {
-    public ermakLockControl ermakLockControl;
+    public NPCLockControl NPCLockControl;
     public Transform parentObj;
     protected virtual void LateUpdate()
     {
@@ -12,6 +12,6 @@ public class ermakSelectedWeapon : MonoBehaviour
     }
     protected virtual void Start()
     {
-        parentObj = ermakLockControl.hands[0].transform;
+        parentObj = NPCLockControl.hands[0].transform;
     }
 }

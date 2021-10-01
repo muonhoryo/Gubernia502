@@ -5,8 +5,9 @@ using UnityEngine;
 [CreateAssetMenu]
 public class Gubernia502ConstData: ScriptableObject
 {
-    public List<Gubernia502.fraction> batrakEnemyFractions=new List<Gubernia502.fraction> { };
-    public List<Gubernia502.fraction> batrakFriendFractions = new List<Gubernia502.fraction> { };
+    public bool debugStatus = false;
+    public List<Gubernia502.fraction> mobsEnemyFractions=new List<Gubernia502.fraction> { };
+    public List<Gubernia502.fraction> mobsFriendFractions = new List<Gubernia502.fraction> { };
     public TextAsset saveFile;
     //global const
     [Tooltip("time to working thread in one frame(in seconds)")]
@@ -66,20 +67,20 @@ public class Gubernia502ConstData: ScriptableObject
     public float mainCameraMaxMoveRadius;
     //ermak const
     [Range(0.1f, 100)]
-    public float ermakMeleeBodyRotSpeed;
+    public float NPCMeleeBodyRotSpeed;
     [Range(0.1f, 100)]
-    public float ermakMoveSoundVolume;
+    public float NPCMoveSoundVolume;
     [Range(0.1f, 100)]
-    public float ermakMinSoundVolume;
+    public float NPCMinSoundVolume;
     [Range(0.1f, 100)]
-    public float ermakHandsSoundVolume;
+    public float NPCHandsSoundVolume;
     [Range(0.1f,100)]
     public float absolutVisionDistance;
     [Range(3,1000)]
     public int absolutVisionQuality;
     [Tooltip("second field of view range")]
     [Range(0.1f, 100)]
-    public float ermakSecondFieldOfViewRange;
+    public float SecondFieldOfViewRange;
     [Tooltip("field of view raycast height")]
     [Range(0, 3)]
     public float fieldOfViewRayCastHeight;
@@ -91,69 +92,69 @@ public class Gubernia502ConstData: ScriptableObject
     public int fieldOfViewEdgeResolveIterations;
     [Tooltip("count of raycast to generate field")]
     [Range(3,1000)]
-    public int ermakFieldOfViewQuality;
+    public int FieldOfViewQuality;
     [Tooltip("field of view angle")]
     [Range(0.1f, 360)]
-    public float ermakFieldOfViewAngle;
+    public float FieldOfViewAngle;
     [Tooltip("field of view range")]
     [Range(0.1f, 100)]
-    public float ermakFieldOfViewRange;
+    public float FieldOfViewRange;
     [Tooltip("time delay on pick up item")]
     [Range(0.1f, 100)]
-    public float ermakPickUpItemAnimDelay;
+    public float NPCPickUpItemAnimDelay;
     [Tooltip("animation speed on pick up item")]
     [Range(0.1f, 100)]
-    public float ermakPickUpItemAnimSpeed;
+    public float NPCPickUpItemAnimSpeed;
     [Range(0.1f, 100)]
-    public float ermakBodyRotationSpeed;
+    public float NPCBodyRotationSpeed;
     [Range(1, 1000)]
-    public int ermakHandsDmg;
+    public int NPCHandsDmg;
     [Range(0.1f, 100f)]
-    public float ermakHeadRotationSpeed;
+    public float NPCHeadRotationSpeed;
     [Range(0, 10)]
-    public float ermakMoveSpeed;
+    public float NPCMoveSpeed;
     //batrak const
     [Range(0,1000)]
-    public int batrakJerkDmg;
+    public int mobJerkDmg;
     [Tooltip("minimum difference between batrak move angle and target move angle to jerk")]
     [Range(0,360)]
-    public float batrakJerkMinAngle;
+    public float mobJerkMinAngle;
     [Range(0,1000)]
-    public int batrakSimpleAttackDmg;
+    public int mobSimpleAttackDmg;
     [Range(0, 10)]
     [Tooltip("min hit distance to move")]
-    public float moveMinHitDistance;
+    public float mobMoveMinHitDistance;
     [Range(0.1f, 100)]
-    public float batrakTimeToDeath;
+    public float mobTimeToDeath;
     [Tooltip("batrak path finding iteractions count")]
     [Range(1, 1000)]
-    public int batrakPathFindingIteractionsCount;
+    public int mobPathFindingIteractionsCount;
     [Range(0, 10)]
-    public float batrakPassiveMoveSpeed;
+    public float mobPassiveMoveSpeed;
     [Range(0, 10)]
-    public float batrakActiveMoveSpeed;
+    public float mobActiveMoveSpeed;
     [Tooltip("direction between needed and current angle,when move speed is slowed")]
     [Range(0.1f, 360)]
-    public float batrakSlowedMoveRotationAngle;
+    public float mobSlowedMoveRotationAngle;
     [Tooltip("batrak simple attack rotation speed")]
     [Range(0.1f, 360)]
-    public float batrakSimpleAtkRotSpeed;
+    public float mobSimpleAtkRotSpeed;
     [Tooltip("batrak active rotation speed")]
     [Range(0.1f, 360)]
-    public float batrakActiveRotationSpeed;
+    public float mobActiveRotationSpeed;
     [Tooltip("batrak passive rotation speed")]
     [Range(0.1f, 360)]
-    public float batrakPassiveRotationSpeed;
+    public float mobPassiveRotationSpeed;
     [Tooltip("max distance for simple combat")]
     [Range(0.1f, 10)]
-    public float batrakMaxSimpleCombatDistance;
+    public float mobMaxSimpleCombatDistance;
     [Tooltip("idle time before or between patrul state(batrak)")]
     [Range(0, 100)]
-    public float batrakPatrulIdleStateTime;
+    public float mobPatrulIdleStateTime;
     [Range(0,50)]
-    public float batrakOnAttackMoveDoneDistance;
+    public float mobOnAttackMoveDoneDistance;
     [Range(0.001f,10)]
-    public float batrakCheckSoundDelay;
+    public float mobCheckSoundDelay;
 
     public GameObject saveLoader;
     public GameObject drawingSphere;

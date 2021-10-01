@@ -85,7 +85,7 @@ public class mainMenu : MonoBehaviour//singltone
         if (dist >Gubernia502.constData.mainMenuSelectorDeadZone)
         {
             buttonSelector.transform.position += Vector3.Normalize(selectorNeededPos - buttonSelector.transform.position)
-                *Gubernia502.constData.mainMenuSelectorSpeed * Time.fixedDeltaTime;
+                *Gubernia502.constData.mainMenuSelectorSpeed * Time.deltaTime;
         }
         else
         {

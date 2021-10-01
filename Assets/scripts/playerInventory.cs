@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class serednyakInventory : ermakInventory//singltone
+public class playerInventory : NPCInventory//singltone
 {
-    static serednyakInventory singltone = null;
+    static playerInventory singltone = null;
     float stateToSelectDurIndic = 0.3f;
     const float ammoGroupPlaceStep =85f;
 

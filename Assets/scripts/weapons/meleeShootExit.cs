@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class meleeShootExit : StateMachineBehaviour
 {
-    public ermakLockControl ermakLockControl;
+    public NPCLockControl NPCLockControl;
     public int nextPunchNum;
     public int currentPunchNum;
     public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        ermakLockControl.meleeShoot.enabled = false;
-        if (ermakLockControl.meleeShoot.hitBox!=null&& ermakLockControl.meleeShoot.hitBox.enabled)
+        NPCLockControl.meleeShoot.enabled = false;
+        if (NPCLockControl.meleeShoot.hitBox!=null&& NPCLockControl.meleeShoot.hitBox.enabled)
         {
-            ermakLockControl.meleeShoot.hitBox.setActiveHitBox(false);
+            NPCLockControl.meleeShoot.hitBox.setActiveHitBox(false);
         }
-        ermakLockControl.meleeFrontHitBox.setActiveHitBox(false);
+        NPCLockControl.meleeFrontHitBox.setActiveHitBox(false);
         Gubernia502.mainCamera.changeToDefaultTrack();
         if (animator.GetInteger("stan") != 0)
         {
@@ -24,21 +24,21 @@ public class meleeShootExit : StateMachineBehaviour
         int punchNum = animator.GetInteger("punchNum");
         if (punchNum != nextPunchNum&&stateInfo.shortNameHash!=animator.GetCurrentAnimatorStateInfo(0).shortNameHash)
         {
-            ermakLockControl.setSeparratedAnim();
+            NPCLockControl.setSeparratedAnim();
             if (!Gubernia502.debugConsole.enabled)
             {
-                ermakLockControl.unlockRotate();
-                ermakLockControl.unlockCtrl();
+                NPCLockControl.unlockRotate();
+                NPCLockControl.unlockCtrl();
             }
-            ermakLockControl.bodyRotationSpeed = Gubernia502.constData.ermakBodyRotationSpeed;
+            NPCLockControl.bodyRotationSpeed = Gubernia502.constData.NPCBodyRotationSpeed;
             animator.SetInteger("punchNum", 0);
         }
     }
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         Gubernia502.mainCamera.changeMoveToTarget(MainCamera.targetType.isObject);
-        ermakLockControl = animator.GetComponent<meleeShoot>().ermakLockControl;
-        ermakLockControl.meleeShoot.enabled = true;
-        ermakLockControl.meleeShoot.hitBox.setActiveHitBox(true);
+        NPCLockControl = animator.GetComponent<meleeShoot>().NPCLockControl;
+        NPCLockControl.meleeShoot.enabled = true;
+        NPCLockControl.meleeShoot.hitBox.setActiveHitBox(true);
     }
 }

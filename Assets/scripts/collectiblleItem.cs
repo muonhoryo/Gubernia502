@@ -15,26 +15,26 @@ public abstract class collectiblleItem : MonoBehaviour
     public virtual void OnMouseExit()
     {
         itemMesh.materials[0].SetFloat("selectBloomLevel", 0);
-        Gubernia502.playerController.ermakLockControl.iteractionScript.usedObj = null;
-        Gubernia502.playerController.ermakLockControl.iteractionScript.usedObjScript = null;
+        Gubernia502.playerController.NPCLockControl.iteractionScript.usedObj = null;
+        Gubernia502.playerController.NPCLockControl.iteractionScript.usedObjScript = null;
     }
-    public virtual void addItem(ermakLockControl ermakLockControl)
+    public virtual void addItem(NPCLockControl ermakLockControl)
     {
     }
     public void Use()
     {
-        Use(Gubernia502.playerController.ermakLockControl);
-        Gubernia502.playerController.ermakLockControl.iteractionScript.usedObj = null;
-        Gubernia502.playerController.ermakLockControl.iteractionScript.usedObjScript = null;
+        Use(Gubernia502.playerController.NPCLockControl);
+        Gubernia502.playerController.NPCLockControl.iteractionScript.usedObj = null;
+        Gubernia502.playerController.NPCLockControl.iteractionScript.usedObjScript = null;
     }
     public void shadowUse()
     {
-        addItem(Gubernia502.playerController.ermakLockControl);
+        addItem(Gubernia502.playerController.NPCLockControl);
     }
-    public virtual void Use(ermakLockControl ermakLockControl)
+    public virtual void Use(NPCLockControl ermakLockControl)
     {
         addItem(ermakLockControl);
-        if (!ermakLockControl.ermakAnim.GetBool("reload"))
+        if (!ermakLockControl.animator.GetBool("reload"))
         {
             ermakLockControl.pickUpItem();
         }

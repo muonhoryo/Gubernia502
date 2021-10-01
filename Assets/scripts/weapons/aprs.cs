@@ -9,40 +9,40 @@ public class aprs : automat
     private bool fireMode;
     public override void altShoot()
     {
-        Gubernia502.spawnControlRocket(ermakLockControl.ermakInventory.EquippedWeapons.currentAmmoId,
-                                       ermakLockControl.ermakInventory.EquippedWeapons.dmg,
+        Gubernia502.spawnControlRocket(NPCLockControl.Inventory.EquippedWeapons.currentAmmoId,
+                                       NPCLockControl.Inventory.EquippedWeapons.dmg,
                                        bulletStart.transform.position,
-                                       ermakLockControl.weaponDispersion.rotateAngle,
-                                       ermakLockControl.weaponDispersion.dispersion,
-                                       ermakLockControl.gameObject);
-        ermakLockControl.ermakInventory.deleteOneAmmo();
+                                       NPCLockControl.weaponDispersion.rotateAngle,
+                                       NPCLockControl.weaponDispersion.dispersion,
+                                       NPCLockControl.gameObject);
+        NPCLockControl.Inventory.deleteOneAmmo();
         nonAnimatedMagazine.SetActive(false);
-        if (ermakLockControl.iteractionScript.selectedWeaponScript.takeDurabilityDmg() == true)
+        if (NPCLockControl.iteractionScript.selectedWeaponScript.takeDurabilityDmg() == true)
         {
-            ermakLockControl.isBreakWeapon(ermakLockControl.weaponDispersion.rotateAngle);
+            NPCLockControl.isBreakWeapon(NPCLockControl.weaponDispersion.rotateAngle);
         }
     }
     private void nonControlShoot()
     {
         nonAnimatedMagazine.SetActive(false);
-        Gubernia502.spawnBullet(ermakLockControl.ermakInventory.EquippedWeapons.currentAmmoId,
-            ermakLockControl.ermakInventory.EquippedWeapons.dmg, bulletStart.transform.position,
-                                    ermakLockControl.weaponDispersion.rotateAngle,
-                                    ermakLockControl.weaponDispersion.dispersion,
-                                    ermakLockControl.gameObject);
-        ermakLockControl.ermakInventory.deleteOneAmmo();
+        Gubernia502.spawnBullet(NPCLockControl.Inventory.EquippedWeapons.currentAmmoId,
+            NPCLockControl.Inventory.EquippedWeapons.dmg, bulletStart.transform.position,
+                                    NPCLockControl.weaponDispersion.rotateAngle,
+                                    NPCLockControl.weaponDispersion.dispersion,
+                                    NPCLockControl.gameObject);
+        NPCLockControl.Inventory.deleteOneAmmo();
         if (takeDurabilityDmg() == true)
         {
-            ermakLockControl.isBreakWeapon(ermakLockControl.weaponDispersion.rotateAngle);
+            NPCLockControl.isBreakWeapon(NPCLockControl.weaponDispersion.rotateAngle);
         }
     }
     private void controlShoot()
     {
-        ermakLockControl.setFullAnim();
-        ermakLockControl.ermakAnim.SetTrigger("shoot");
-        ermakLockControl.lockCtrl();
-        ermakLockControl.weaponDispersion.gameObject.SetActive(false);
-        ermakLockControl.viewBodyScript.ermakBody.rotation = Quaternion.Euler(0f, ermakLockControl.weaponDispersion.transform.rotation.eulerAngles.y, 0f);
+        NPCLockControl.setFullAnim();
+        NPCLockControl.animator.SetTrigger("shoot");
+        NPCLockControl.lockCtrl();
+        NPCLockControl.weaponDispersion.gameObject.SetActive(false);
+        NPCLockControl.viewBodyScript.transfmoredBody.rotation = Quaternion.Euler(0f, NPCLockControl.weaponDispersion.transform.rotation.eulerAngles.y, 0f);
     }
     public override void changeShootMode()
     {
@@ -59,8 +59,8 @@ public class aprs : automat
     }
     public override void shoot()
     {
-        coolDown = ermakLockControl.ermakInventory.EquippedWeapons.coolDownTime;
-        if (ermakLockControl.ermakInventory.EquippedWeapons.ammoInMag > 0)
+        coolDown = NPCLockControl.Inventory.EquippedWeapons.coolDownTime;
+        if (NPCLockControl.Inventory.EquippedWeapons.ammoInMag > 0)
         {
             fire();
         }

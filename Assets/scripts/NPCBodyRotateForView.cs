@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ermakBodyRotateForView : bodyRotateForView
+public class NPCBodyRotateForView : bodyRotateForView
 {
     [SerializeField]
-    private ermakLockControl ermakLockControl;
+    private NPCLockControl NPCLockControl;
     protected override float rotationSpeed
     {
-        get => ermakLockControl.bodyRotationSpeed;
+        get => NPCLockControl.bodyRotationSpeed;
     }
     protected override void enableThisScript(bool enable = true)
     {

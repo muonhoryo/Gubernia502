@@ -8,34 +8,34 @@ public class pistol : weapon
     public GameObject altBulletStart;
     public override void shoot()
     {
-        coolDown = ermakLockControl.ermakInventory.EquippedWeapons.coolDownTime;
-        if(ermakLockControl.ermakInventory.EquippedWeapons.ammoInMag > 0)
+        coolDown = NPCLockControl.Inventory.EquippedWeapons.coolDownTime;
+        if(NPCLockControl.Inventory.EquippedWeapons.ammoInMag > 0)
         {
             Vector3 bullStart = bulletStart.transform.position;
             generateSound();
             RaycastHit[] hits= Physics.RaycastAll(altBulletStart.transform.position,
-                Gubernia502.directionFromAngle(ermakLockControl.weaponDispersion.rotateAngle),
-                ermakLockControl.ermakInventory.EquippedWeapons.weaponsItem.altBulletStartZOffset,
+                Gubernia502.directionFromAngle(NPCLockControl.weaponDispersion.rotateAngle),
+                NPCLockControl.Inventory.EquippedWeapons.weaponsItem.altBulletStartZOffset,
                 ~(1 << 10),QueryTriggerInteraction.Ignore);
-            if (hits.Length>1||hits.Length>0&&hits[0].collider.gameObject!=ermakLockControl.gameObject)
+            if (hits.Length>1||hits.Length>0&&hits[0].collider.gameObject!=NPCLockControl.gameObject)
             {
                 bullStart = altBulletStart.transform.position;
             }
             Instantiate(Gubernia502.constData.effects[0], bulletStart.transform.position,
-                        Quaternion.Euler(0, ermakLockControl.weaponDispersion.rotateAngle, 0), bulletStart.transform);
-            Gubernia502.spawnBullet(ermakLockControl.ermakInventory.EquippedWeapons.currentAmmoId, 
-                ermakLockControl.ermakInventory.EquippedWeapons.dmg, bullStart,
-                                ermakLockControl.weaponDispersion.gameObject.transform.rotation.eulerAngles.y,
-                                ermakLockControl.weaponDispersion.dispersion,
-                                ermakLockControl.gameObject);
-            ermakLockControl.ermakInventory.deleteOneAmmo();
+                        Quaternion.Euler(0, NPCLockControl.weaponDispersion.rotateAngle, 0), bulletStart.transform);
+            Gubernia502.spawnBullet(NPCLockControl.Inventory.EquippedWeapons.currentAmmoId, 
+                NPCLockControl.Inventory.EquippedWeapons.dmg, bullStart,
+                                NPCLockControl.weaponDispersion.gameObject.transform.rotation.eulerAngles.y,
+                                NPCLockControl.weaponDispersion.dispersion,
+                                NPCLockControl.gameObject);
+            NPCLockControl.Inventory.deleteOneAmmo();
             if (takeDurabilityDmg()==false)
             { 
-                ermakLockControl.ermakAnim.SetTrigger("shoot");
+                NPCLockControl.animator.SetTrigger("shoot");
             }
             else
             {
-                ermakLockControl.isBreakWeapon(ermakLockControl.weaponDispersion.transform.localRotation.eulerAngles.y);
+                NPCLockControl.isBreakWeapon(NPCLockControl.weaponDispersion.transform.localRotation.eulerAngles.y);
             }
         }
         else
@@ -45,13 +45,13 @@ public class pistol : weapon
     }
     public override void reload()
     {
-        if(ermakLockControl.ermakInventory.EquippedWeapons.ammoInMag <
-               ermakLockControl.ermakInventory.EquippedWeapons.maxAmmoInMag &&
-               ermakLockControl.ermakInventory.isHaveAmmo(ermakLockControl.ermakInventory.EquippedWeapons.currentAmmoId))
+        if(NPCLockControl.Inventory.EquippedWeapons.ammoInMag <
+               NPCLockControl.Inventory.EquippedWeapons.maxAmmoInMag &&
+               NPCLockControl.Inventory.isHaveAmmo(NPCLockControl.Inventory.EquippedWeapons.currentAmmoId))
         {
-            ermakLockControl.distantShoot.nonAnimatedMagazine = nonAnimatedMagazine;
-            ermakLockControl.ermakAnim.SetBool("reload",true);
-            ermakLockControl.lockOtherCtrl();
+            NPCLockControl.distantShoot.nonAnimatedMagazine = nonAnimatedMagazine;
+            NPCLockControl.animator.SetBool("reload",true);
+            NPCLockControl.lockOtherCtrl();
         }
     }
     public override void FixedUpdate()
@@ -63,15 +63,15 @@ public class pistol : weapon
     }
     public override void changeAmmoType()
     {
-        ermakLockControl.ermakInventory.unloadWeapon();
-        ermakLockControl.ermakInventory.nextAmmoType();
-        ermakLockControl.iteractionScript.reload();
+        NPCLockControl.Inventory.unloadWeapon();
+        NPCLockControl.Inventory.nextAmmoType();
+        NPCLockControl.iteractionScript.reload();
     }
     public override void generateSound()
     {
-        if (ermakLockControl.ermakInventory.EquippedWeapons.currentAmmoId != 2)
+        if (NPCLockControl.Inventory.EquippedWeapons.currentAmmoId != 2)
         {
-            generateSound(ermakLockControl.ermakInventory.EquippedWeapons.weaponsItem.soundVolume);
+            generateSound(NPCLockControl.Inventory.EquippedWeapons.weaponsItem.soundVolume);
         }
         else
         {

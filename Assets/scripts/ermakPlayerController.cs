@@ -9,8 +9,8 @@ public class ermakPlayerController : MonoBehaviour//singltone
 
     private bool isCanSelectWeapon=true;
     public mainFieldOfView fieldOfView;
-    public ermakLockControl ermakLockControl;
-    public serednyakMeleeShoot meleeShoot;
+    public NPCLockControl NPCLockControl;
+    public playerMeleeShoot meleeShoot;
     private float diagonalModifier;
     delegate void fire1();
     private fire1 fire;
@@ -31,7 +31,7 @@ public class ermakPlayerController : MonoBehaviour//singltone
     }
     public void setNeededHeadDirection()
     {
-        ermakLockControl.viewBodyScript.neededHeadDirection = Gubernia502.angleFromDirection(
+        NPCLockControl.viewBodyScript.neededHeadDirection = Gubernia502.angleFromDirection(
             Gubernia502.mainCamera.cursorPos - transform.position);
     }
     public void changeAutoMode(bool isAuto)
@@ -49,21 +49,21 @@ public class ermakPlayerController : MonoBehaviour//singltone
     {
         if (Input.GetButton("_Fire1"))
         {
-            ermakLockControl.iteractionScript.fire1();
+            NPCLockControl.iteractionScript.fire1();
         }
     }
     private void fireSingle()
     {
         if (Input.GetButtonDown("_Fire1"))
         {
-            ermakLockControl.iteractionScript.fire1();
+            NPCLockControl.iteractionScript.fire1();
         }
     }
     private void Update()
     {
         if (Input.GetButtonDown("Submit"))
         {
-            ermakLockControl.lockCtrl();
+            NPCLockControl.lockCtrl();
             Gubernia502.debugConsole.enabled = true;
         }
         if (Input.GetAxis("_Horizontal") != 0 || Input.GetAxis("_Vertical") != 0)
@@ -76,7 +76,7 @@ public class ermakPlayerController : MonoBehaviour//singltone
             {
                 diagonalModifier = 1;
             }
-            ermakLockControl.moveScript.moveTraectory = new Vector3(Input.GetAxis("_Horizontal") * diagonalModifier,
+            NPCLockControl.moveScript.moveTraectory = new Vector3(Input.GetAxis("_Horizontal") * diagonalModifier,
                                                                                  0f,
                                                                                  Input.GetAxis("_Vertical") * diagonalModifier);
         }
@@ -98,46 +98,46 @@ public class ermakPlayerController : MonoBehaviour//singltone
     }
     private void LateUpdate()
     {
-        if (!ermakLockControl.isLockedCtrl)
+        if (!NPCLockControl.isLockedCtrl)
         {
             setNeededHeadDirection();
         }
-        fieldOfView.generateAngle = ermakLockControl.viewBodyScript.ermakBody.transform.eulerAngles.y +
-            (ermakLockControl.ermakAnim.GetFloat("HeadView") - 22.5f);
+        fieldOfView.generateAngle = NPCLockControl.viewBodyScript.transfmoredBody.transform.eulerAngles.y +
+            (NPCLockControl.animator.GetFloat("HeadView") - 22.5f);
         if (Input.GetButtonDown("Cancel"))
         {
             StartCoroutine(waitToAddChoise());
         }
-        if (ermakLockControl.iteractionScript.isActiveIteraction)
+        if (NPCLockControl.iteractionScript.isActiveIteraction)
         {
             fire();
             if (Input.GetButtonDown("_Interaction"))
             {
-                ermakLockControl.iteractionScript.firstIteraction();
+                NPCLockControl.iteractionScript.firstIteraction();
             }
             if (Input.GetButtonDown("_Reload"))
             {
-                ermakLockControl.iteractionScript.reload();
+                NPCLockControl.iteractionScript.reload();
             }
             if (Input.GetButtonDown("_ChangeAmmo"))
             {
-                ermakLockControl.iteractionScript.changeAmmo();
+                NPCLockControl.iteractionScript.changeAmmo();
             }
             if (Input.GetButtonDown("_ChangeFireMode"))
             {
-                ermakLockControl.iteractionScript.changeFireMode();
+                NPCLockControl.iteractionScript.changeFireMode();
             }
-            if (isCanSelectWeapon&&!ermakLockControl.ermakAnim.GetBool("reload"))
+            if (isCanSelectWeapon&&!NPCLockControl.animator.GetBool("reload"))
             {
                 if (Input.GetButton("_NextWeapon"))
                 {
-                    ermakLockControl.ermakInventory.selectNextWeapon();
+                    NPCLockControl.Inventory.selectNextWeapon();
                     isCanSelectWeapon = false;
                     StartCoroutine(selectCoolDown(selectWeaponCoolDown));
                 }
                 if (Input.GetButton("_PrevWeapon"))
                 {
-                    ermakLockControl.ermakInventory.selectPreviousWeapon();
+                    NPCLockControl.Inventory.selectPreviousWeapon();
                     isCanSelectWeapon = false;
                     StartCoroutine(selectCoolDown(selectWeaponCoolDown));
                 }
@@ -145,7 +145,7 @@ public class ermakPlayerController : MonoBehaviour//singltone
         }
         else
         {
-            if (Input.GetButtonDown("_Fire1")&&ermakLockControl.ermakAnim.GetInteger("punchNum") != 0)
+            if (Input.GetButtonDown("_Fire1")&&NPCLockControl.animator.GetInteger("punchNum") != 0)
             {
                 meleeShoot.isNextAttack = true;
             }

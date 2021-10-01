@@ -6,8 +6,8 @@ public class ermakViewBody : MonoBehaviour
 {
     public float neededHeadDirection;
 
-    private ermakLockControl ermakLockControl;
-    public Transform ermakBody;
+    private NPCLockControl NPCLockControl;
+    public Transform transfmoredBody;
     public int foundAnimModiferResult;
     public int isMeleeWeapon = 1;
     public int sideRotation;
@@ -15,18 +15,18 @@ public class ermakViewBody : MonoBehaviour
     {
         float headAngle;
         if (sideRotation == 1 &&
-           ermakBody.transform.rotation.eulerAngles.y > neededHeadDirection)
+           transfmoredBody.transform.rotation.eulerAngles.y > neededHeadDirection)
         {
-            headAngle = 360f - ermakBody.transform.rotation.eulerAngles.y + neededHeadDirection;
+            headAngle = 360f - transfmoredBody.transform.rotation.eulerAngles.y + neededHeadDirection;
         }
         else if (sideRotation == -1 &&
-                ermakBody.transform.rotation.eulerAngles.y < neededHeadDirection)
+                transfmoredBody.transform.rotation.eulerAngles.y < neededHeadDirection)
         {
-            headAngle = 22.5f-360f + neededHeadDirection - ermakBody.transform.rotation.eulerAngles.y;
+            headAngle = 22.5f-360f + neededHeadDirection - transfmoredBody.transform.rotation.eulerAngles.y;
         }
         else 
         {
-            headAngle = (neededHeadDirection - ermakBody.transform.rotation.eulerAngles.y + 22.5f) % 360; 
+            headAngle = (neededHeadDirection - transfmoredBody.transform.rotation.eulerAngles.y + 22.5f) % 360; 
         }
         if (headAngle > 45f) { headAngle = 45f; }
         else if (headAngle < 0f) { headAngle = 0f; }
@@ -35,19 +35,19 @@ public class ermakViewBody : MonoBehaviour
     public void rotateHead()
     {
         float headAngle = foundHeadAngle();
-        if (ermakLockControl.ermakAnim.GetFloat("HeadView") + Gubernia502.constData.ermakHeadRotationSpeed < headAngle)
+        if (NPCLockControl.animator.GetFloat("HeadView") + Gubernia502.constData.NPCHeadRotationSpeed < headAngle)
         {
-            ermakLockControl.ermakAnim.SetFloat("HeadView", ermakLockControl.ermakAnim.GetFloat("HeadView")
-                + Gubernia502.constData.ermakHeadRotationSpeed);
+            NPCLockControl.animator.SetFloat("HeadView", NPCLockControl.animator.GetFloat("HeadView")
+                + Gubernia502.constData.NPCHeadRotationSpeed);
             return;
         }
-        else if(ermakLockControl.ermakAnim.GetFloat("HeadView") - Gubernia502.constData.ermakHeadRotationSpeed > headAngle)
+        else if(NPCLockControl.animator.GetFloat("HeadView") - Gubernia502.constData.NPCHeadRotationSpeed > headAngle)
         {
-            ermakLockControl.ermakAnim.SetFloat("HeadView", ermakLockControl.ermakAnim.GetFloat("HeadView")
-                - Gubernia502.constData.ermakHeadRotationSpeed);
+            NPCLockControl.animator.SetFloat("HeadView", NPCLockControl.animator.GetFloat("HeadView")
+                - Gubernia502.constData.NPCHeadRotationSpeed);
             return;
         }
-        ermakLockControl.ermakAnim.SetFloat("HeadView", headAngle);
+        NPCLockControl.animator.SetFloat("HeadView", headAngle);
     }
     public void foundAnimModifer()
     {
@@ -57,9 +57,9 @@ public class ermakViewBody : MonoBehaviour
             foundAnimModiferResult = 0; return; 
         }
         else if (neededHeadDirection > 
-            ermakLockControl.moveScript.animModifier * 45 + 22.5 + 2 * isMeleeWeapon ||
+            NPCLockControl.moveScript.animModifier * 45 + 22.5 + 2 * isMeleeWeapon ||
                 neededHeadDirection <  
-                ermakLockControl.moveScript.animModifier * 45-22.5 - 2* isMeleeWeapon)
+                NPCLockControl.moveScript.animModifier * 45-22.5 - 2* isMeleeWeapon)
         {
             foundAnimModiferResult = (int)(neededHeadDirection + 22.5) / 45;
         }
@@ -68,17 +68,17 @@ public class ermakViewBody : MonoBehaviour
     void LateUpdate()
     {
         Gubernia502.foundSideRotation(neededHeadDirection, 
-                                      out sideRotation, ermakLockControl.viewBodyScript.ermakBody.transform.rotation.eulerAngles.y);
+                                      out sideRotation, NPCLockControl.viewBodyScript.transfmoredBody.transform.rotation.eulerAngles.y);
         foundAnimModifer();
-        if (foundAnimModiferResult!= ermakLockControl.moveScript.animModifier)//проверка на смену области взгляда,потом поворот на нее
+        if (foundAnimModiferResult!= NPCLockControl.moveScript.animModifier)//проверка на смену области взгляда,потом поворот на нее
         {
-            ermakLockControl.moveScript.animModifier = foundAnimModiferResult;//область взгляда
-            ermakLockControl.bodyRotateScript.neededDirectionAngle = 45* ermakLockControl.moveScript.animModifier;//необходимый угол поворота туши
+            NPCLockControl.moveScript.animModifier = foundAnimModiferResult;//область взгляда
+            NPCLockControl.bodyRotateScript.neededDirectionAngle = 45* NPCLockControl.moveScript.animModifier;//необходимый угол поворота туши
         }
         rotateHead();
     }
     private void Start()
     {
-        ermakLockControl = GetComponent<ermakLockControl>();
+        NPCLockControl = GetComponent<NPCLockControl>();
     }
 }

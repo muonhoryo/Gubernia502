@@ -198,7 +198,7 @@ public static class Gubernia502
     private static List<GameObject> drawingSpheres = new List<GameObject> { };
     public static List<temporalPathPoint> pathFindingMap = new List<temporalPathPoint> { };
     public static List<wallHitPointSystem> walls = new List<wallHitPointSystem> { };
-    public static List<batrakBehavior> enemies = new List<batrakBehavior> { };
+    public static List<mobBehavior> enemies = new List<mobBehavior> { };
     public static List<collectibleWeaponsItem> weapons = new List<collectibleWeaponsItem> { };
     public static List<collectibleSimpleItem> items = new List<collectibleSimpleItem> { };
     public static string saveFileName;

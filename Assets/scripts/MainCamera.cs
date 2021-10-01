@@ -40,23 +40,22 @@ public class MainCamera : MonoBehaviour//singltone
         if (dist > Gubernia502.constData.mainCameraMaxMoveRadius)
         {
             return transform.position + Vector3.Normalize(target - new Vector3(transform.position.x, target.y, transform.position.z)) *
-                                                        Gubernia502.constData.ermakMoveSpeed * Time.fixedDeltaTime;
+                                                        Gubernia502.constData.NPCMoveSpeed*Time.deltaTime ;
         }
         else
         {
             return transform.position + Vector3.Normalize(target - new Vector3(transform.position.x, target.y, transform.position.z)) *
-                                                        Gubernia502.constData.ermakMoveSpeed *
-                                                        Time.fixedDeltaTime * dist / Gubernia502.constData.mainCameraMaxMoveRadius;
+                                                        Gubernia502.constData.NPCMoveSpeed*Time.deltaTime
+                                                        * dist / Gubernia502.constData.mainCameraMaxMoveRadius;
         }
     }//плавное следование за объектом
     private Vector3 camMoveToTrackObj()
     {
-        float nextStepLength = Gubernia502.constData.mainCameraMoveSpeed * Time.fixedDeltaTime;
         if (Vector2.Distance(new Vector2(transform.position.x, transform.position.z),
-                            new Vector2(target.x, target.z)) > nextStepLength)
+                            new Vector2(target.x, target.z)) > Gubernia502.constData.mainCameraMoveSpeed*Time.deltaTime)
         {
             return transform.position + Vector3.Normalize(target - new Vector3(transform.position.x, target.y, transform.position.z)) *
-                nextStepLength;
+                Gubernia502.constData.mainCameraMoveSpeed*Time.deltaTime;
         }
         else
         {
@@ -75,7 +74,7 @@ public class MainCamera : MonoBehaviour//singltone
     private Vector3 thirdToCursor()//камера находится на расстоянии одной трети от гг до курсора
     {
         return new Vector3(playerController.transform.position.x + (cursorPos.x -
-            playerController.ermakLockControl.transform.position.x) / 3,
+            playerController.NPCLockControl.transform.position.x) / 3,
                                                 Gubernia502.constData.mainCameraHeight,
                                                 playerController.transform.position.z + (cursorPos.z -
             playerController.transform.position.z) / 3);

@@ -8,40 +8,40 @@ public class hand : weapon
     public trailRenHitBox leftHand =null;
     public override void generateSound()
     {
-        ermakLockControl.soundGenerator.soundLevel = Gubernia502.constData.ermakHandsSoundVolume;
+        NPCLockControl.soundGenerator.soundLevel = Gubernia502.constData.NPCHandsSoundVolume;
     }
     public virtual void meleeHitEnabled()
     {
-        if (ermakLockControl.ermakAnim.GetInteger("punchNum") != 1)
+        if (NPCLockControl.animator.GetInteger("punchNum") != 1)
         {
-            ermakLockControl.meleeShoot.hitBox = rightHand;
-            ermakLockControl.ermakAnim.SetInteger("punchNum", 1);
+            NPCLockControl.meleeShoot.hitBox = rightHand;
+            NPCLockControl.animator.SetInteger("punchNum", 1);
         }
         else
         {
-            ermakLockControl.meleeShoot.hitBox = leftHand;
-            ermakLockControl.ermakAnim.SetInteger("punchNum", 2);
+            NPCLockControl.meleeShoot.hitBox = leftHand;
+            NPCLockControl.animator.SetInteger("punchNum", 2);
         }
     }
     public override void shoot()
     {
-        ermakLockControl.meleeLock();
-        ermakLockControl.bodyRotationSpeed = Gubernia502.constData.ermakMeleeBodyRotSpeed;
-        ermakLockControl.bodyRotateScript.neededDirectionAngle = ermakLockControl.viewBodyScript.neededHeadDirection;
-        ermakLockControl.setFullAnim();
-        ermakLockControl.ermakAnim.SetFloat("move", 8);
-        ermakLockControl.ermakAnim.SetTrigger("shoot");
+        NPCLockControl.meleeLock();
+        NPCLockControl.bodyRotationSpeed = Gubernia502.constData.NPCMeleeBodyRotSpeed;
+        NPCLockControl.bodyRotateScript.neededDirectionAngle = NPCLockControl.viewBodyScript.neededHeadDirection;
+        NPCLockControl.setFullAnim();
+        NPCLockControl.animator.SetFloat("move", 8);
+        NPCLockControl.animator.SetTrigger("shoot");
         meleeHitEnabled();
     }
     protected override void Start()
     {
         if (rightHand != null)
         {
-            rightHand.hitDmg = Gubernia502.constData.ermakHandsDmg;
+            rightHand.hitDmg = Gubernia502.constData.NPCHandsDmg;
         }
         if (leftHand != null)
         {
-            leftHand.hitDmg = Gubernia502.constData.ermakHandsDmg;
+            leftHand.hitDmg = Gubernia502.constData.NPCHandsDmg;
         }
     }
 }

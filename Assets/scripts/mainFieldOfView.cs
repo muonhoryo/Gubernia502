@@ -2,32 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class mainFieldOfView : ermakFieldOfView//singltone
+public class mainFieldOfView : NPCFieldOfView//singltone
 {
 	static mainFieldOfView singltone = null;
 	public float generateAngle;
 	protected override void generateFieldOfViewMesh()//генерирует меш поля
 	{
-		float stepAngleSize = Gubernia502.constData.ermakFieldOfViewAngle /
-			(Gubernia502.constData.ermakFieldOfViewQuality - 1);//промежуток между рейкастами
+		float stepAngleSize = Gubernia502.constData.FieldOfViewAngle /
+			(Gubernia502.constData.FieldOfViewQuality - 1);//промежуток между рейкастами
 		List<Vector3> mainFieldPoints = new List<Vector3> { };
 		List<Vector3> secondFieldPoints = new List<Vector3> { };//точки попадания рейкастом
-		ViewCastInfo newViewCast = ViewCast(generateAngle - Gubernia502.constData.ermakFieldOfViewAngle / 2,
-			Gubernia502.constData.ermakFieldOfViewRange);
+		ViewCastInfo newViewCast = ViewCast(generateAngle - Gubernia502.constData.FieldOfViewAngle / 2,
+			Gubernia502.constData.FieldOfViewRange);
 		mainFieldPoints.Add(newViewCast.point);
 		ViewCastInfo oldViewCast = newViewCast;
-		generateMeshCycle(newViewCast.angle + stepAngleSize, Gubernia502.constData.ermakFieldOfViewQuality,
-			stepAngleSize, ref mainFieldPoints, ref oldViewCast, ref newViewCast, 1, Gubernia502.constData.ermakFieldOfViewRange);
+		generateMeshCycle(newViewCast.angle + stepAngleSize, Gubernia502.constData.FieldOfViewQuality,
+			stepAngleSize, ref mainFieldPoints, ref oldViewCast, ref newViewCast, 1, Gubernia502.constData.FieldOfViewRange);
 		int secondFieldOfViewQuality = Mathf.RoundToInt(360 /
-			Gubernia502.constData.ermakFieldOfViewAngle * Gubernia502.constData.ermakFieldOfViewQuality);
-		float secondStepAngleSize = (360 - Gubernia502.constData.ermakFieldOfViewAngle) / (secondFieldOfViewQuality - 1);
-		newViewCast = ViewCast(generateAngle + Gubernia502.constData.ermakFieldOfViewAngle / 2,
-			 Gubernia502.constData.ermakSecondFieldOfViewRange);
+			Gubernia502.constData.FieldOfViewAngle * Gubernia502.constData.FieldOfViewQuality);
+		float secondStepAngleSize = (360 - Gubernia502.constData.FieldOfViewAngle) / (secondFieldOfViewQuality - 1);
+		newViewCast = ViewCast(generateAngle + Gubernia502.constData.FieldOfViewAngle / 2,
+			 Gubernia502.constData.SecondFieldOfViewRange);
 		secondFieldPoints.Add(newViewCast.point);
 		oldViewCast = newViewCast;
-		generateMeshCycle(generateAngle + Gubernia502.constData.ermakFieldOfViewAngle / 2 + secondStepAngleSize,
+		generateMeshCycle(generateAngle + Gubernia502.constData.FieldOfViewAngle / 2 + secondStepAngleSize,
 			secondFieldOfViewQuality, secondStepAngleSize, ref secondFieldPoints, ref oldViewCast, ref newViewCast, 1,
-			Gubernia502.constData.ermakSecondFieldOfViewRange);
+			Gubernia502.constData.SecondFieldOfViewRange);
 		Vector3[] vertices = new Vector3[mainFieldPoints.Count + secondFieldPoints.Count + 1];
 		int[] triangles = new int[(mainFieldPoints.Count + secondFieldPoints.Count) * 3];
 		vertices[0] = transform.InverseTransformPoint(new Vector3(transform.position.x, 0.01f, transform.position.z));

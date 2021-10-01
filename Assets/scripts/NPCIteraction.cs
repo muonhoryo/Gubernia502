@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ermakIteraction : MonoBehaviour
+public class NPCIteraction : MonoBehaviour
 {
-    private ermakLockControl ermakLockControl;
+    private NPCLockControl NPCLockControl;
     public GameObject usedObj;
     public MonoBehaviour usedObjScript;
     public weapon selectedWeaponScript;
@@ -33,14 +33,14 @@ public class ermakIteraction : MonoBehaviour
     }
     public void changeAmmo()
     {
-        if (ermakLockControl.ermakInventory.EquippedWeapons.weaponsItem.ammotTypes.Count > 1)
+        if (NPCLockControl.Inventory.EquippedWeapons.weaponsItem.ammotTypes.Count > 1)
         {
             selectedWeaponScript.changeAmmoType();
         }
     }
     private void Start()
     {
-        ermakLockControl = GetComponent<ermakLockControl>();
-        ermakLockControl.ermakInventory.selectWeapon(0);
+        NPCLockControl = GetComponent<NPCLockControl>();
+        NPCLockControl.Inventory.selectWeapon(0);
     }
 }

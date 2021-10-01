@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class absolutFieldOfView : ermakFieldOfView//singltone
+public class absolutFieldOfView : NPCFieldOfView//singltone
 {
 	static absolutFieldOfView singltone = null;
 	protected override void generateFieldOfViewMesh()//генерирует меш поля

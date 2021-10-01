@@ -22,9 +22,9 @@ public class soundGenerator : MonoBehaviour
     }
     private void Update()
     {
-        if (SoundLevel <= Gubernia502.constData.ermakMinSoundVolume)
+        if (SoundLevel <= Gubernia502.constData.NPCMinSoundVolume)
         {
-            SoundLevel = Gubernia502.constData.ermakMinSoundVolume;
+            SoundLevel = Gubernia502.constData.NPCMinSoundVolume;
             enabled = false;
         }
         else

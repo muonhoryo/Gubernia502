@@ -7,13 +7,13 @@ public class rifle : pistol
     public override void reload()
     {
 
-        if (ermakLockControl.ermakInventory.EquippedWeapons.ammoInMag <
-               ermakLockControl.ermakInventory.EquippedWeapons.maxAmmoInMag &&
-               ermakLockControl.ermakInventory.isHaveAmmo(ermakLockControl.ermakInventory.EquippedWeapons.currentAmmoId))
+        if (NPCLockControl.Inventory.EquippedWeapons.ammoInMag <
+               NPCLockControl.Inventory.EquippedWeapons.maxAmmoInMag &&
+               NPCLockControl.Inventory.isHaveAmmo(NPCLockControl.Inventory.EquippedWeapons.currentAmmoId))
         {
-            ermakLockControl.distantShoot.nonAnimatedMagazine = nonAnimatedMagazine;
-            ermakLockControl.ermakAnim.SetBool("reload",true);
-            ermakLockControl.lockOtherCtrl();
+            NPCLockControl.distantShoot.nonAnimatedMagazine = nonAnimatedMagazine;
+            NPCLockControl.animator.SetBool("reload",true);
+            NPCLockControl.lockOtherCtrl();
             GetComponent<Animator>().SetTrigger("reload");
         }
     }
