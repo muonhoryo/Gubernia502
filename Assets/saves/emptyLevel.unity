@@ -308,14 +308,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ermak
       objectReference: {fileID: 0}
-    - target: {fileID: 1439220917531232748, guid: de2e2dfce30a2ed4d997fa3d0472e72c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1618169911096309033, guid: de2e2dfce30a2ed4d997fa3d0472e72c, type: 3}
-      propertyPath: guiCanvas
-      value: 
-      objectReference: {fileID: 527632046}
     - target: {fileID: 1618169911096309033, guid: de2e2dfce30a2ed4d997fa3d0472e72c, type: 3}
       propertyPath: ammoCounter
       value: 
@@ -400,18 +392,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2159515458318944853, guid: de2e2dfce30a2ed4d997fa3d0472e72c, type: 3}
-      propertyPath: m_Parameters.widthMultiplier
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 2159515458825561319, guid: de2e2dfce30a2ed4d997fa3d0472e72c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2159515459102399226, guid: de2e2dfce30a2ed4d997fa3d0472e72c, type: 3}
-      propertyPath: m_Parameters.widthMultiplier
-      value: 0.05
-      objectReference: {fileID: 0}
     - target: {fileID: 4074940239921714846, guid: de2e2dfce30a2ed4d997fa3d0472e72c, type: 3}
       propertyPath: soundIndicator
       value: 
@@ -436,8 +416,7 @@ PrefabInstance:
       propertyPath: exitMessage
       value: 
       objectReference: {fileID: 451852255}
-    m_RemovedComponents:
-    - {fileID: 1247323221, guid: de2e2dfce30a2ed4d997fa3d0472e72c, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de2e2dfce30a2ed4d997fa3d0472e72c, type: 3}
 --- !u!114 &435003227 stripped
 MonoBehaviour:
@@ -526,6 +505,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2926896770668308501, guid: 59744885d2de0c74a83c1e74673fd93e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3193345131075468407, guid: 59744885d2de0c74a83c1e74673fd93e, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -541,7 +524,7 @@ PrefabInstance:
     - target: {fileID: 3479163012534175125, guid: 59744885d2de0c74a83c1e74673fd93e, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 436935039}
     - target: {fileID: 4015318841230537660, guid: 59744885d2de0c74a83c1e74673fd93e, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -754,11 +737,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &527632046 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4815138452996336902, guid: 59744885d2de0c74a83c1e74673fd93e, type: 3}
-  m_PrefabInstance: {fileID: 451852254}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &581388007 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7693433876994370257, guid: 59744885d2de0c74a83c1e74673fd93e, type: 3}

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ermakMove : MonoBehaviour
+public class NPCMove : MonoBehaviour
 {
     public bool isActive = true;
     public NPCLockControl NPCLockControl;

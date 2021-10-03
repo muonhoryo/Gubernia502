@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36380d762436a5749a3870496a4abf5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  batrakBehavior: {fileID: 5360940727339878713}
+  mobBehavior: {fileID: 5360940727339878713}
   coll: {fileID: 3196193491324588456}
   damagedHPSys: []
 --- !u!1 &113703026845681806
@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36380d762436a5749a3870496a4abf5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  batrakBehavior: {fileID: 5360940727339878713}
+  mobBehavior: {fileID: 5360940727339878713}
   coll: {fileID: 8269814004293610072}
   damagedHPSys: []
 --- !u!1 &815769891745243056
@@ -410,7 +410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 559b22ad63e0c1f48b41ca6c00ca7820, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  batrakBehavior: {fileID: 5360940727339878713}
+  mobBehavior: {fileID: 5360940727339878713}
   soundHears: []
 --- !u!1 &986807749214068847
 GameObject:
@@ -518,7 +518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ab4d58bb990e454a98399a40a98eedb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  batrakBehavior: {fileID: 5360940727339878713}
+  mobBehavior: {fileID: 5360940727339878713}
   ignoringLayers:
     serializedVersion: 2
     m_Bits: 7223
@@ -1505,7 +1505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b02d8802377c6ac42a5d488f74bf01a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  batrakBehavior: {fileID: 5360940727339878713}
+  mobBehavior: {fileID: 5360940727339878713}
   coll: {fileID: 281086670262847027}
   damagedHPSys: []
 --- !u!1 &5211028554171209483
@@ -2084,7 +2084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f5770a3ba8c0df48b5bdcdb0bcacb6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  batrakBehavior: {fileID: 5360940727339878713}
+  mobBehavior: {fileID: 5360940727339878713}
 --- !u!114 &7472146775700817136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2098,7 +2098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitBox: {fileID: 0}
-  batrakBehavior: {fileID: 5360940727339878713}
+  mobBehavior: {fileID: 5360940727339878713}
   AnimMoveSpeed: 0
   cantMoveLayers: 8960
   trailRenderer: {fileID: 8501858823937718036}
@@ -2309,10 +2309,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54c9578b65c88484080890b80c6964c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Fraction: 1
   takingDamageObjData: {fileID: 11400000, guid: 36fe181d34057b54bb0f1f4095611981, type: 2}
   hitPoint: 1
   destroyedShieldEffect: {fileID: 870246671040344930}
-  Fraction: 1
   regenData: {fileID: 11400000, guid: c13484cf98a3c2145b5ab111e218918c, type: 2}
   anim: {fileID: 6312640488248862041}
 --- !u!114 &8183992973994114213
@@ -2327,8 +2327,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 764b29d75bc740146ac53b123bfb898b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  batrakCollider: {fileID: 2456803888090764406}
-  batrakBehavior: {fileID: 5360940727339878713}
+  mobCollider: {fileID: 2456803888090764406}
+  mobBehavior: {fileID: 5360940727339878713}
   MoveTarget: {x: 0, y: 0, z: 0}
   DirectionMove: {x: 0, y: 0, z: 0}
 --- !u!114 &5360940727339878713
@@ -2343,10 +2343,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e5ccab816fd2a040a07946c2096de7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  meleeDmg: 0
+  isStunnedDmg: 0
   startBehavior: 1
   viewZone: {fileID: 5386940411719170790}
-  batrakRGbody: {fileID: 7881355946838636975}
-  batrakAnim: {fileID: 6312640488248862041}
+  RGbody: {fileID: 7881355946838636975}
+  animator: {fileID: 6312640488248862041}
   meleeShoot: {fileID: 7472146775700817136}
   rightHand: {fileID: 147309339056529145}
   leftHand: {fileID: 8441203748251936804}
@@ -2375,7 +2377,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NeededDirectionAngle: 0
   rotatedBody: {fileID: 7937383344512146551}
-  batrakBehavior: {fileID: 5360940727339878713}
+  mobBehavior: {fileID: 5360940727339878713}
 --- !u!1 &8145860838406941905
 GameObject:
   m_ObjectHideFlags: 0

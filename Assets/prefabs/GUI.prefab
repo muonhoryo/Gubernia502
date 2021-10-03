@@ -2356,7 +2356,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: saveSystem, Assembly-CSharp
+          m_TargetAssemblyTypeName: mapRedactor, Assembly-CSharp
           m_MethodName: saveMap
           m_Mode: 1
           m_Arguments:

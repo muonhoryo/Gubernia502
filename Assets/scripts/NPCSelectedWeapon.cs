@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class ermakSelectedWeapon : MonoBehaviour
+public class NPCSelectedWeapon : MonoBehaviour
 {
     public NPCLockControl NPCLockControl;
     public Transform parentObj;

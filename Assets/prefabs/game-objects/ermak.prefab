@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e173bc671a2ecf4b822e46ccc3eec77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ermakLockControl: {fileID: 4629995479781679705}
+  NPCLockControl: {fileID: 4629995479781679705}
   animatiedMagazine: {fileID: 0}
   nonAnimatedMagazine: {fileID: 0}
 --- !u!114 &4653061407056723024
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc1b510b4b39cdd42b06250b43cd6a22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ermakLockControl: {fileID: 4629995479781679705}
+  NPCLockControl: {fileID: 4629995479781679705}
   hitBox: {fileID: 0}
   animMoveVector: {x: 0, y: 0, z: 0}
   AnimMoveSpeed: 0
@@ -916,8 +916,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 1
-  ermakLockControl: {fileID: 4629995479781679705}
-  ermakAnim: {fileID: 569808816747574194}
+  NPCLockControl: {fileID: 4629995479781679705}
+  animator: {fileID: 569808816747574194}
   animModifier: 0
   hitBox: {fileID: 1247323222}
   colliderRadius: 0
@@ -934,7 +934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neededHeadDirection: 0
-  ermakBody: {fileID: 7491228594133004377}
+  transfmoredBody: {fileID: 7491228594133004377}
   foundAnimModiferResult: 0
   isMeleeWeapon: 1
   sideRotation: 0
@@ -951,8 +951,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coolDown: 0
-  ermakLockControl: {fileID: 4629995479781679705}
-  bulletStart: {fileID: 0}
+  NPCLockControl: {fileID: 4629995479781679705}
+  bulletStart: {fileID: 2159515458825561319}
   rightHand: {fileID: 8750953028730600679}
   leftHand: {fileID: 7440545299288359952}
 --- !u!114 &2159515458646258998
@@ -969,7 +969,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NeededDirectionAngle: 0
   rotatedBody: {fileID: 7491228594133004377}
-  ermakLockControl: {fileID: 4629995479781679705}
+  NPCLockControl: {fileID: 4629995479781679705}
 --- !u!114 &2159515458646258996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -998,7 +998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af512bf5e54698c41ba7cbc90e6bed95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ermakLockControl: {fileID: 4629995479781679705}
+  NPCLockControl: {fileID: 4629995479781679705}
   colliderOffset: {x: 0, y: 4.094626, z: 0}
   colliderObj: {fileID: 1247323222}
   colliderPos: {fileID: 1776513259}
@@ -1015,7 +1015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fieldOfView: {fileID: 3484492232105663937}
-  ermakLockControl: {fileID: 4629995479781679705}
+  NPCLockControl: {fileID: 4629995479781679705}
   meleeShoot: {fileID: 4653061407056723024}
   exitMessage: {fileID: 0}
 --- !u!114 &4629995479781679705
@@ -1035,11 +1035,11 @@ MonoBehaviour:
   hands:
   - {fileID: 8856078539104139489}
   - {fileID: 9013659699877842199}
-  ermakAnim: {fileID: 569808816747574194}
+  animator: {fileID: 569808816747574194}
   meleeShoot: {fileID: 4653061407056723024}
   distantShoot: {fileID: 6150025106311318363}
   weaponDispersion: {fileID: 2159515458825561317}
-  ermakSelectedWeapon: {fileID: 2159515458981238192}
+  selectedWeaponScript: {fileID: 2159515458981238192}
   soundGenerator: {fileID: 4074940239921714846}
   meleeFrontHitBox: {fileID: 274541847760412379}
   hpSystem: {fileID: 6287919983459485393}
@@ -1047,8 +1047,8 @@ MonoBehaviour:
   moveScript: {fileID: 1247323220}
   iteractionScript: {fileID: 2159515458646258996}
   viewBodyScript: {fileID: 2159515458646259005}
-  ermakRGBody: {fileID: 1247323223}
-  ermakInventory: {fileID: 1618169911096309033}
+  RGBody: {fileID: 1247323223}
+  Inventory: {fileID: 1618169911096309033}
 --- !u!114 &6287919983459485393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1061,14 +1061,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07612e1861c825142a021d16c760d7f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Fraction: 0
   takingDamageObjData: {fileID: 11400000, guid: 56c381b12151c91478d84e58f8322c8b, type: 2}
   hitPoint: 1
   destroyedShieldEffect: {fileID: 7786774543527533285}
-  Fraction: 0
   regenData: {fileID: 11400000, guid: d366c7221ff648a4c819734b0bd459e2, type: 2}
   anim: {fileID: 569808816747574194}
   statsCollector: {fileID: 525011381942645307}
-  ermakLockControl: {fileID: 4629995479781679705}
+  NPCLockControl: {fileID: 4629995479781679705}
   healthIndicator: {fileID: 0}
   activeRegen: {fileID: 0}
   dangerIndicator: {fileID: 0}
@@ -1086,7 +1086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hand: {fileID: 2159515458646259001}
-  ermakLockControl: {fileID: 4629995479781679705}
+  NPCLockControl: {fileID: 4629995479781679705}
   playerInterfaceCanvas: {fileID: 0}
   weaponDurMonitor: {fileID: 0}
   weaponDurIndicator: {fileID: 0}
@@ -1410,7 +1410,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 3}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.1
+    widthMultiplier: 0.05
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -1508,7 +1508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b81fd8065eaf6d9418a619fd44211611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ermakLockControl: {fileID: 4629995479781679705}
+  NPCLockControl: {fileID: 4629995479781679705}
   leftLine: {fileID: 2159515458318944855}
   rightLine: {fileID: 2159515459102399228}
   dispersion: 1
@@ -1556,7 +1556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16b1eaf1493b8ed4eb078fd6ce6c86f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ermakLockControl: {fileID: 4629995479781679705}
+  NPCLockControl: {fileID: 4629995479781679705}
   parentObj: {fileID: 0}
 --- !u!1 &2159515459102399228
 GameObject:
@@ -1635,7 +1635,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 3}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.1
+    widthMultiplier: 0.05
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -2981,7 +2981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dba56f2e87a2ac4da3d74f2971314ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ermakLockControl: {fileID: 4629995479781679705}
+  NPCLockControl: {fileID: 4629995479781679705}
   hitDmg: 1
   hitBox: {fileID: 2593907083543461094}
   damagedHPSys: []
@@ -3338,7 +3338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0443d0c76ea15d74780fb5a311b38ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ermakLockControl: {fileID: 4629995479781679705}
+  NPCLockControl: {fileID: 4629995479781679705}
   hitDmg: 1
   hitBox: {fileID: 2159515457907354672}
   damagedHPSys: []
@@ -3406,7 +3406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0443d0c76ea15d74780fb5a311b38ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ermakLockControl: {fileID: 4629995479781679705}
+  NPCLockControl: {fileID: 4629995479781679705}
   hitDmg: 1
   hitBox: {fileID: 2159515459074574699}
   damagedHPSys: []

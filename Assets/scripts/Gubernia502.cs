@@ -205,7 +205,7 @@ public static class Gubernia502
     public static multiThreadManager threadManager;
     public static debugConsole debugConsole;
     public static MainCamera mainCamera;
-    public static ermakPlayerController playerController;
+    public static playerController playerController;
     public static mainMenu mainMenu;
     public enum fraction
     {

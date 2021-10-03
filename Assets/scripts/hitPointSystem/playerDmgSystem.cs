@@ -29,6 +29,12 @@ public class playerDmgSystem : NPCDmgSystem
         }
         base.takeDamage(dmgResult, hitAngle, hitPos);
     }
+    protected override void death(float rotation)
+    {
+        base.death(rotation);
+        NPCLockControl.weaponDispersion.gameObject.SetActive(false);
+        Gubernia502.mainCamera.changeToTargetTracking(gameObject);
+    }
     public override int shieldDurability 
     {
         get => base.shieldDurability;

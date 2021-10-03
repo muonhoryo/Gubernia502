@@ -8,6 +8,10 @@ public class enemyViewZone : MonoBehaviour
     private Gubernia502.simpleFun updateAction;
     public LayerMask ignoringLayers;
     private List<alifeDmgSystem> objInViewZone=new List<alifeDmgSystem>();
+    public void removeEnemy(alifeDmgSystem alifeDmgSystem)
+    {
+        objInViewZone.Remove(alifeDmgSystem);
+    }
     private void OnTriggerEnter(Collider other)
     {
         alifeDmgSystem dmgSystem;
@@ -60,7 +64,7 @@ public class enemyViewZone : MonoBehaviour
         mobBehavior.targetEnemy.huntEnd(mobBehavior.dmgSystem);
         mobBehavior.targetEnemy = null;
     }
-    protected virtual void enemyWasFounded(hitPointSystem targetEnemy)
+    protected virtual void enemyWasFounded(alifeDmgSystem targetEnemy)
     {
         updateAction = trackVisibleTarget;
         mobBehavior.targetEnemy = targetEnemy;

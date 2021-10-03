@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class magazineAnim : ermakSelectedWeapon
+public class magazineAnim : NPCSelectedWeapon
 {
     public int hand = 0;
     protected override void LateUpdate()

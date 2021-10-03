@@ -18,7 +18,7 @@ public class MainCamera : MonoBehaviour//singltone
     }
     public targetType targetMode;
     public cameraMode cameraStartMode;
-    public ermakPlayerController playerController;
+    public playerController playerController;
     public Vector3 cursorPos;
     public GameObject trackingObj;
     public Vector3 target;

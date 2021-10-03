@@ -14,7 +14,7 @@ public class mobBehavior : MonoBehaviour
         }
         public static void SRonGetStun(mobBehavior owner, float hitAngle)
         {
-            owner.bodyRotateScript.rotatedBody.rotation = Quaternion.Euler(0f, hitAngle, 0f);
+            owner.bodyRotateScript.rotatedBody.rotation = Quaternion.Euler(0f, (hitAngle+180)%360, 0f);
             owner.enemyDirection = hitAngle;
             owner.currentState = BSstun;
         }
@@ -1110,7 +1110,7 @@ public class mobBehavior : MonoBehaviour
     public bool isAggressive = false;
     public float enemyDirection;
     public Vector3 enemyLastPosition;
-    public hitPointSystem targetEnemy=null;
+    public alifeDmgSystem targetEnemy=null;
     public List<Vector3> patrulPoint=new List<Vector3> { };
     public int patrulPointNum;
     mobBehaviorStateMachine.primBehaviorState defaultState;
@@ -1140,6 +1140,7 @@ public class mobBehavior : MonoBehaviour
     {
         if (targetEnemy != null)
         {
+            viewZone.removeEnemy(targetEnemy);
             enemyLastPosition = targetEnemy.transform.position;
             currentState.onLostVisibleEnemy(this);
             targetEnemy = null;

@@ -45,7 +45,7 @@ public class cumulativeRocket : bullet
             }
         }
     }
-    protected override void onHit(Collider other)
+    protected override void onHit(Collider other,float hitDistance)
     {
             action(other);
     }

@@ -15,15 +15,15 @@ public class NPCLockControl : MonoBehaviour
     public Animator animator;
     public meleeShoot meleeShoot;
     public distantShoot distantShoot;
-    public ermakWeaponDispersion weaponDispersion;
-    public ermakSelectedWeapon selectedWeaponScript;
+    public NPCWeaponDispersion weaponDispersion;
+    public NPCSelectedWeapon selectedWeaponScript;
     public soundGenerator soundGenerator;
     public meleeHitBox meleeFrontHitBox;
     public NPCDmgSystem hpSystem;
     public NPCBodyRotateForView bodyRotateScript;
-    public ermakMove moveScript;
+    public NPCMove moveScript;
     public NPCIteraction iteractionScript;
-    public ermakViewBody viewBodyScript;
+    public NPCViewBody viewBodyScript;
     public Rigidbody RGBody;
     public NPCInventory Inventory;
     /// <summary>

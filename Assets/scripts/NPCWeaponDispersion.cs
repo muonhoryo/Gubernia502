@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ermakWeaponDispersion : MonoBehaviour
+public class NPCWeaponDispersion : MonoBehaviour
 {
     [SerializeField]
     private NPCLockControl NPCLockControl;
@@ -12,7 +12,8 @@ public class ermakWeaponDispersion : MonoBehaviour
     public float rotateAngle=0;
     private void LateUpdate()
     {
-        rotateAngle = NPCLockControl.viewBodyScript.transfmoredBody.rotation.eulerAngles.y + NPCLockControl.animator.GetFloat("HeadView") - 22.5f;
+        rotateAngle = NPCLockControl.viewBodyScript.transfmoredBody.rotation.eulerAngles.y + 
+            NPCLockControl.animator.GetFloat("HeadView") - 22.5f;
         gameObject.transform.rotation = Quaternion.Euler(0f,
                                                     rotateAngle,
                                                     0f);

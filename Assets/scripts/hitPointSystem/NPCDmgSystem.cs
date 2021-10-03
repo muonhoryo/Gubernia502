@@ -5,9 +5,9 @@ using UnityEngine;
 public class NPCDmgSystem : alifeDmgSystem
 {
     [SerializeField]
-    targetStatsCollector statsCollector;
+    protected targetStatsCollector statsCollector;
     [SerializeField]
-    NPCLockControl NPCLockControl;
+    protected NPCLockControl NPCLockControl;
     protected override void getStunned(float rotation, int stunType)
     {
         base.getStunned(rotation, stunType);
@@ -16,8 +16,6 @@ public class NPCDmgSystem : alifeDmgSystem
     protected override void death(float rotation)
     {
         base.death(rotation);
-        NPCLockControl.weaponDispersion.gameObject.SetActive(false);
-        Gubernia502.mainCamera.changeToTargetTracking(gameObject);
         NPCLockControl.soundGenerator.disableSoundGen();
     }
     public override void becameTarget(hitPointSystem hunter)

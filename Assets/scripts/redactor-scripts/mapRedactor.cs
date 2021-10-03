@@ -322,6 +322,10 @@ public class mapRedactor : MonoBehaviour//singltone
         mapRedactorPanel.SetActive(false);
         playerInterface.SetActive(true);
     }
+    public void saveMap()
+    {
+        saveSystem.saveMap();
+    }
     private void addingItemUpdate()
     {
         if (Input.GetMouseButtonDown(0) &&

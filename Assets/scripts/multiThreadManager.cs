@@ -123,12 +123,12 @@ public class multiThreadManager : MonoBehaviour//singltone
             Quaternion.Euler(0, sceneSave.mainHero.yRotation, 0);
         Gubernia502.playerController.NPCLockControl.hpSystem.hitPoint = sceneSave.mainHero.HPpoint;
         Gubernia502.playerController.NPCLockControl.hpSystem.shieldDurability = sceneSave.mainHero.shieldDuration;
+        stateLoading = 0;
+        loader.currentState = saveLoader.loadState.wallsLoad;
         if (Time.realtimeSinceStartup - startTime>Gubernia502.constData.threadFrameTime)
         {
             return;
         }
-        stateLoading = 0;
-        loader.currentState = saveLoader.loadState.wallsLoad;
         wallsLoad:
         if (sceneSave.walls.Count > 0&&stateLoading<sceneSave.walls.Count)
         {

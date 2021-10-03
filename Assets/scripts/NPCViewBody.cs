@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ermakViewBody : MonoBehaviour
+public class NPCViewBody : MonoBehaviour
 {
     public float neededHeadDirection;
 

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ermakPlayerController : MonoBehaviour//singltone
+public class playerController : MonoBehaviour//singltone
 {
-    static ermakPlayerController singltone = null;
+    static playerController singltone = null;
     private float selectWeaponCoolDown = 0.2f;
 
     private bool isCanSelectWeapon=true;
